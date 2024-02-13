@@ -9,33 +9,12 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             @auth
             <li class="nav-item">
-                <a class="nav-link "
-                {{-- {{ (\Request::route()->getName() == '#') ? 'active' : '' }}"  --}}
-                href="#">
-                    Bill
-                </a>
+                <a class="nav-link" href="#">Bill</a>
             </li>         
         @else
             <li class="nav-item">
-                <a class="nav-link"
-                 {{-- {{ (\Request::route()->getName() == '#') ? 'active' : '' }}"  --}}
-                 href="#">Internet</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"
-                {{-- {{ (\Request::route()->getName() == '#') ? 'active' : '' }}"  --}}
-                href="#">Promo's</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link "
-                {{-- {{ (\Request::route()->getName() == '#') ? 'active' : '' }}"  --}}
-                href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link "
-                {{-- {{ (\Request::route()->getName() == '#') ? 'active' : '' }}"  --}}
-                href="#">Apply NOW</a>
-            </li>
+                <a class="nav-link" href="#">Internet</a>
+            
         @endauth
          @if (Route::has('login'))
                 <div class="nav-item ">
