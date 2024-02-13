@@ -19,12 +19,12 @@
             <li class="nav-item">
                 <a class="nav-link"
                  {{-- {{ (\Request::route()->getName() == '#') ? 'active' : '' }}"  --}}
-                 href="{{route('internetplans')}}">Internet</a>
+                 href="#">Internet</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link"
                 {{-- {{ (\Request::route()->getName() == '#') ? 'active' : '' }}"  --}}
-                href="{{route('internetpromos')}}">Promos</a>
+                href="#">Promo's</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link "
@@ -34,7 +34,7 @@
             <li class="nav-item">
                 <a class="nav-link "
                 {{-- {{ (\Request::route()->getName() == '#') ? 'active' : '' }}"  --}}
-                href="#">Apply Now!</a>
+                href="#">Apply NOW</a>
             </li>
         @endauth
          @if (Route::has('login'))
