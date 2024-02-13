@@ -2,6 +2,7 @@
 
 use App\Mail\MyMailingServices;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AJCController;
 use App\Http\Controllers\ProfileController;
 
 /*
