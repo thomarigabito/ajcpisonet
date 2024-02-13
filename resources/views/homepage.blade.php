@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -141,7 +141,7 @@
     </style>
 
 </head>
-<body>
+<body> --}}
 @extends('mainlayout')
 @section('title', 'AJC-Homepage')
 @section('content')
@@ -328,6 +328,6 @@
         </div>
     </div>
 @endsection
-</body>
-</html>
+{{-- </body>
+</html> --}}
 
