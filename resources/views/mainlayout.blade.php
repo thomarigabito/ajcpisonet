@@ -21,6 +21,9 @@
             .logo{
                 width: 120px;
             }
+            .nav-link{
+                font-size: 24px !important;
+            }
 
 
 
@@ -29,6 +32,9 @@
                 .logo{
                     width: 80px;
                  }
+                 .nav-link{
+                    font-size: 16px !important;
+                }
             }
         </style>
     </head>
