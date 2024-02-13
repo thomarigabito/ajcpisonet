@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Internet</a>
+            <a class="nav-link" class="text-center" aria-current="page" href="#">Internet</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Promos</a>
@@ -24,7 +24,7 @@
                         <a href="{{ route('login') }}" >Log in</a>
                     @endauth
                 </div>
-            @endif
+        @endif
       </div>
     </div>
   </nav>
