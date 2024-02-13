@@ -8,6 +8,6 @@ class AJCController extends Controller
 {
     public function internet()
     {
-        return view('internet');
+        return view('include.internet');
     }
 }
