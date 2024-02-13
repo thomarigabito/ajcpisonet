@@ -1,6 +1,7 @@
 <?php
 
 use App\Mail\MyMailingServices;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AJCController;
 use App\Http\Controllers\ProfileController;
@@ -44,6 +45,7 @@ Route::get('/internet', [AJCController::class, 'internet'])->name('internet');
 Route::get('/promos', [AJCController::class, 'promos'])->name('promos');
 Route::get('/contactus', [AJCController::class, 'contactus'])->name('contactus');
 Route::get('/applynow', [AJCController::class, 'applynow'])->name('applynow');
+
 Route::post('/applynow', [AJCController::class, 'applynowPOST'])->name('applynowPOST');
 
 
