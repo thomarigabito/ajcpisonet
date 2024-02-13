@@ -37,3 +37,6 @@ Route::get('/testroute', function(){
     //Send email to anyone
     Mail::to('deepong25@gmail.com')->send (new MyMailingServices('Jupiter'));
 });
+
+// From AJCController
+Route::get('/internet', [AJCController::class, 'internet'])->name('internet');
