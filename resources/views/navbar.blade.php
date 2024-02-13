@@ -5,17 +5,24 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" class="text-center" aria-current="page" href="#">Internet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Promos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ContactUS</a>
-          </li>
-        </ul>
+            @auth
+            <li class="nav-item">
+                <a class="nav-link {{ (\Request::route()->getName() == '#') ? 'active' : '' }}" href="#">Bill</a>
+            </li>         
+        @else
+            <li class="nav-item">
+                <a class="nav-link {{ (\Request::route()->getName() == '#') ? 'active' : '' }}" href="{{route('internetplans')}}">Internet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ (\Request::route()->getName() == '#') ? 'active' : '' }}" href="{{route('internetpromos')}}">Promos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ (\Request::route()->getName() == '#') ? 'active' : '' }}" href="{{route('contactus')}}">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ (\Request::route()->getName() == '#') ? 'active' : '' }}" href="{{route('applynow')}}">Apply Now!</a>
+            </li>
+        @endauth
          @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
@@ -28,3 +35,6 @@
       </div>
     </div>
   </nav>
+
+
+  
