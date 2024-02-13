@@ -197,12 +197,26 @@
             background: transparent;
             box-shadow: none;
         }
+
+        .footer-copyright {
+            color: #695B5E;
+        }
+
+        .font-style {
+            font-weight: bolder;
+            text-decoration: underline;
+
+        }
+
+        .button {
+            color: #5C4D51;
+        }
         </style>
     </head>
     <body class="antialiased">
         @include('navbar')
         @yield('content')
-
+        @include('footer')
 
 
 
