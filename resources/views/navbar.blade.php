@@ -15,10 +15,10 @@
             <a class="nav-link {{ (\Request::route()->getName() == 'promos') ? 'active' : '' }}"  href="{{route('promos')}}">Promos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ContactUs</a>
+            <a class="nav-link {{ (\Request::route()->getName() == 'contactus') ? 'active' : '' }}"  href="{{route('contactus')}}">ContactUS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ApplyNow</a>
+            <a class="nav-link {{ (\Request::route()->getName() == 'applynow') ? 'active' : '' }}"  href="{{route('applynow')}}">ApplyNow</a>
           </li>
         </ul>
         

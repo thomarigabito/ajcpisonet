@@ -14,4 +14,12 @@ class AJCController extends Controller
     {
         return view('include.promos');
     }
+    public function contactus()
+    {
+        return view('include.contactus');
+    }
+    public function applynow()
+    {
+        return view('include.applynow');
+    }
 }
