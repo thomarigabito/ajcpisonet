@@ -1,6 +1,9 @@
 <x-guest-layout>
+
+
     <form method="POST" action="{{ route('register') }}">
         @csrf
+        <h3 class="text-gray-900 fw-semibold fs-5 pb-6 ">{{__('Registration Form')}}</h3>
 
         <!-- Name -->
         <div>

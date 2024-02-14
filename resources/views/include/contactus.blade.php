@@ -37,6 +37,12 @@
             padding: 15px;
             background: #999;
         }
+
+        .fa-brands{
+            justify-items:space-between;
+            font-size: 35px;
+            padding: 15px;
+        }
     </style>
 
 
@@ -62,10 +68,11 @@
         </div>
 
 
-        <div class="container-fluid px-5 py-5 h-100">
-            <div class="row">
-                <div class="col col-md-6">
-                    <form action="" method="post">
+        <div class="container-fluid px-5 py-5 min-h-100 bg-gray-100">
+            <div class="row ">
+                <div class="col-12 col-md-6 w-full sm:max-w-md px-6 bg-white py-4 shadow-md overflow-hidden sm:rounded-lg">
+                    <form action="" method="post" class>
+                        @csrf
                         <div class="mb-3">
                             <div class="mb-3">
                                 <input type="text" class="form-control" name="" id=""
@@ -82,14 +89,19 @@
                         </div>
                     </form>
                 </div>
-                <div class="col col-md-6">
+                <div class="col-12 col-md-6">
                     <h3>Message Us</h3>
                     <p>Our team is dedicated to providing you with the best support and ensuring your experience with us is
                         top-notch. Don't hesitate to drop us a message—we're here for you!</p>
-                    <div class="col col-md-6">
-                        <div>
-                        </div>
-                    </div>
+                        <div class="row">
+                            <div class="col">
+                            <a href="/"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="/"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                     </div>
+
+
                 </div>
             </div>
         </div>
