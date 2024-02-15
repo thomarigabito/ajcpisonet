@@ -109,7 +109,7 @@
                         <a href="/" type="button" class="form-control btn btn-danger">Cancel</a>
                     </div>
                     <div class="col-lg-6 col-md-12 mt-md-1 p-1">
-                        <button type="submit" class="form-control btn btn-primary">Hello</button>
+                        <button type="submit" class="form-control btn btn-primary">Submit</button>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@
           </div>
           <div class="col-auto">
             <!-- Submit button -->
-            <button type="submit" class="btn bg-white mb-4 button">
+            <button type="submit" class="btn mb-4 button">
               Subscribe
             </button>
           </div>
@@ -59,7 +59,7 @@
 
   <!-- Copyright section -->
   <section>
-    <div class="footer-copyright text-center py-3" >© 2024 Copyright:
+    <div class="footer-copyright text-center py-3" >©
       <a href="#" class="font-style">AJC PISONET</a>
     </div>
   </section>

@@ -65,6 +65,6 @@ class AJCController extends Controller
         if(!$applicants){
             return redirect(route('applynow'))->with("error", "Application failed, please try again");
         }
-        return redirect(route('dashboard'))->with("success", "Application submitted, Please wait for email, text or call");
+        return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
     }
 }

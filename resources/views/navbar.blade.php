@@ -29,12 +29,8 @@
                         </ul>
 
                     @if (Route::has('login'))
-                        <div class="nav-item ">
-                            @auth
-                                <a class="nav-link" href="{{ route('logout') }}">Log out</a>
-                            @else
-                                <a class="nav-link" href="{{ route('login') }}">Log in</a>
-                            @endauth
+                        <div class="nav-item ">              
+                            <a class="nav-link" href="{{ route('login') }}">Log in</a>
                         </div>
                     @endif
                 </div>

@@ -1,5 +1,5 @@
 @extends('mainlayout')
-@section('title', 'AJC-Homepage')
+@section('title', 'AJC Pisonet')
 @section('content')
         <div class="head container-fluid px-5">
 

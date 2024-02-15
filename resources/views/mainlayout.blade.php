@@ -206,13 +206,31 @@
 
         .font-style {
             font-weight: bolder;
-            text-decoration: underline;
+
 
         }
 
         .button {
-            color: #5C4D51;
+            background-color: white;
+            border: 1px solid #ccc;
+            transition: background-color 0.3s ease;
+
+
         }
+
+        .button:hover {
+            background-color: #fff;
+        }
+
+        .hero-section {
+            min-height:550;
+            padding: 10%;
+            background-image: linear-gradient(rgba(218, 194, 178, 0.719), rgba(111, 78, 82, 0.259)), url(./assets/internet-head.jpg);
+	        background-position: 0 0, 50%;
+	        background-size: auto, cover;
+
+        }
+
         </style>
     </head>
     <body class="antialiased">
