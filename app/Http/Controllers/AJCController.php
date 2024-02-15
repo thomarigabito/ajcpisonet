@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AJCController extends Controller
 {
+
     public function homepage(){
         if(Auth::check()){
             return redirect(route('dashboard'));
@@ -48,6 +49,8 @@ class AJCController extends Controller
         if(Auth::check()){
             return redirect(route('dashboard'));
         }
+
+
         $request->validate([
             'firstname' => 'required',
             'middlename' => 'required',
@@ -82,11 +85,15 @@ class AJCController extends Controller
         $data['uploadid'] = $request->uploadid;
         $data['idselfie'] = $request->idselfie;
 
-
         $applicants = Application::create($data);
+
         if(!$applicants){
             return redirect(route('applynow'))->with("error", "Application failed, please try again");
         }
         return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
+    }
+    public function applicantdata(){
+        $applicant = Application::all();
+        return view('dashboard', ['applicant'=> $applicant]);
     }
 }
