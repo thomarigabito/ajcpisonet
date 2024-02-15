@@ -54,24 +54,24 @@
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-e-2 border-2 m-1 rounded-4 ">
-                    <h3 class="mbps">200 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1699</p>
+                    <h3 class="mbps">20 Mbps</h3>
+                    <p class="p_mbps">Fiber Unli Plan 899</p>
                 </div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">400 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1699</p>
+                    <h3 class="mbps">30 Mbps</h3>
+                    <p class="p_mbps">Fiber Unli Plan 1000</p>
                 </div>
                 <div class="col col-md-2"><span></span></div>
             </div>
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">600 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1699</p>
+                    <h3 class="mbps">50 Mbps</h3>
+                    <p class="p_mbps">Fiber Unli Plan 1500</p>
                 </div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">1000 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1699</p>
+                    <h3 class="mbps">100 Mbps</h3>
+                    <p class="p_mbps">Fiber Unli Plan 1500</p>
                 </div>
                 <div class="col col-md-2"><span></span></div>
             </div>
