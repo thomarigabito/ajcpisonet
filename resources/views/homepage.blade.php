@@ -13,7 +13,7 @@
 
 
     <div class="container-fluid Fiber_Experience px-5 ">
-        <h1 class="">Elevate Your Fiber Experience at AJC Internet</h1>
+        <h1 class="" style="font-size:35px;">Elevate Your Fiber Experience at AJC Internet</h1>
         <div class="row">
             <div class="col-12 col-md-12 col-lg-4 py-5 d-flex">
                 <div class="bundle px-1 px-md-2 "><span class="text"><i class="fa-solid fa-wifi"></i></span></div>
@@ -53,11 +53,11 @@
         <div class="row ">
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
-                <div class="col col-md-4 px-2 text-center">
+                <div class="col-12 col-md-4 px-2 py-5 text-center border-e-2 border-2 m-1 rounded-4 ">
                     <h3 class="mbps">200 Mbps</h3>
                     <p class="p_mbps">Fiber Unli Plan 1699</p>
                 </div>
-                <div class="col col-md-4 px-2 text-center">
+                <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
                     <h3 class="mbps">400 Mbps</h3>
                     <p class="p_mbps">Fiber Unli Plan 1699</p>
                 </div>
@@ -65,11 +65,11 @@
             </div>
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
-                <div class="col col-md-4 px-2 text-center">
+                <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
                     <h3 class="mbps">600 Mbps</h3>
                     <p class="p_mbps">Fiber Unli Plan 1699</p>
                 </div>
-                <div class="col col-md-4 px-2 text-center">
+                <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
                     <h3 class="mbps">1000 Mbps</h3>
                     <p class="p_mbps">Fiber Unli Plan 1699</p>
                 </div>
@@ -80,23 +80,23 @@
 
       </div>
     <div class="container-fluid">
-        <h1 class="col-8 text-center align-items-center m-auto p-2  ">We’ve got you covered with reliable internet that’s
+        <h1 class="col-8 text-center align-items-center m-auto py-5" style="font-size: 34px; font-weight:700;">We’ve got you covered with reliable internet that’s
             right for your home.</h1>
     </div>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-4 p-5 justify-content-center text-center">
+            <div class="col-12 col-md-4 p-2 p-md-3 p-lg-4 justify-content-center text-center">
                 <img class="py-4 m-auto" src="./assets/productivity.png">
                 <h4>Be more productive than ever</h4>
                 <p>with faster speeds that Fiber Unli can provide.</p>
             </div>
-            <div class="col-12 col-md-4 p-5 justify-content-center text-center">
+            <div class="col-12 col-md-4 p-2 p-md-3 p-lg-4 justify-content-center text-center">
                 <img class="py-4 m-auto" src="./assets/stream.png">
                 <h4>There’s no limit!</h4>
                 <p>Stream to your heart’s content for as low as P899!</p>
             </div>
-            <div class="col-12 col-md-4 p-5 justify-content-center text-center">
+            <div class="col-12 col-md-4 p-2 p-md-3 p-lg-4 justify-content-center text-center">
                 <img class="py-4 m-auto" src="./assets/internet.png">
                 <h4>Win more rounds with AUJ Internet</h4>
             </div>
@@ -129,60 +129,44 @@
     </div>
 
 
-
-    <div class="container-fluid faq py-5 px-5">
-        <h3>FAQ</h3>
-        <div class="row accordion" id="accordionFAQ">
-            <div class="col-12 col-sm-10 col-md-10">
-                <div class="accordion-item col">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            What are included in the AJC Internet plans?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
-                        <div class="accordion-body">
-                            All our plan offers come with free WiFi modem (DSL, Fibre and LTE bundled plans) and monthly
-                            volume allowance. Plans starting at 1299 and above also have a free landline with unlimited
-                            calls to any Globe or TM numbers, and 6-month access to Amazon Prime Video.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item col">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-button-fucos-box-shadow:none" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            What is monthly data allowance?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                        <div class="accordion-body">
-                            It's the amount of data that you can use according to the broadband plan you subscribed to. Your
-                            allowance is measured in gigabytes (GB) and is used up based on how much data your internet
-                            activities consume.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item col">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-button-fucos-box-shadow:none " type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How do you apply the Fair Use Policy to your broadband service?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                        <div class="accordion-body">
-                            Globe At Home was designed to provide you consistently fast and reliable broadband service for a
-                            steady browsing experience in the convenience of your home. It lets you stream data and download
-                            large files, but if you use this service other than its intent as mentioned, you may experience
-                            slow browsing.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
     </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
 @endsection
 
 

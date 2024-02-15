@@ -33,7 +33,7 @@
       </div>
     </div>
   </nav>
-    
+
 
 
 
@@ -67,11 +67,11 @@
             @auth
             <li class="nav-item">
                 <a class="nav-link" href="#">Bill</a>
-            </li>         
+            </li>
         @else
             <li class="nav-item">
                 <a class="nav-link" href="#">Internet</a>
-            
+
         @endauth
          @if (Route::has('login'))
                 <div class="nav-item ">
@@ -87,4 +87,3 @@
   </nav> --}}
 
 
-  
