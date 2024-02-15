@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Application;
-use App\Http\Requests\Auth\LoginRequest;
 use Illuminate\Http\Request;
 
 class AJCController extends Controller
