@@ -12,26 +12,42 @@ class AJCController extends Controller
         if(Auth::check()){
             return redirect(route('dashboard'));
         }
+        return view('homepage');
     }
     public function internet()
     {
+        if(Auth::check()){
+            return redirect(route('dashboard'));
+        }
         return view('include.internet');
     }
     public function promos()
     {
+        if(Auth::check()){
+            return redirect(route('dashboard'));
+        }
         return view('include.promos');
     }
     public function contactus()
     {
+        if(Auth::check()){
+            return redirect(route('dashboard'));
+        }
         return view('include.contactus');
     }
     public function applynow()
     {
+        if(Auth::check()){
+            return redirect(route('dashboard'));
+        }
         return view('include.applynow');
     }
 
 
     function applynowPOST(Request $request){
+        if(Auth::check()){
+            return redirect(route('dashboard'));
+        }
         $request->validate([
             'firstname' => 'required',
             'middlename' => 'required',
