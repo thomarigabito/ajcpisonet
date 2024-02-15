@@ -17,9 +17,7 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', [AJCController::class, 'homepage']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

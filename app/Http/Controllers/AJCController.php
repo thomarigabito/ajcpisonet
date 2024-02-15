@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class AJCController extends Controller
 {
+    public function homepage(){
+        if(Auth::check()){
+            return redirect(route('dashboard'));
+        }
+    }
     public function internet()
     {
         return view('include.internet');
