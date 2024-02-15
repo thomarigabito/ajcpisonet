@@ -13,6 +13,18 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <style>
+        .logo{
+                width: 120px;
+            }
+         /* Query here */
+         @media screen and (max-width:700px){
+                .logo{
+                    width: 80px;
+                 }
+            }
+    </style>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
