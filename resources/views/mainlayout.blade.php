@@ -47,7 +47,6 @@
             .nav-link {
                 font-size: 20px;
                 text-align: center;
-                color: black;
             }
 
             .nav-link:hover {
