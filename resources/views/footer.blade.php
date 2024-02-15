@@ -38,12 +38,11 @@
       </div>
       <div class="row">
         <div class="col text-sm text-center">
-          Phone: +63 (094) 335-5133 / Fax: (093) 990-4121
-        </div>
+          Phone: +63 (095) 620-78139 / Tel: (033) 3515718
       </div>
       <div class="row">
         <div class="col text-sm text-center text-decoration-underline mb-4">
-          Physical address: 123 Maginhawa Street, Quezon City, Metro Manila, Fargo, ND 58102
+          Physical address: Zone 7, Punta(Bolocawe), Carles, Iloilo 5019
         </div>
       </div>
     </section>
