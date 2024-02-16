@@ -35,6 +35,15 @@ Route::middleware('auth')->group(function () {
 Route::get('/apply_899',function(){
     return view('include.20mbps');
 })->name('20mbps');
+Route::get('/apply_1000',function(){
+    return view('include.30mbps');
+})->name('30mbps');
+Route::get('/apply_1300',function(){
+    return view('include.50mbps');
+})->name('50mbps');
+Route::get('/apply_1500',function(){
+    return view('include.100mbps');
+})->name('100mbps');
 
 require __DIR__.'/auth.php';
 

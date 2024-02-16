@@ -55,27 +55,33 @@
                 <div class="col col-md-2"><span></span></div>
                 
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-e-2 border-2 m-1 rounded-4 ">
-                <a href="{{route('20mbps')}}">
-                    <h3 class="mbps">20 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 899</p>
-                </a>
+                    <a href="{{route('20mbps')}}">
+                        <h3 class="mbps">20 Mbps</h3>
+                        <p class="p_mbps">Fiber Unli Plan 899</p>
+                    </a>
                 </div>
             
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">30 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1000</p>
+                    <a href="{{route('30mbps')}}">
+                        <h3 class="mbps">30 Mbps</h3>
+                        <p class="p_mbps">Fiber Unli Plan 1000</p>
+                    </a>
                 </div>
                 <div class="col col-md-2"><span></span></div>
             </div>
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">50 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1300</p>
+                    <a href="{{route('50mbps')}}">
+                        <h3 class="mbps">50 Mbps</h3>
+                        <p class="p_mbps">Fiber Unli Plan 1300</p>
+                    </a>
                 </div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">100 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1500</p>
+                    <a href="{{route('100mbps')}}">
+                        <h3 class="mbps">100 Mbps</h3>
+                        <p class="p_mbps">Fiber Unli Plan 1500</p>
+                    </a>
                 </div>
                 <div class="col col-md-2"><span></span></div>
             </div>

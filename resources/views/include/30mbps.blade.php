@@ -57,7 +57,7 @@
                         </select>
                     </div>
                     <div class="col-lg-4 col-md-12 mt-md-1 p-1">
-                        <input type="text" name="plan" class="form-control" value="899" placeholder="899" >
+                        <input type="text" name="plan" class="form-control" value="1000" placeholder="1000" >
                     </div>
                 </div>
                 <div class="row">
