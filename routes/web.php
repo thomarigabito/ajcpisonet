@@ -30,7 +30,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/admindashboard', [DashboardController::class, 'admindashboard'])->name('admindashboard');
     Route::get('/addClient', [ClientsController::class, 'addClient'])->name('addClient');
     Route::get('/bill', [AJCController::class, 'bill'])->name('bill');
-    
 });
 
 

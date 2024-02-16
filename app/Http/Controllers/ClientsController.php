@@ -27,7 +27,7 @@ class ClientsController extends Controller
     //         'firstname' => 'required'
     //     ]);
 
-<<<<<<< HEAD
+
 
         $request->validate([
             'firstname' => 'required'
@@ -36,11 +36,11 @@ class ClientsController extends Controller
         $data['firstname'] = $request->firstname;
 
         $applicants = Application::create($data);
-=======
+
     //     $data['firstname'] = $request->firstname;
-       
+
     //     $applicants = Application::create($data);
->>>>>>> 82b31c87d4c7f111c2a0adbbeabb9530ddd54583
+
 
     //     if(!$applicants){
     //         return redirect(route('applynow'))->with("error", "Application failed, please try again");
