@@ -34,7 +34,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/apply_899',function(){
     return view('20mbps')->name('20mbps');
-})
+});
 
 require __DIR__.'/auth.php';
 
