@@ -8,12 +8,19 @@ class ClientsController extends Controller
 {
 
     public function addClient(){
+        // to avoid unauthorized access
+        if(Auth::user()->usertype!='admin'){
+            return redirect(route('dashboard'));
+        }
         return view('include.addClient');
     }
 
     // Add Client post request
     function addClientPost(Request $request){
-
+        // to avoid unauthorized access
+        if(Auth::user()->usertype!='admin'){
+            return redirect(route('dashboard'));
+        }
         $request->validate([
             'firstname' => 'required'
         ]);
