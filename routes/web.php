@@ -23,11 +23,11 @@ Route::get('/', [AJCController::class, 'homepage']);
 
 
 
-
+Route::get('/addClient', [ClientsController::class, 'addClient'])->name('addClient');
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
     Route::get('/admindashboard', [DashboardController::class, 'admindashboard'])->name('admindashboard');
-    Route::get('/addClient', [ClientsController::class, 'addClient'])->name('addClient');
+    
 });
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
