@@ -21,10 +21,6 @@ use App\Http\Controllers\DashboardController;
 
 Route::get('/', [AJCController::class, 'homepage']);
 
-
-
-
-
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
     Route::get('/admindashboard', [DashboardController::class, 'admindashboard'])->name('admindashboard');
