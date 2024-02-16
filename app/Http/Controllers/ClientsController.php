@@ -8,9 +8,9 @@ class ClientsController extends Controller
 {
 
     public function addClient(){
-        if(Auth::check()){
-            return redirect(route('dashboard'));
-        }
+        // if(Auth::check()){
+        //     return redirect(route('dashboard'));
+        // }
         return view('include.addClient');
     }
 
