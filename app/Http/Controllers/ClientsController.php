@@ -31,8 +31,14 @@ class ClientsController extends Controller
     //     $applicants = Application::create($data);
 
     //     if(!$applicants){
-    //         return redirect(route('applynow'))->with("error", "Application failed, please try again");
+    //         return redirect(route('addClient'))->with("error", "Application failed, please try again");
     //     }
-    //     return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
+    //     return redirect(route('addClient'))->with("success", "Application submitted, Please wait for email, text or call");
     // }
+
+
+
+    public function newapplication () {
+        return view ('include.newapplication');
+    }
 }
