@@ -12,7 +12,7 @@ class DashboardController extends Controller
     public function dashboard(){
         if(Auth::id()){
             $usertype=Auth()->user()->usertype;
-            if($user=='user'){
+            if($usertype=='user'){
                 return view('dashboard');
             }
             else if($user=='admin'){
