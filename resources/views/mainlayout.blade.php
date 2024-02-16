@@ -223,13 +223,41 @@
         }
 
         .hero-section {
-            min-height:550;
-            padding: 10%;
+            padding: 15%;
             background-image: linear-gradient(rgba(218, 194, 178, 0.719), rgba(111, 78, 82, 0.259)), url(./assets/internet-head.jpg);
-	        background-position: 0 0, 50%;
+	        background-position: 50% 25%;
 	        background-size: auto, cover;
 
         }
+
+        .hero-section2 {
+            background-image: linear-gradient(rgba(218, 194, 178, 0.719), rgba(111, 78, 82, 0.259)), url(./assets/promos.jpg);
+	        background-position: 50% 25%;
+	        background-size: auto, cover;
+        }
+
+        #texts {
+            width: 55%;
+            color: #f5f5f5;
+            font-size: 40px;
+
+        }
+
+        #paragraph {
+            width: 55%;
+            color: #f5f5f5;
+            font-size: 20px;
+        }
+
+        #exclusive-deals {
+            font-weight: 900 !important;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 6vh !important;
+            width: 55%;
+            color: inherit;
+        }
+
+
 
         </style>
     </head>

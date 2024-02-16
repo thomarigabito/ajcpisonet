@@ -1,5 +1,11 @@
 @extends('mainlayout')
 @section('title', 'AJC-InternetPlans')
 @section('content')
-    <h1>This is Internet Page</h1>
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-wrapper">
+
+            </div>
+        </div>
+    </div>
 @endsection
