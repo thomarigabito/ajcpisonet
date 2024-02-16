@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="text-center text-white" style="background-color: #FAEEE7;">
+<footer class="text-center text-white mt-5" style="background-color: #FAEEE7;">
   <div class="container-fluid p-4" style="color: #594a4e;">
     <section>
       <form action="">
