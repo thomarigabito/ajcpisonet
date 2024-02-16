@@ -92,9 +92,10 @@ class AJCController extends Controller
         }
         return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
     }
-    public function applicantdata(){
-        $applicant = Application::all();
-        return view('dashboard', ['applicant'=> $applicant]);
+
+    public function show(){
+        $applicants = Application::all();
+        return view('dashboard', ['applicants'=> $applicants]);
     }
 
 }

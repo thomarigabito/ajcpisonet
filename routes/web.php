@@ -22,6 +22,12 @@ use App\Http\Controllers\DashboardController;
 Route::get('/', [AJCController::class, 'homepage']);
 
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+
+
 
 Route::get('/addClient', [ClientsController::class, 'addClient'])->name('addClient');
 
@@ -33,6 +39,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
+
 Route::get('/bill', function () {
     return view('bill');
 })->middleware(['auth', 'verified'])->name('bill');
@@ -74,4 +81,5 @@ Route::get('/applynow', [AJCController::class, 'applynow'])->name('applynow');
 Route::post('/applynow', [AJCController::class, 'applynowPOST'])->name('applynowPOST');
 
 
-Route::post('/dashboard', [AJCController::class, 'applicantdata'])->name('applicantdata');
+Route::get('/dashboard', [AJCController::class, 'show'])->name('dashboard');
+
