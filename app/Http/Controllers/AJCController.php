@@ -98,4 +98,12 @@ class AJCController extends Controller
         return view('dashboard', ['applicants'=> $applicants]);
     }
 
+    public function bill(){
+        // to avoid unauthorized access
+        if(Auth::user()->usertype!='user'){
+            return redirect(route('admindashboard'));
+        }
+        return view('bill');
+    }
+
 }

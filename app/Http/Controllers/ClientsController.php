@@ -10,18 +10,24 @@ class ClientsController extends Controller
 {
 
     public function addClient(){
-        if(Auth::check()){
+        // to avoid unauthorized access
+        if(Auth::user()->usertype!='admin'){
             return redirect(route('dashboard'));
         }
         return view('include.addClient');
     }
 
     // Add Client post request
-    function addClientPost(Request $request){
-        if(Auth::check()){
-            return redirect(route('dashboard'));
-        }
+    // function addClientPost(Request $request){
+    //     // to avoid unauthorized access
+    //     if(Auth::user()->usertype!='admin'){
+    //         return redirect(route('dashboard'));
+    //     }
+    //     $request->validate([
+    //         'firstname' => 'required'
+    //     ]);
 
+<<<<<<< HEAD
 
         $request->validate([
             'firstname' => 'required'
@@ -30,10 +36,15 @@ class ClientsController extends Controller
         $data['firstname'] = $request->firstname;
 
         $applicants = Application::create($data);
+=======
+    //     $data['firstname'] = $request->firstname;
+       
+    //     $applicants = Application::create($data);
+>>>>>>> 82b31c87d4c7f111c2a0adbbeabb9530ddd54583
 
-        if(!$applicants){
-            return redirect(route('applynow'))->with("error", "Application failed, please try again");
-        }
-        return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
-    }
+    //     if(!$applicants){
+    //         return redirect(route('applynow'))->with("error", "Application failed, please try again");
+    //     }
+    //     return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
+    // }
 }
