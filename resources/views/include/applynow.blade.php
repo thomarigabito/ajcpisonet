@@ -59,9 +59,10 @@
                     <div class="col-lg-4 col-md-12 mt-md-1 p-1">
                         <select class="form-control" name="plan" required>
                             <option value="">Choose plan</option>
-                            <option value="1500">1500</option>
+                            <option value="899">899</option>
                             <option value="1000">1000</option>
-                            <option value="800">800</option>
+                            <option value="1300">1300</option>
+                            <option value="1500">1500</option>
                         </select>
                     </div>
                 </div>
