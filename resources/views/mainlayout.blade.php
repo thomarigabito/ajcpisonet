@@ -233,7 +233,7 @@
 
         </style>
     </head>
-    <body class="antialiased">
+    <body class="antialiased" style="display:flex; flex-direction:column; justify-content:space-between">
         @include('navbar')
         @yield('content')
         @include('footer')
