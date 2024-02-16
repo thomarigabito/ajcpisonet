@@ -22,6 +22,7 @@ Route::get('/', [AJCController::class, 'homepage']);
 
 
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/admindashboard', [DashboardController::class, 'admindashboard'])->middleware(['auth', 'verified'])->name('admindashboard');
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
