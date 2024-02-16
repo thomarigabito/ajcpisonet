@@ -19,9 +19,11 @@ use App\Http\Controllers\ProfileController;
 
 Route::get('/', [AJCController::class, 'homepage']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashboard', [AJCController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/bill', function () {
     return view('bill');
 })->middleware(['auth', 'verified'])->name('bill');

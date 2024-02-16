@@ -96,4 +96,8 @@ class AJCController extends Controller
         $applicant = Application::all();
         return view('dashboard', ['applicant'=> $applicant]);
     }
+
+    public function dashboard(){
+        return view('dashboard');
+    }
 }
