@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Client;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -17,9 +18,9 @@ class DashboardController extends Controller
             $usertype=Auth()->user()->usertype;
             if($usertype=='user'){
                 return view('dashboard');
-            }              
+            }
         }
-        
+
     }
     public function admindashboard(){
         if(Auth::user()->usertype!='admin'){
@@ -31,6 +32,5 @@ class DashboardController extends Controller
                 return view('admindashboard');
             }
         }
-        
     }
 }
