@@ -1,7 +1,7 @@
 @extends('mainlayout')
 @section('title', 'AJC Pisonet')
 @section('content')
-        <div class="head container-fluid px-5">
+    <div class="head container-fluid px-5">
 
         <h3 style="font-size:35px;" class="pt-5">A Greater Life Together, at Home</h3>
 
@@ -40,11 +40,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{route('internet')}}'
+            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{ route('internet') }}'
                     class="btn btn-light rounded-5 text-uppercase plan_btn">View Plans</a></div>
-            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{route('applynow')}}'
+            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{ route('applynow') }}'
                     class="btn btn-light rounded-5 text-uppercase plan_btn">Apply Plan</a></div>
-            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{route('login')}}'
+            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{ route('login') }}'
                     class="btn btn-light rounded-5 text-uppercase plan_btn">Upgrade Plan</a></div>
         </div>
     </div>
@@ -53,16 +53,15 @@
         <div class="row ">
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
-                
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-e-2 border-2 m-1 rounded-4 ">
-                    <a href="{{route('20mbps')}}">
+                    <a href="{{ route('20mbps') }}">
                         <h3 class="mbps">20 Mbps</h3>
                         <p class="p_mbps">Fiber Unli Plan 899</p>
                     </a>
                 </div>
-            
+
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <a href="{{route('30mbps')}}">
+                    <a href="{{ route('30mbps') }}">
                         <h3 class="mbps">30 Mbps</h3>
                         <p class="p_mbps">Fiber Unli Plan 1000</p>
                     </a>
@@ -72,13 +71,13 @@
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <a href="{{route('50mbps')}}">
+                    <a href="{{ route('50mbps') }}">
                         <h3 class="mbps">50 Mbps</h3>
                         <p class="p_mbps">Fiber Unli Plan 1300</p>
                     </a>
                 </div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <a href="{{route('100mbps')}}">
+                    <a href="{{ route('100mbps') }}">
                         <h3 class="mbps">100 Mbps</h3>
                         <p class="p_mbps">Fiber Unli Plan 1500</p>
                     </a>
@@ -88,9 +87,10 @@
         </div>
     </div>
 
-      </div>
+    </div>
     <div class="container-fluid">
-        <h1 class="col-8 text-center align-items-center m-auto py-5" style="font-size: 34px; font-weight:700;">We’ve got you covered with reliable internet that’s
+        <h1 class="col-8 text-center align-items-center m-auto py-5" style="font-size: 34px; font-weight:700;">We’ve got you
+            covered with reliable internet that’s
             right for your home.</h1>
     </div>
 
@@ -123,15 +123,17 @@
             <div class="col-12 col-md-6 py-5 text-center chat">
                 <h1 style="font-size:32px; font-weight:700;">Chat with Us !</h1>
                 <p>Use our AJC Pisonet FB Messenger for quick and easy assistance.</p>
-                <div class="py-5"><button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-comments btnicon px-1"></i>AJC
-                    Chatbot</button></div>
+                <div class="py-5"><button class="btn btn-outline-dark rounded-2"><i
+                            class="fa-solid fa-comments btnicon px-1"></i>AJC
+                        Chatbot</button></div>
             </div>
             <div class="col-12 col-md-6 py-5  text-center support">
                 <h1 style="font-size:32px; font-weight:700;">Support</h1>
                 <p>We’ll find the best solution for you.</p>
                 <div class="py-5">
-                    <button class="btn btn-outline-dark rounded-2 py-2"><i class="fa-solid fa-circle-question btnicon px-1"></i>Go to
-                    Support</button>
+                    <button class="btn btn-outline-dark rounded-2 py-2"><i
+                            class="fa-solid fa-circle-question btnicon px-1"></i>Go to
+                        Support</button>
                 </div>
 
             </div>
@@ -139,7 +141,5 @@
     </div>
 
 
-    
+
 @endsection
-
-

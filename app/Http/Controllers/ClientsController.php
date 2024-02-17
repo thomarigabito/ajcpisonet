@@ -24,17 +24,14 @@ class ClientsController extends Controller
 
     public function clientPost(Request $request){
         if(Auth::check()){
-            if(Auth::user()->usertype=='admin'){
-                return redirect(route('admindashboard'));
-            }else{
+            if(Auth::user()->usertype!='admin'){
                 return redirect(route('dashboard'));
             }
         }
-
-        $request->validate([
-            'fullname'=> 'required|unique:clients,fullname',
-            'plan'=> 'required',
-            'accountnumber'=> 'required|unique:clients,accountnumber',
+        $request->validateWithBag('createClient', [
+            'fullname'=> ['required','unique:clients,fullname'],
+            'plan'=> ['required'],
+            'accountnumber'=> ['required','unique:clients,accountnumber'],
         ]);
 
         $data['fullname'] = $request->fullname;
@@ -72,22 +69,23 @@ class ClientsController extends Controller
                 return redirect(route('dashboard'));
             }
         }
-        $request->validate([
-            'firstname' => 'required',
-            'middlename' => 'required',
-            'lastname' => 'required',
-            'contact' => 'required',
-            'birthday' => 'required',
-            'gender' => 'required',
-            'plan' => 'required',
-            'email' => 'required|email|unique:applications,email',
-            'street' => 'required',
-            'barangay' => 'required',
-            'town' => 'required',
-            'province' => 'required',
-            'landmark' => 'required',
-            'uploadid' => 'required',
-            'idselfie' => 'required'
+        
+        $request->validateWithBag('apply', [
+            'firstname' => ['required', 'string', 'max:255'],
+            'middlename' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string', 'max:255'],
+            'contact' => ['required', 'numeric', 'max:255'],
+            'birthday' => ['required'],
+            'gender' => ['required'],
+            'plan' => ['required'],
+            'email' => ['required','email|unique:applications,email'],
+            'street' => ['required', 'string', 'max:255'],
+            'barangay' => ['required', 'numeric', 'max:255'],
+            'town' => ['required', 'string', 'max:255'],
+            'province' => ['required', 'string', 'max:255'],
+            'landmark' => ['required', 'string', 'max:255'],
+            'uploadid' => ['required'],
+            'idselfie' => ['required']
         ]);
 
         $data['firstname'] = $request->firstname;
