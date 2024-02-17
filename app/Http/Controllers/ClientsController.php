@@ -26,9 +26,9 @@ class ClientsController extends Controller
 
 
         $request->validate([
-            'fullname'=> 'required',
+            'fullname'=> 'required|unique:clients,fullname',
             'plan'=> 'required',
-            'accountnumber'=> 'required',
+            'accountnumber'=> 'required|unique:clients,accountnumber',
         ]);
 
         $data['fullname'] = $request->fullname;
@@ -43,9 +43,13 @@ class ClientsController extends Controller
         return redirect(route('clientPOST'))->with("success", "Client submitted,");
     }
 
-    public function createClient(){
+    public function createClientadmin(){
         $client = Client::all();
         return view('admindashboard', ['client'=> $client]);
+    }
+    public function createClient(){
+        $client = Client::all();
+        return view('.include.addClient', ['client'=> $client]);
     }
 
 
@@ -57,8 +61,6 @@ class ClientsController extends Controller
                 return redirect(route('dashboard'));
             }
         }
-
-
         $request->validate([
             'firstname' => 'required',
             'middlename' => 'required',
@@ -103,7 +105,7 @@ class ClientsController extends Controller
 
     public function show(){
         $applicants = Application::all();
-        return view('dashboard', ['applicants'=> $applicants]);
+        return view('include.newapplication', ['applicants'=> $applicants]);
     }
 
 

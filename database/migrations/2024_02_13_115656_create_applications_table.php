@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('gender');
             $table->string('plan');
             $table->string('email');
-            $table->foreign('email')->references('email')->on('users');
             $table->string('street');
             $table->string('barangay');
             $table->string('town');
