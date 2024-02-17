@@ -28,10 +28,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('/addclient', [ClientsController::class, 'addClient'])->name('addClient');
     Route::get('/newapplication', [ClientsController::class, 'newapplication'])->name('newapplication');
-    Route::get('/dashboard', [ClientsController::class, 'show'])->name('dashboard');
+    Route::get('/newapplication', [ClientsController::class, 'show'])->name('newapplication');
 
     Route::post('/addclient', [ClientsController::class, 'clientPost'])->name('clientPOST');
-    Route::get('/admindashboard', [ClientsController::class, 'createClient'])->name('admindashboard');
+    Route::get('/addclient', [ClientsController::class, 'createClient'])->name('addClient');
+    Route::get('/admindashboard', [ClientsController::class, 'createClientadmin'])->name('admindashboard');
 
     Route::get('/bill', [AJCController::class, 'bill'])->name('bill');
 });
