@@ -23,7 +23,13 @@ class ClientsController extends Controller
     }
 
     public function clientPost(Request $request){
-
+        if(Auth::check()){
+            if(Auth::user()->usertype=='admin'){
+                return redirect(route('admindashboard'));
+            }else{
+                return redirect(route('dashboard'));
+            }
+        }
 
         $request->validate([
             'fullname'=> 'required|unique:clients,fullname',
@@ -44,6 +50,11 @@ class ClientsController extends Controller
     }
 
     public function createClientadmin(){
+        if(Auth::check()){
+            if(Auth::user()->usertype!='admin'){
+                return redirect(route('dashboard'));
+            }
+        }
         $client = Client::all();
         return view('admindashboard', ['client'=> $client]);
     }
