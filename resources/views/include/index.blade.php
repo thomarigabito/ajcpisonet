@@ -16,7 +16,7 @@
                         </h4>
                     </div>
                     <div class="card-body">
-                        <div class="table-responsive">
+                        <div class="table-responsive-sm">
                             <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
