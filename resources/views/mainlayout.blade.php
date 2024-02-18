@@ -222,6 +222,7 @@
         }
 
         .hero-section2 {
+            padding: 11%;
             background-image: linear-gradient(rgba(218, 194, 178, 0.719), rgba(111, 78, 82, 0.259)), url(./assets/promos.jpg);
 	        background-position: 50% 25%;
 	        background-size: auto, cover;
