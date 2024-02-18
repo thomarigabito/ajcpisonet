@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\client;
 use App\Models\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -38,7 +39,7 @@ class ClientsController extends Controller
         $data['plan'] = $request->plan;
         $data['accountnumber'] = $request->accountnumber;
 
-        $client = Client::create($data);
+        $client = client::create($data);
 
         if(!$client){
             return redirect(route('clientPOST'))->with("error", "Client failed, please try again");
