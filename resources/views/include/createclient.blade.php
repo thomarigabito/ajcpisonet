@@ -24,7 +24,7 @@
                             <div class="mb-3">
                                 <label>Fullname</label>
                                 <input type="text" class="form-control" name="fullname" value="{{old('name')}}" Capitalized />
-                                @error('name') <span class="text-danger">{{$message}}</span>@enderror
+                                @error('fullname') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
                                 <label>Address</label>
