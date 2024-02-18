@@ -14,7 +14,7 @@
                     @endif
                    <div class="card">
                     <div class="card-header">
-                        <h4>Add Client
+                        <h4>Edit Clients
                             <a href="{{route('index')}}" class="btn btn-primary float-end">Back</a>
                         </h4>
                     </div>
@@ -23,26 +23,26 @@
                             @csrf
                             <div class="mb-3">
                                 <label>Fullname</label>
-                                <input type="text" class="form-control " name="fullname" value="{{old('name')}}" capitalize />
+                                <input type="text" class="form-control " name="fullname" value="{{$client->fullname}}" capitalize />
                                 @error('fullname') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
                                 <label>Address</label>
-                                <input type="text" class="form-control " name="address" value="{{old('address')}}" capitalize />
+                                <input type="text" class="form-control " name="address" value="{{$client->address}}" capitalize />
                                 @error('address') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
                                 <label>Plan</label>
-                                <input type="text" class="form-control" name="plan" value="{{old('plan')}}" />
+                                <input type="text" class="form-control" name="plan" value="{{$client->plan}}" />
                                 @error('plan') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
                                 <label>Account Number</label>
-                                <input type="text" class="form-control" name="accountNumber" value="{{old('accountNumber')}}" />
+                                <input type="text" class="form-control" name="accountNumber" value="{{$client->accountNumber}}" />
                                 @error('accountNumber') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">Add</button>
+                                <button type="submit" class="btn btn-primary">Update</button>
                             </div>    
                         </form>
                     </div>

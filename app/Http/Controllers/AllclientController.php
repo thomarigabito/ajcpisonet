@@ -32,6 +32,6 @@ class AllclientController extends Controller
     }
     public function edit(int $id){
         $client = Allclient::findOrFail($id);
-        return $client;
+        return view('include.editclient', compact('client'));
     }
 }

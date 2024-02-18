@@ -41,7 +41,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('clients', [AllclientController::class, 'index'])->name('index');
     Route::get('createclient', [AllclientController::class, 'createclient'])->name('createclient');
     Route::post('createclient', [AllclientController::class, 'storeclient'])->name('storeclient');
-    Route::get('clients/{id}/edit', [AllclientController::class, 'edit'])->name('clients/{id}/edit');
+    Route::get('clients/{id}/edit', [AllclientController::class, 'edit']);
 });
 
 
