@@ -15,11 +15,11 @@
                    <div class="card">
                     <div class="card-header">
                         <h4>Edit Clients
-                            <a href="{{url('clients/'.$client->id.'/edit')}}" class="btn btn-primary float-end">Back</a>
+                            <a href="{{route('index')}}" class="btn btn-primary float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('storeclient')}}" method="POST">
+                        <form action="{{route('updateclient')}}" method="POST">
                             @csrf
                             @method('PUT')
                             <div class="mb-3">

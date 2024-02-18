@@ -19,7 +19,7 @@
                         </h4>
                     </div>
                     <div class="card-body">
-                        <form action="{{route('index')}}" method="POST">
+                        <form action="{{route('storeclient')}}" method="POST">
                             @csrf
                             <div class="mb-3">
                                 <label>Fullname</label>
