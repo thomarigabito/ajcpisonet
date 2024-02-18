@@ -1,11 +1,5 @@
 @extends('mainlayout')
-@section('title', 'AJC-InternetPlans')
+@section('title', 'AJC-ContactUs')
 @section('content')
-    <div class="hero-section">
-        <div class="container">
-            <div class="hero-wrapper">
-
-            </div>
-        </div>
-    </div>
+    <h1>Hellowrold</h1>
 @endsection

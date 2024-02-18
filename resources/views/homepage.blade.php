@@ -40,11 +40,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{route('promos')}}'
+            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{route('internet')}}'
                     class="btn btn-light rounded-5 text-uppercase plan_btn">View Plans</a></div>
             <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{route('applynow')}}'
                     class="btn btn-light rounded-5 text-uppercase plan_btn">Apply Plan</a></div>
-            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href=''
+            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{route('login')}}'
                     class="btn btn-light rounded-5 text-uppercase plan_btn">Upgrade Plan</a></div>
         </div>
     </div>
@@ -53,25 +53,35 @@
         <div class="row ">
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
+                
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-e-2 border-2 m-1 rounded-4 ">
-                    <h3 class="mbps">20 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 899</p>
+                    <a href="{{route('20mbps')}}">
+                        <h3 class="mbps">20 Mbps</h3>
+                        <p class="p_mbps">Fiber Unli Plan 899</p>
+                    </a>
                 </div>
+            
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">30 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1000</p>
+                    <a href="{{route('30mbps')}}">
+                        <h3 class="mbps">30 Mbps</h3>
+                        <p class="p_mbps">Fiber Unli Plan 1000</p>
+                    </a>
                 </div>
                 <div class="col col-md-2"><span></span></div>
             </div>
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">50 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1500</p>
+                    <a href="{{route('50mbps')}}">
+                        <h3 class="mbps">50 Mbps</h3>
+                        <p class="p_mbps">Fiber Unli Plan 1300</p>
+                    </a>
                 </div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-2 m-1 rounded-4">
-                    <h3 class="mbps">100 Mbps</h3>
-                    <p class="p_mbps">Fiber Unli Plan 1500</p>
+                    <a href="{{route('100mbps')}}">
+                        <h3 class="mbps">100 Mbps</h3>
+                        <p class="p_mbps">Fiber Unli Plan 1500</p>
+                    </a>
                 </div>
                 <div class="col col-md-2"><span></span></div>
             </div>
@@ -98,7 +108,7 @@
             </div>
             <div class="col-12 col-md-4 p-2 p-md-3 p-lg-4 justify-content-center text-center">
                 <img class="py-4 m-auto" src="./assets/internet.png">
-                <h4>Win more rounds with AUJ Internet</h4>
+                <h4>Win more rounds with AJC Internet</h4>
             </div>
         </div>
     </div>
@@ -113,7 +123,7 @@
             <div class="col-12 col-md-6 py-5 text-center chat">
                 <h1 style="font-size:32px; font-weight:700;">Chat with Us !</h1>
                 <p>Use our AJC Pisonet FB Messenger for quick and easy assistance.</p>
-                <div class="py-5"><button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-comments btnicon px-1"></i>UJC
+                <div class="py-5"><button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-comments btnicon px-1"></i>AJC
                     Chatbot</button></div>
             </div>
             <div class="col-12 col-md-6 py-5  text-center support">
