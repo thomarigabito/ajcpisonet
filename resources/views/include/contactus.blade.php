@@ -54,13 +54,13 @@
             <h1 class="contact_text text-center align-content-center text-uppercase">Keep in touch with us</h1>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col col-md-4">
+                    <div class="col-4 col-md-4">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <div class="col col-md-4">
+                    <div class="col-4 col-md-4">
                         <i class="fa-solid fa-phone"></i>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-4 col-md-4">
                         <i class="fa-solid fa-comment-dots"></i>
                     </div>
                 </div>
@@ -86,6 +86,9 @@
                         </div>
                         <div class="mb-3">
                             <textarea class="form-control" name="message" id="" rows="7" placeholder="Message"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-success " type="submit" value="Send Message">Send message</button>
                         </div>
                     </form>
                 </div>
