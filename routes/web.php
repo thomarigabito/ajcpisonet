@@ -38,7 +38,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/bill', [AJCController::class, 'bill'])->name('bill');
 
     // new
-    Route::get('clients', [AllclientController::class, 'index'])->name('index');
+    Route::get('clients', [AllclientController::class, 'index'])->name('index')-name('clients');
     Route::get('createclient', [AllclientController::class, 'createclient'])->name('createclient');
 });
 
