@@ -76,7 +76,7 @@ Route::get('/applynow', [AJCController::class, 'applynow'])->name('applynow');
 Route::post('/applynow', [ClientsController::class, 'applynowPOST'])->name('applynowPOST');
 
 
-Route::get('clients', [AllclientController::class], 'index');
+Route::get('/clients', [AllclientController::class], 'index');
 
 
 
