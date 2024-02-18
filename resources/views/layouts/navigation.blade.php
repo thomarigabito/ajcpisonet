@@ -21,7 +21,7 @@
                 <!--Admin type -->
                 @if(Auth::user()->usertype=='admin')
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('admindashboard')" :active="request()->routeIs('admindashboard')">
+                    <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
@@ -103,7 +103,7 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             @if(Auth::user()->usertype=='admin')
-                <x-responsive-nav-link :href="route('admindashboard')" :active="request()->routeIs('admindashboard')">
+                <x-responsive-nav-link :href="route('index')" :active="request()->routeIs('index')">
                     {{ __('Dashboard') }}
                 </x-responsive-nav-link>
                 <x-responsive-nav-link :href="route('addClient')" :active="request()->routeIs('addClient')">
