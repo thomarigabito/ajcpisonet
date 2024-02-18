@@ -2,7 +2,7 @@
 @section('title', 'AJC-Promos')
 @section('content')
 <div class="hero-section2">
-  <div class="container p-48">
+  <div class="container">
     <h1 class="text-white" id="texts">Get your free install today and enjoy 2 months of internet on the house!</h1>
     <h1 class="mt-5" id="paragraph">Elevate your home experience with fast, reliable plans.</h1>
   </div>
