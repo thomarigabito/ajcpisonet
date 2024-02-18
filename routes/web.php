@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AJCController;
 use App\Http\Controllers\ClientsController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AllclientController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -75,6 +76,7 @@ Route::get('/applynow', [AJCController::class, 'applynow'])->name('applynow');
 Route::post('/applynow', [ClientsController::class, 'applynowPOST'])->name('applynowPOST');
 
 
+Route::get('clients', AllclientController::class, 'index');
 
 
 
