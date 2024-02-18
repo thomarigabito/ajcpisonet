@@ -42,6 +42,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('createclient', [AllclientController::class, 'createclient'])->name('createclient');
     Route::post('createclient', [AllclientController::class, 'storeclient'])->name('storeclient');
     Route::get('clients/{id}/edit', [AllclientController::class, 'edit']);
+    Route::put('clients/{id}/edit', [AllclientController::class, 'update']);
 });
 
 

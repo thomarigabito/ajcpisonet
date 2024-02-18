@@ -34,4 +34,19 @@ class AllclientController extends Controller
         $client = Allclient::findOrFail($id);
         return view('include.editclient', compact('client'));
     }
+    public function update(Request $request, int $id){
+        $request->validate([
+            'fullname' => 'required',
+            'address' => 'required',
+            'plan' => 'required',
+            'accountNumber' => 'required'
+        ]);
+        Allclient::findOrFail($id)->update([
+            'fullname' => $request->fullname,
+            'address' => $request->address,
+            'plan' => $request->plan,
+            'accountNumber' => $request->accountNumber,
+        ]);
+        return redirect()->back()->with('status', 'Client Updated');
+    }
 }
