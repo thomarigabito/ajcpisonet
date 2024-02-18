@@ -19,13 +19,13 @@
                         <form action="">
                             <div class="mb-3">
                                 <label>Fullname</label>
-                                <input type="text" class="form-control" name="fullname" value={{old('name')}} />
+                                <input type="text" class="form-control" name="fullname" value="{{old('name')}}" />
                                 <label>Address</label>
-                                <input type="text" class="form-control" name="address" value={{old('address')}} />
+                                <input type="text" class="form-control" name="address" value="{{old('address')}}" />
                                 <label>Plan</label>
-                                <input type="number" class="form-control" name="plan" value={{old('plan')}} />
+                                <input type="number" class="form-control" name="plan" value="{{old('plan')}}" />
                                 <label>Account Number</label>
-                                <input type="number" class="form-control" name="accountNumber" value={{old('accountNumber')}} />
+                                <input type="number" class="form-control" name="accountNumber" value="{{old('accountNumber')}}" />
                                 
                             </div>
                         </form>
