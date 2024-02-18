@@ -69,7 +69,7 @@ class ClientsController extends Controller
                 return redirect(route('dashboard'));
             }
         }
-        
+
         $request->validateWithBag('apply', [
             'firstname' => ['required', 'string', 'max:255'],
             'middlename' => ['required', 'string', 'max:255'],
