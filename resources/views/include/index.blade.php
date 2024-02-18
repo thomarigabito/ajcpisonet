@@ -37,7 +37,7 @@
                                             <td>{{$item->plan}}</td>
                                             <td>{{$item->accountNumber}}</td>
                                             <td>
-                                                <a href="{{url('clients/'.$item->id.'/edit')}}" class="btn btn-success edit mx-3">Edit</a>
+                                                <a href="{{url('clients/'.$item->id.'/edit')}}" class="btn btn-success edit mx-1">Edit</a>
                                                 <a href="{{url('clients/'.$item->id.'/delete')}}" class="btn btn-danger delete mx-1" onclick="return confirm('Are you sure?')">Delete</a>
                                             </td>
                                         </tr>

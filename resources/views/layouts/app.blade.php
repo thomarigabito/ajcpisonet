@@ -27,7 +27,7 @@
                     width: 80px;
                  }
                  .table-responsive, .edit, .delete{
-                    font-size: 12px !important;
+                    font-size: 10px !important;
                  }
                  
             }
