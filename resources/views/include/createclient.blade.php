@@ -25,17 +25,25 @@
                                 <label>Fullname</label>
                                 <input type="text" class="form-control" name="fullname" value="{{old('name')}}" Capitalized />
                                 @error('name') <span class="text-danger">{{$message}}</span>@enderror
+                            </div>
+                            <div class="mb-3">
                                 <label>Address</label>
                                 <input type="text" class="form-control" name="address" value="{{old('address')}}" Capitalized/>
                                 @error('address') <span class="text-danger">{{$message}}</span>@enderror
+                            </div>
+                            <div class="mb-3">
                                 <label>Plan</label>
                                 <input type="number" class="form-control" name="plan" value="{{old('plan')}}" />
                                 @error('plan') <span class="text-danger">{{$message}}</span>@enderror
+                            </div>
+                            <div class="mb-3">
                                 <label>Account Number</label>
                                 <input type="number" class="form-control" name="accountNumber" value="{{old('accountNumber')}}" />
                                 @error('accountNumber') <span class="text-danger">{{$message}}</span>@enderror
-                                <button type="submit" class="btn btn-primary">Add</button>
                             </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary">Add</button>
+                            </div>    
                         </form>
                     </div>
                    </div>
