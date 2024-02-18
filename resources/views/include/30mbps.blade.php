@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center mt-3 mb-5">
         <div class="row">
-            <div class="col col-md-6">
+            <div class="col-12 col-md-6">
                 <form action="{{route('applynowPOST')}}" method="POST">
             @csrf
             <div class="col-10 m-auto p-4 border rounded shadow">
@@ -108,8 +108,9 @@
                 </div>
             </div>
         </form>
+        
             </div>
-            <div class="col col-md-6 h-auto plan2">
+            <div class="col-12 mt-5 m-md-0 col-md-6 h-auto plan2">
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-e-2 border-2 m-1 rounded-4 ">
