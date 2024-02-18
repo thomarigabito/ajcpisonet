@@ -23,12 +23,12 @@
                             @csrf
                             <div class="mb-3">
                                 <label>Fullname</label>
-                                <input type="text" class="form-control " name="fullname" value="{{$client->fullname}}" capitalize />
+                                <input type="text" class="form-control uppercase" name="fullname" value="{{$client->fullname}}"  />
                                 @error('fullname') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
                                 <label>Address</label>
-                                <input type="text" class="form-control " name="address" value="{{$client->address}}" capitalize />
+                                <input type="text" class="form-control uppercase" name="address" value="{{$client->address}}"  />
                                 @error('address') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
