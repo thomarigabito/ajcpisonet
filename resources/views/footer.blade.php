@@ -1,65 +1,40 @@
-<!-- Footer -->
-<footer class="text-center text-white" style="background-color: #FAEEE7;">
-  <div class="container-fluid p-4" style="color: #594a4e;">
-    <section>
-      <form action="">
-        <div class="row d-flex justify-content-center">
-          <div class="col-auto">
-            <p class="pt-2">
-              <strong>Subscribe to our newsletter</strong>
-            </p>
-          </div>
+    <footer class="main-footer">
+        <div class="footer-left">
+            <h3>AJC<span>PISONET</span></h3>
 
-          <div class="col-md-5 col-12">
-            <!-- Email input -->
-            <div class="form-outline form-white mb-4">
-              <input type="email" id="Emailfield" class="form-control" />
-              <label class="form-label" for="Emailfield">Email address</label>
+            <p class="footer-company-name">Copyright © 2024 <strong>AJC</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Philippines</span>
+                Dampol 2nd B, Pulilan, 3005</p>
             </div>
-          </div>
-          <div class="col-auto">
-            <!-- Submit button -->
-            <button type="submit" class="btn mb-4 button">
-              Subscribe
-            </button>
-          </div>
-          <!-- End grid column -->
-        </div>
-        <!-- End grid row -->
-      </form>
-    </section>
 
-    <!-- Company information section -->
-    <section>
-      <div class="row">
-        <div class="col mb-4 mb-md-0">
-          <h3 class="text-uppercase text-center">AJC PISONET</h3>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>09260994769</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">AJC.pisonet2023@gmail.com</a></p>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col text-sm text-center">
-          Phone: +63 (095) 620-78139 / Tel: (033) 3515718
-      </div>
-      <div class="row">
-        <div class="col text-sm text-center text-decoration-underline mb-4">
-          Physical address: Zone 7, Punta(Bolocawe), Carles, Iloilo 5019
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>AJCPISONET</strong> This is an internet service provider offering fast and reliable connectivity solutions for homes and businesses, ensuring seamless access to online content and services.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/profile.php?id=100093338891270"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- Assistance section -->
-    <section class="mb-4">
-      <h2 class="text-center">Need Assistance?</h2>
-      <p class="text-center">
-        Our dedicated team is here to support you every step of the way – simply chat with us via our AJC Pisonet FB Messenger for quick and easy assistance. Need more personalized help? Our UJC Chatbot is ready to find the best solution tailored to your needs.
-      </p>
-    </section>
-  </div>
+</body>
 
-  <!-- Copyright section -->
-  <section>
-    <div class="footer-copyright text-center py-3" >©
-      <a href="#" class="font-style">AJC PISONET</a>
-    </div>
-  </section>
-</footer>
+</html>
+

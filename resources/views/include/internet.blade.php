@@ -1,6 +1,5 @@
 @extends('mainlayout')
-@section('title', 'AJC-InternetPlans')
+@section('title', 'AJC-ContactUs')
 @section('content')
-    <h1>This is Internet Page</h1>
-    <h2>Hello from online edit</h2>
+    <h1>Hellowrold</h1>
 @endsection

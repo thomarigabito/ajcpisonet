@@ -13,7 +13,8 @@
         <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
+        <!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -211,36 +212,221 @@
         }
 
 
-        /*----Footer Style----*/
-        .footer-copyright {
-            color: #695B5E;
-        }
-
-        .font-style {
-            font-weight: bolder;
-
-
-        }
-
-        .button {
-            background-color: white;
-            border: 1px solid #ccc;
-            transition: background-color 0.3s ease;
-
-
-        }
-
-        .button:hover {
-            background-color: #fff;
-        }
 
         .hero-section {
-            min-height:550;
-            padding: 10%;
+            padding: 15%;
             background-image: linear-gradient(rgba(218, 194, 178, 0.719), rgba(111, 78, 82, 0.259)), url(./assets/internet-head.jpg);
-	        background-position: 0 0, 50%;
+	        background-position: 50% 25%;
 	        background-size: auto, cover;
 
+        }
+
+        .hero-section2 {
+            background-image: linear-gradient(rgba(218, 194, 178, 0.719), rgba(111, 78, 82, 0.259)), url(./assets/promos.jpg);
+	        background-position: 50% 25%;
+	        background-size: auto, cover;
+        }
+
+        #texts {
+            width: 55%;
+            color: #f5f5f5;
+            font-size: 40px;
+
+        }
+
+        #paragraph {
+            width: 55%;
+            color: #f5f5f5;
+            font-size: 20px;
+        }
+
+        #exclusive-deals {
+            font-weight: 900 !important;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 6vh !important;
+            width: 55%;
+            color: inherit;
+        }
+        footer {
+            position: fixed;
+                bottom: 0;
+            }
+
+        @media (max-height:1440px) {
+        footer {
+            position: static;
+        }
+        header {
+            padding-top: 40px;
+            }
+        }
+
+        .main-footer {
+            background-color: #FAEEE7;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+            padding: 50px 50px 60px 50px;
+            margin-top: 80px;
+        }
+
+        .main-footer .footer-left, .main-footer .footer-center, .main-footer .footer-right {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+
+        .main-footer .footer-left {
+            width: 30%;
+        }
+
+        .main-footer h3 {
+            color: #594A4E;
+            font: normal 36px 'Cookie', cursive;
+            margin: 0;
+        }
+
+
+        .main-footer h3 span {
+            color: #f0525f;
+        }
+
+
+        .main-footer .footer-links {
+            color: #594A4E;
+            margin: 20px 0 12px;
+        }
+
+        .main-footer .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .main-footer .footer-company-name {
+            color: #594A4E;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+
+        .main-footer .footer-center {
+            width: 35%;
+        }
+
+        .main-footer .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+
+        .mainf-footer .footer-center i.fa-envelope {
+            font-size: 17px;
+            line-height: 38px;
+        }
+
+        .main-footer .footer-center p {
+            display: inline-block;
+            color: #594A4E;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+        .main-footer .footer-center p span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .main-footer .footer-center p a {
+            color: #594A4E;
+            text-decoration: none;
+        }
+
+
+
+        .main-footer .footer-right {
+            width: 30%;
+        }
+
+        .main-footer .footer-company-about {
+            line-height: 20px;
+            color: #92999f;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .main-footer .footer-company-about span {
+            display: block;
+            color: #594A4E;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .main-footer .footer-icons {
+            margin-top: 25px;
+        }
+
+        .main-footer .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+
+        .main-footer .footer-icons a:hover {
+            background-color: #3F71EA;
+        }
+
+        .footer-links a:hover {
+            color: #3F71EA;
+        }
+
+        @media (max-width: 880px) {
+            .main-footer .footer-left, .main-footer .footer-center, .main-footer .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .main-footer .footer-center i {
+                margin-left: 0;
+            }
+        }
+
+        h2 {
+            color: #f0525f;
+        }
+
+        .promo-card .card {
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .promo-card .card:hover {
+            background-color: #e3242b;
+            color: #fff;
         }
 
         </style>
