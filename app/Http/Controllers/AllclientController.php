@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class AllclientController extends Controller
 {
     public function index(){
-        return view('include.index');
+        $allclientdata = Allclient::get();
+        return view('include.index', compact('allclientdata'));
     }
     public function createclient(){
         return view('include.createclient');

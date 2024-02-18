@@ -16,7 +16,7 @@
                         </h4>
                     </div>
                     <div class="card-body">
-
+                        {{$allclientdata}}
                     </div>
                    </div>
                    
