@@ -16,7 +16,33 @@
                         </h4>
                     </div>
                     <div class="card-body">
-                        {{$allclientdata}}
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Fullname</th>
+                                    <th>Address</th>
+                                    <th>Plan</th>
+                                    <th>Account#</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($allclientdata as $item)
+                                    <tr>
+                                        <td>{{$item->id}}</td>
+                                        <td>{{$item->fullname}}</td>
+                                        <td>{{$item->address}}</td>
+                                        <td>{{$item->plan}}</td>
+                                        <td>{{$item->accountNumber}}</td>
+                                        <td>
+                                            <a href="">Edit</a>
+                                            <a href="">Delete</a>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
                    </div>
                    
