@@ -64,7 +64,7 @@ class AllclientController extends Controller
     // New Application Routes
     public function newApplication(){
         $applicants = Application::get();
-        return view('newapplication', compact('applicants'));
+        return view('include.newapplication', compact('applicants'));
     }
 
 }
