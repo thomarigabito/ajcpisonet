@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mt-md-1 p-1">
                         <input type="text" name="firstname" class="form-control" placeholder="First Name" style="text-transform:capitalize" />
-                        <x-input-error class="mt-2"></x-input-error>
+                        <x-input-error class="mt-2">{{$message}}</x-input-error>
                     </div>
                     <div class="col-lg-6 col-md-12 mt-md-1 p-1">
                         <input type="text" name="middlename" class="form-control"  placeholder="Middle Name" style="text-transform:capitalize"/>
