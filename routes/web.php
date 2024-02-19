@@ -32,7 +32,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // CRUD clients
     Route::get('createclient', [AllclientController::class, 'createclient'])->name('createclient');
     Route::post('createclient', [AllclientController::class, 'storeclient'])->name('storeclient');
-    Route::get('clients/{id}/edit', [AllclientController::class, 'edit'])->name('edit');
+    Route::get('clients/{id}/edit', [AllclientController::class, 'edit']);
     Route::put('clients/{id}/edit', [AllclientController::class, 'update']);
     Route::get('clients/{id}/delete', [AllclientController::class, 'deleteclient']);
 
