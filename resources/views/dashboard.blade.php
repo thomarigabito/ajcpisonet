@@ -11,7 +11,7 @@
                 <div class="p-6 text-gray-900">
                     @if(Auth::user()->accountNumber==0)
                         <h4>Please Link Account</h4>
-                        <form action="">
+                        <form action="" class="col-4">
                             <div class="mb-2">
                                 <label>Account Number</label>
                                 <input type="text" class="form-control" />
