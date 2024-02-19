@@ -20,10 +20,20 @@ class AllclientController extends Controller
     }
 
     public function createclient(){
+        if(Auth::check()){
+            if(Auth::user()->usertype=='user'){
+                return redirect(route('dashboard'));
+            }
+        }
         return view('include.createclient');
     }
 
     public function storeclient(Request $request){
+        if(Auth::check()){
+            if(Auth::user()->usertype=='user'){
+                return redirect(route('dashboard'));
+            }
+        }
         $request->validate([
             'fullname'=> 'required|unique:allclients',
             'address' => 'required',
@@ -41,11 +51,21 @@ class AllclientController extends Controller
     }
 
     public function edit(int $id){
+        if(Auth::check()){
+            if(Auth::user()->usertype=='user'){
+                return redirect(route('dashboard'));
+            }
+        }
         $client = Allclient::findOrFail($id);
         return view('include.editclient', compact('client'));
     }
 
     public function update(Request $request, int $id){
+        if(Auth::check()){
+            if(Auth::user()->usertype=='user'){
+                return redirect(route('dashboard'));
+            }
+        }
         $request->validate([
             'fullname' => 'required|unique:allclients',
             'address' => 'required',
@@ -62,6 +82,11 @@ class AllclientController extends Controller
     }
 
     public function deleteclient(int $id){
+        if(Auth::check()){
+            if(Auth::user()->usertype=='user'){
+                return redirect(route('dashboard'));
+            }
+        }
         $client = Allclient::findOrFail($id);
         $client->delete();
         return redirect()->back()->with('status', 'Client Deleted');
@@ -69,10 +94,20 @@ class AllclientController extends Controller
 
     // New Application Routes
     public function newApplication(){
+        if(Auth::check()){
+            if(Auth::user()->usertype=='user'){
+                return redirect(route('dashboard'));
+            }
+        }
         $applicants = Application::get();
         return view('include.newapplication', compact('applicants'));
     }
     public function deletenewapplication(int $id){
+        if(Auth::check()){
+            if(Auth::user()->usertype=='user'){
+                return redirect(route('dashboard'));
+            }
+        }
         $newapplicant = Application::findOrFail($id);
         $newapplicant->delete();
         return redirect()->back()->with('status', 'Application Deleted');
