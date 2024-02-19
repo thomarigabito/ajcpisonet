@@ -19,10 +19,10 @@ class AllclientController extends Controller
 
     public function storeclient(Request $request){
         $request->validate([
-            'fullname'=> 'required|unique:Allclient',
+            'fullname'=> 'required|unique:allclients',
             'address' => 'required',
             'plan'=> 'required',
-            'accountNumber'=> 'required|unique:Allclient',
+            'accountNumber'=> 'required|unique:allclients',
         ]);
         Allclient::create([
             'fullname' => $request->fullname,
@@ -41,10 +41,10 @@ class AllclientController extends Controller
 
     public function update(Request $request, int $id){
         $request->validate([
-            'fullname' => 'required|unique:Allclient',
+            'fullname' => 'required|unique:allclients',
             'address' => 'required',
             'plan' => 'required',
-            'accountNumber' => 'required|unique:Allclient',
+            'accountNumber' => 'required|unique:allclients',
         ]);
         Allclient::findOrFail($id)->update([
             'fullname' => $request->fullname,
