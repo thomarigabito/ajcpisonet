@@ -44,7 +44,7 @@
                             </div>
                             <div class="mb-3">
                                 <button type="submit" class="btn btn-primary">Update</button>
-                            </div>    
+                            </div>
                         </form>
                     </div>
                    </div>

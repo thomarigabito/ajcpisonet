@@ -30,7 +30,7 @@ class AllclientController extends Controller
             'plan' => $request->plan,
             'accountNumber' => $request->accountNumber,
         ]);
-        return redirect('createclient')->with('status','Client Added');
+        return redirect('/admindashboard/createclient')->with('status','Client Added');
 
     }
 
