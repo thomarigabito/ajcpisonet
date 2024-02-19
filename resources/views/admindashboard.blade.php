@@ -9,7 +9,7 @@
         <div class="max-w-10xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                   <div class="card">
+                   {{-- <div class="card">
                     <div class="card-header">
                         <h4>Clients
                             <a href="{{route('createclient')}}" class="btn btn-primary float-end">Add Client</a>
@@ -56,7 +56,7 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                        </div>
+                        </div> --}}
                     </div>
                    </div>
                    
