@@ -10,8 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     @if(Auth::user()->accountNumber==0)
-                        <h1>Its zero</h1>
-                        {{Auth::user()->id}}
+                        <h4>Please Link Account</h4>
                     @else
                         <h1>It is not Zero</h1>
                     @endif
