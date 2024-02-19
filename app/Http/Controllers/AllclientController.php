@@ -21,8 +21,7 @@ class AllclientController extends Controller
         $request->validate([
             'fullname'=> 'required',
             'address' => 'required',
-            'plan'=> 'required',
-            'accountnumber'=> 'required'
+            'plan'=> 'required'
         ]);
         Allclient::create([
             'fullname' => $request->fullname,
@@ -30,7 +29,7 @@ class AllclientController extends Controller
             'plan' => $request->plan,
             'accountNumber' => $request->accountNumber,
         ]);
-        return redirect('/admindashboard/createclient')->with('status','Client Added');
+        return redirect('createclient')->with('status','Client Added');
 
     }
 
