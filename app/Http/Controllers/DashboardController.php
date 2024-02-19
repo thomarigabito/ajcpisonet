@@ -22,15 +22,4 @@ class DashboardController extends Controller
         }
 
     }
-    public function admindashboard(){
-        if(Auth::user()->usertype!='admin'){
-            return redirect(route('dashboard'));
-        }
-        $usertype=Auth()->user()->usertype;
-        if(Auth::id()){
-            if($usertype=='admin'){
-                return view('admindashboard');
-            }
-        }
-    }
 }

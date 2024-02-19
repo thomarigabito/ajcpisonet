@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class AllclientController extends Controller
 {
-    public function index(){
+    public function admindashboard(){
         $allclientdata = Allclient::get();
-        return view('include.index', compact('allclientdata'));
+        return view('admindashboard', compact('allclientdata'));
     }
     public function createclient(){
         return view('include.createclient');
