@@ -6,7 +6,7 @@
     </x-slot>
 
     <div class="my-2">
-        <div class="max-w-10xl mx-auto sm:px-4 lg:px-24">
+        <div class="max-w-10xl mx-auto sm:px-4 lg:px-4">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-4 text-gray-900">
                     <div class="card">
