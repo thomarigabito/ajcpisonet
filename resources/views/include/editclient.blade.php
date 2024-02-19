@@ -11,6 +11,7 @@
                 <div class="p-6 text-gray-900">
                     @if(session('status'))
                         <div class="alert alert-success">{{session('status')}}</div>
+                        {{Auth::user()->usertype}}
                     @endif
                    <div class="card">
                     <div class="card-header">
