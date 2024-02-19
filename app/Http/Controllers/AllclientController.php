@@ -8,12 +8,14 @@ use Illuminate\Http\Request;
 class AllclientController extends Controller
 {
     public function admindashboard(){
-        $allclientdata = Allclient::get();
-        return view('admindashboard', compact('allclientdata'));
+        $clientsdata = Allclient::get();
+        return view('admindashboard', compact('clientsdata'));
     }
+
     public function createclient(){
         return view('include.createclient');
     }
+
     public function storeclient(Request $request){
         $request->validate([
             'fullname' => 'required',
@@ -30,10 +32,12 @@ class AllclientController extends Controller
         return redirect('createclient')->with('status','Client Added');
 
     }
+
     public function edit(int $id){
         $client = Allclient::findOrFail($id);
         return view('include.editclient', compact('client'));
     }
+
     public function update(Request $request, int $id){
         $request->validate([
             'fullname' => 'required',
@@ -49,6 +53,7 @@ class AllclientController extends Controller
         ]);
         return redirect()->back()->with('status', 'Client Updated');
     }
+    
     public function deleteclient(int $id){
         $client = Allclient::findOrFail($id);
         $client->delete();
