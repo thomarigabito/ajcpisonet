@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-14">
+    <div class="my-5">
         <div class="max-w-10xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
@@ -22,10 +22,7 @@
                                         <th scope="col">Gender</th>
                                         <th scope="col">Plan</th>
                                         <th scope="col">Address</th>
-                                        <th scope="col">Province</th>
-                                        <th scope="col">Valid ID</th>
-                                        <th scope="col">ID Selfie</th>
-                                        <th scope="col">Time Applied</th>
+                                        <th scope="col">Date Applied</th>
 
                                     </tr>
                                 </thead>
