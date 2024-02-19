@@ -18,7 +18,7 @@ class ApplicationController extends Controller
             'birthday' => ['required'],
             'gender' => ['required'],
             'plan' => ['required'],
-            'email' => ['required','email|unique:applications,email'],
+            'email' => ['required','email','unique:applications,email'],
             'street' => ['required', 'string', 'max:255'],
             'barangay' => ['required', 'numeric', 'max:255'],
             'town' => ['required', 'string', 'max:255'],
