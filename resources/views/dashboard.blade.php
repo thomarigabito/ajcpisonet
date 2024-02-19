@@ -16,10 +16,7 @@
             <div class="row flex justify-content-center mt-5">              
                 <div class="col-4 p-3 border rounded shadow">
                     <h4 class="text-center">Please link your account</h4>
-                    @foreach($data as $data)
-                        <h5>{{$data->accountNumber}}</h5>
-                    @endforeach
-                    <form action="" method="POST">
+                    <form action="{{route('linkaccount')}}" method="POST">
                         @csrf
                         <div class="mb-3">
                             <label>Enter your account number:</label>

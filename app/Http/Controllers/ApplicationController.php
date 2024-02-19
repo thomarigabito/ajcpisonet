@@ -53,8 +53,15 @@ class ApplicationController extends Controller
     }
 
 
-    public function linkaccount(){
-        
+    public function linkaccount(Request $request){
+        $request->validate([
+            'accountNumber' => 'required'
+        ]);
+        $data = Allclient::get();
+        if($request->accountNumber==$data->accountNumber){
+            return redirect('bill');
+        }
+
     }
 
 }
