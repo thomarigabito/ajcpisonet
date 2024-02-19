@@ -3,4 +3,3 @@
 @section('content')
     <h1>Hellowrold</h1>
 @endsection
-z
