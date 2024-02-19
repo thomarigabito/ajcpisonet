@@ -1,4 +1,4 @@
-{{-- <x-app-layout>
+<x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
@@ -30,7 +30,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($clientsdata as $item)
+                                    @foreach ($data as $item)
                                         <tr>
                                             <td>{{$item->id}}</td>
                                             <td>{{$item->fullname}}</td>
@@ -65,6 +65,4 @@
             </div>
         </div>
     </div>
-</x-app-layout> --}}
-
-<h1>hello</h1>
+</x-app-layout>
