@@ -33,7 +33,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::post('/addclient', [ClientsController::class, 'clientPost'])->name('clientPOST');
     Route::get('/addclient', [ClientsController::class, 'createClient'])->name('addClient');
-    Route::get('/admindashboard', [ClientsController::class, 'createClientadmin'])->name('admindashboard');
 
     Route::get('/bill', [AJCController::class, 'bill'])->name('bill');
 
