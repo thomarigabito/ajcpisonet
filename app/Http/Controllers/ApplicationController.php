@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class ApplicationController extends Controller
 {
     function applynowPOST(Request $request){
-        $request->validateWithBag('apply', [
+        $request->validate([
             'firstname' => ['required', 'string', 'max:255'],
             'middlename' => ['required', 'string', 'max:255'],
             'lastname' => ['required', 'string', 'max:255'],
