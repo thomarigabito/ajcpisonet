@@ -77,7 +77,6 @@
                     <div class="col-lg-6 col-md-12 mt-md-1 p-1">
                         <input type="text" name="barangay" class="form-control"  placeholder="Barangay" style="text-transform:capitalize"/>
                         <x-input-error :messages="$errors->apply->get('barangay')" class="mt-2 "/>
-                        <x-input-error :messages="$errors->apply->get('barangay')" class="mt-2 text-danger-400"/>
                     </div>
                 </div>
                 <div class="row">
