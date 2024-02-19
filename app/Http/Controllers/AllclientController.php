@@ -61,6 +61,6 @@ class AllclientController extends Controller
     }
 
     public function newApplication(){
-        return view('newapplication')
+        return view('newapplication');
     }
 }
