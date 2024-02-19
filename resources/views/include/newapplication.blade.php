@@ -5,10 +5,10 @@
         </h2>
     </x-slot>
 
-    <div class="my-5">
-        <div class="max-w-10xl mx-auto sm:px-6 lg:px-8">
+    <div class="my-2">
+        <div class="max-w-10xl mx-auto sm:px-2 lg:px-2">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
+                <div class="p-2 text-gray-900">
                     {{-- <h1>Clients Application</h1>
                     <div>
                         <div class="mt-3 table-responsive">
