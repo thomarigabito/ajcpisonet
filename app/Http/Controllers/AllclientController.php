@@ -19,7 +19,7 @@ class AllclientController extends Controller
 
     public function storeclient(Request $request){
         $request->validateWithBag('createClient', [
-            'fullname'=> ['required','unique:clients,fullname'],
+            'fullname'=> ['required','unique:allclients,fullname'],
             'plan'=> ['required'],
             'accountnumber'=> ['required','unique:clients,accountnumber'],
         ]);
