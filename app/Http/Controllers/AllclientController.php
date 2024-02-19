@@ -18,11 +18,10 @@ class AllclientController extends Controller
     }
 
     public function storeclient(Request $request){
-        $request->validate([
-            'fullname' => 'required',
-            'address' => 'required',
-            'plan' => 'required',
-            'accountNumber' => 'required'
+        $request->validateWithBag('createClient', [
+            'fullname'=> ['required','unique:clients,fullname'],
+            'plan'=> ['required'],
+            'accountnumber'=> ['required','unique:clients,accountnumber'],
         ]);
         Allclient::create([
             'fullname' => $request->fullname,
@@ -54,7 +53,7 @@ class AllclientController extends Controller
         ]);
         return redirect()->back()->with('status', 'Client Updated');
     }
-    
+
     public function deleteclient(int $id){
         $client = Allclient::findOrFail($id);
         $client->delete();
@@ -72,6 +71,6 @@ class AllclientController extends Controller
         return redirect()->back()->with('status', 'Application Deleted');
     }
 
-    
+
 
 }
