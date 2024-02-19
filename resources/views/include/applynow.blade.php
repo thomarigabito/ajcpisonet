@@ -5,6 +5,9 @@
     <div class="row d-flex justify-content-center mt-3 mb-3">
         <div class="row">
         <div class="col col-md-6">
+            @if(session('success'))
+                <div class="alert alert-success">{{session('success')}}</div>
+             @endif
          <form action="{{route('applynowPOST')}}" method="POST">
             @csrf
             <div class="col-10 m-auto p-4 border rounded shadow">
