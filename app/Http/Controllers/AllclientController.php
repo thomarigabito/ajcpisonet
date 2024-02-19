@@ -21,7 +21,7 @@ class AllclientController extends Controller
         $request->validateWithBag('createClient', [
             'fullname'=> ['required','unique:allclients,fullname'],
             'plan'=> ['required'],
-            'accountnumber'=> ['required','unique:clients,accountnumber'],
+            'accountnumber'=> ['required','unique:allclients,accountnumber'],
         ]);
         Allclient::create([
             'fullname' => $request->fullname,
