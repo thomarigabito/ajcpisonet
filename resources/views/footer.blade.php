@@ -9,12 +9,12 @@
             <div>
                 <i class="fa fa-map-marker"></i>
                 <p><span>Philippines</span>
-                Dampol 2nd B, Pulilan, 3005</p>
+                Zone 7, Punta, Carles, Iloilo 5019</p>
             </div>
 
             <div>
                 <i class="fa fa-phone"></i>
-                <p>09260994769</p>
+                <p>+639562078140</p>
             </div>
             <div>
                 <i class="fa fa-envelope"></i>
@@ -24,7 +24,8 @@
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>About the company</span>
-                <strong>AJCPISONET</strong> This is an internet service provider offering fast and reliable connectivity solutions for homes and businesses, ensuring seamless access to online content and services.
+                <strong>AJCPISONET</strong>, a third party internet service provider by PLDT Enterprise offering fast 
+                and reliable connectivity solutions for homes and businesses, ensuring seamless access to online content and services.
             </p>
             <div class="footer-icons">
                 <a href="https://www.facebook.com/profile.php?id=100093338891270"><i class="bi bi-facebook"></i></a>
