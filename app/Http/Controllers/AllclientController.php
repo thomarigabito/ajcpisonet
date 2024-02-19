@@ -9,7 +9,7 @@ class AllclientController extends Controller
 {
     public function admindashboard(){
         $data = Allclient::get();
-        return view('admindashboard', compact('data'));
+        return $data;
     }
 
     public function createclient(){
