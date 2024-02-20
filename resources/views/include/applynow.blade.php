@@ -8,7 +8,7 @@
             @if(session('success'))
                 <div class="alert alert-success">{{session('success')}}</div>
              @endif
-         <form action="{{route('applynowPOST')}}" method="POST">
+         <form action="{{route('applynowPOST')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="col-10 m-auto p-4 border rounded shadow">
                 <h3 class="text-center mb-5">Application Form</h3>

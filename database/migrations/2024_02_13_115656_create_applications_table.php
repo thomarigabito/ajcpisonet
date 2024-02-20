@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('applications', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('firstname');
             $table->string('middlename');
             $table->string('lastname');
@@ -26,8 +26,8 @@ return new class extends Migration
             $table->string('town');
             $table->string('province');
             $table->string('landmark');
-            $table->string('uploadid');
-            $table->string('idselfie');
+            $table->string('uploadid', 300);
+            $table->string('idselfie', 300);
             $table->timestamps();
         });
     }
