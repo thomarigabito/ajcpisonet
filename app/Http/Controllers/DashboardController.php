@@ -21,7 +21,7 @@ class DashboardController extends Controller
                 $data = Allclient::get();
                 foreach($data as $data){
                     $acc = $data->accountNumber;
-                    return view('dashboard');
+                    return view('dashboard')-with('acc', $acc);
                 }
                 
             }
