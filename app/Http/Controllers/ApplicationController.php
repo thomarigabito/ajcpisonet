@@ -63,7 +63,7 @@ class ApplicationController extends Controller
         foreach($searchAccountNumber as $searchAccountNumber){
             $AccountNumber = $searchAccountNumber->accountNumber;
 
-            echo $AccountNumber;
+            echo gettype($AccountNumber);
         }
 
 
