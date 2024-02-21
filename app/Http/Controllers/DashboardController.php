@@ -15,11 +15,11 @@ class DashboardController extends Controller
         if(Auth::user()->usertype!='user'){
             return redirect(route('admindashboard'));
         }
-        if(Auth::id()){
+        else if(Auth::id()){
             $usertype=Auth()->user()->usertype;
             if($usertype=='user'){
-                
-                return view('dashboard');
+                $data = Allclient::get('accountNumber');
+                return view('dashboard', $data);
             }
         }
 
