@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Auth;
 use Hash;
-use App\Models\User;
 use App\Models\Allclient;
 use App\Models\Application;
 use Illuminate\Http\Request;
@@ -68,7 +67,10 @@ class ApplicationController extends Controller
             $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
             if($recvAccountNumber == $AccountNumber){
                 //proceed
-                $linkDataAccountNumber = User::create($recvAccountNumber);
+                $linkDataAccountNumber = new App\Models\User;
+                $linkDataAccountNumber->accountNumber = $recvAccountNumber;
+                $linkDataAccountNumber->save();
+                echo 'saved';
             }else{
                 echo 'not ok';
             }
