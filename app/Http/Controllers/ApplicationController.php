@@ -58,8 +58,9 @@ class ApplicationController extends Controller
         $request->validate([
             'accountNumber' => 'required'
         ]);
-        echo $request->accountNumber;
-        echo gettype($request->accountNumber);
+        $recvacc = (integer)$request->accountNumber;
+        echo $recvacc;
+        echo gettype($recvacc);
 
     }
 
