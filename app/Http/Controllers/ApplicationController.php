@@ -69,7 +69,7 @@ class ApplicationController extends Controller
             if($recvAccountNumber == $AccountNumber){
                 //proceed
                 $linkDataAccountNumber = new User;
-                $linkDataAccountNumber->accountNumber = $recvAccountNumber;
+                $linkDataAccountNumber->accountNumber = $request->accountNumber;
                 $linkDataAccountNumber->save();
                 echo 'saved';
             }else{
