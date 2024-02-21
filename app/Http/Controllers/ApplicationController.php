@@ -66,7 +66,8 @@ class ApplicationController extends Controller
             
             $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
             if($recvAccountNumber == $AccountNumber){
-                echo 'ok';
+                //proceed
+                $linkDataAccountNumber = User::create($recvAccountNumber);
             }else{
                 echo 'not ok';
             }
