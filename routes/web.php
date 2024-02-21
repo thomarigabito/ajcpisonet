@@ -28,6 +28,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
     Route::get('/admindashboard', [AllclientController::class, 'admindashboard'])->name('admindashboard');
     Route::get('/bill', [AJCController::class, 'bill'])->name('bill');
+
+    // Link account
     Route::post('/linkaccount', [ApplicationController::class, 'linkaccount'])->name('linkaccount');
 
     // CRUD clients

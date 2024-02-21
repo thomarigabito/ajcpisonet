@@ -61,15 +61,20 @@ class ApplicationController extends Controller
 
         $searchAccountNumber = Allclient::get();
         foreach($searchAccountNumber as $searchAccountNumber){
-            $AccountNumber = $searchAccountNumber->accountNumber;
 
-            echo gettype($AccountNumber);
+            $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
+            
+            $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
+            if($recvAccountNumber == $AccountNumber){
+                echo 'ok';
+            }else{
+                echo 'not ok';
+            }
+
         }
 
 
-        // $recvacc = (integer)$request->accountNumber;
-        // echo $recvacc;
-        // echo gettype($recvacc);
+        
 
     }
 

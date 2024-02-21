@@ -15,9 +15,6 @@
         <div class="container mt-3">
             <div class="row flex justify-content-center mt-5">              
                 <div class="col-4 p-3 border rounded shadow">
-                    <div class="my-3 ">
-                        
-                    </div>
                     <h4 class="text-center">Please link your account</h4>
                     <form action="{{route('linkaccount')}}" method="POST">
                         @csrf
