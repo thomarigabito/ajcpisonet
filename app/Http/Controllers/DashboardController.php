@@ -18,8 +18,8 @@ class DashboardController extends Controller
         else if(Auth::id()){
             $usertype=Auth()->user()->usertype;
             if($usertype=='user'){
-                $data = Allclient::get('accountNumber');
-                return view('dashboard', $data);
+                $data = Allclient::get();
+                return view('dashboard', compact('data'));
             }
         }
 
