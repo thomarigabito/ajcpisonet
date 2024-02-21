@@ -9,9 +9,10 @@ use Illuminate\Support\Facades\Auth;
 
 class AllclientController extends Controller
 {
-    public function admindashboard(){
-        if(Auth::check()){
-            if(Auth::user()->usertype=='user'){
+    public function admindashboard()
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
                 return redirect(route('dashboard'));
             }
         }
@@ -19,50 +20,20 @@ class AllclientController extends Controller
         return view('admindashboard', compact('clientsdata'));
     }
 
-    public function createclient(){
-        if(Auth::check()){
-            if(Auth::user()->usertype=='user'){
+    public function createclient()
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
                 return redirect(route('dashboard'));
             }
         }
         return view('include.createclient');
     }
 
-    public function storeclient(Request $request){
-        if(Auth::check()){
-            if(Auth::user()->usertype=='user'){
-                return redirect(route('dashboard'));
-            }
-        }
-        $request->validate([
-            'fullname'=> 'required|unique:allclients',
-            'address' => 'required',
-            'plan'=> 'required',
-            'accountNumber'=> 'required|unique:allclients',
-        ]);
-        Allclient::create([
-            'fullname' => $request->fullname,
-            'address' => $request->address,
-            'plan' => $request->plan,
-            'accountNumber' => $request->accountNumber,
-        ]);
-        return redirect('createclient')->with('status','Client Added');
-
-    }
-
-    public function edit(int $id){
-        if(Auth::check()){
-            if(Auth::user()->usertype=='user'){
-                return redirect(route('dashboard'));
-            }
-        }
-        $client = Allclient::findOrFail($id);
-        return view('include.editclient', compact('client'));
-    }
-
-    public function update(Request $request, int $id){
-        if(Auth::check()){
-            if(Auth::user()->usertype=='user'){
+    public function storeclient(Request $request)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
                 return redirect(route('dashboard'));
             }
         }
@@ -71,19 +42,60 @@ class AllclientController extends Controller
             'address' => 'required',
             'plan' => 'required',
             'accountNumber' => 'required|unique:allclients',
+            'user_id'=>'required',
+        ]);
+        Allclient::create([
+            'fullname' => $request->fullname,
+            'address' => $request->address,
+            'plan' => $request->plan,
+            'accountNumber' => $request->accountNumber,
+            'user_id'=> $request->user_id,
+        ]);
+        return redirect('createclient')->with('status', 'Client Added');
+
+    }
+
+    public function edit(int $id)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
+                return redirect(route('dashboard'));
+            }
+        }
+        $client = Allclient::findOrFail($id);
+        return view('include.editclient', compact('client'));
+    }
+
+    public function update(Request $request, int $id)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
+                return redirect(route('dashboard'));
+            }
+        }
+        $request->validate([
+            'fullname' => 'required|unique:allclients',
+            'address' => 'required',
+            'plan' => 'required',
+            'accountNumber' => 'required|unique:allclients',
+            'user_id'=>'required',
+
         ]);
         Allclient::findOrFail($id)->update([
             'fullname' => $request->fullname,
             'address' => $request->address,
             'plan' => $request->plan,
-            'accountNumber' => $request->accountNumber,
+            'accountNumber' => 'required|unique:allclients',
+            'user_id'=>'required',
+
         ]);
         return redirect()->back()->with('status', 'Client Updated');
     }
 
-    public function deleteclient(int $id){
-        if(Auth::check()){
-            if(Auth::user()->usertype=='user'){
+    public function deleteclient(int $id)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
                 return redirect(route('dashboard'));
             }
         }
@@ -93,18 +105,20 @@ class AllclientController extends Controller
     }
 
     // New Application Routes
-    public function newApplication(){
-        if(Auth::check()){
-            if(Auth::user()->usertype=='user'){
+    public function newApplication()
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
                 return redirect(route('dashboard'));
             }
         }
         $applicants = Application::get();
         return view('include.newapplication', compact('applicants'));
     }
-    public function deletenewapplication(int $id){
-        if(Auth::check()){
-            if(Auth::user()->usertype=='user'){
+    public function deletenewapplication(int $id)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
                 return redirect(route('dashboard'));
             }
         }
@@ -113,14 +127,12 @@ class AllclientController extends Controller
         return redirect()->back()->with('status', 'Application Deleted');
     }
 
-    public function accountlink(Request $request){
+    public function accountlink(Request $request)
+    {
 
         $request->validate([
-            'accountnumber'=> 'required|unique:allclients',
+            'accountnumber' => 'required|unique:allclients',
         ]);
 
     }
-
-
-
 }

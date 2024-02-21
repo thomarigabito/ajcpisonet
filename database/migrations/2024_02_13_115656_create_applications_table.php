@@ -29,6 +29,7 @@ return new class extends Migration
             $table->string('uploadid', 300);
             $table->string('idselfie', 300);
             $table->timestamps();
+            
         });
     }
 
