@@ -20,7 +20,7 @@ class DashboardController extends Controller
             if($usertype=='user'){
                 $data = Allclient::get();
                 foreach($data as $data){
-                    = $data->accountNumber;
+                    $acc = $data->accountNumber;
                     return view('dashboard');
                 }
                 
