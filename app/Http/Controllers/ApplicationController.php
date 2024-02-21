@@ -60,23 +60,28 @@ class ApplicationController extends Controller
             'accountNumber' => 'required'
         ]);
 
-        $searchAccountNumber = Allclient::get();
-        foreach($searchAccountNumber as $searchAccountNumber){
+        $linkDataAccountNumber = new User;
+        $linkDataAccountNumber->accountNumber = $request['accountNumber'];
+        $linkDataAccountNumber->save();
+        echo 'saved';
 
-            $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
+        // $searchAccountNumber = Allclient::get();
+        // foreach($searchAccountNumber as $searchAccountNumber){
+
+        //     $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
             
-            $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
-            if($recvAccountNumber == $AccountNumber){
-                //proceed
-                $linkDataAccountNumber = new User;
-                $linkDataAccountNumber->accountNumber = $request['accountNumber'];
-                $linkDataAccountNumber->save();
-                echo 'saved';
-            }else{
-                echo 'not ok';
-            }
+        //     $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
+        //     if($recvAccountNumber == $AccountNumber){
+        //         //proceed
+        //         $linkDataAccountNumber = new User;
+        //         $linkDataAccountNumber->accountNumber = $request['accountNumber'];
+        //         $linkDataAccountNumber->save();
+        //         echo 'saved';
+        //     }else{
+        //         echo 'not ok';
+        //     }
 
-        }
+        // }
 
 
         
