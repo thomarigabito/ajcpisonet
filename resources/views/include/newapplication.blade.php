@@ -20,6 +20,7 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr class="text-nowrap">
+                                            <th>ID</th>
                                             <th>Fullname</th>
                                             <th>Email</th>
                                             <th>Contact</th>
@@ -27,6 +28,7 @@
                                             <th>Gender</th>
                                             <th>Plan</th>
                                             <th>Address</th>
+                                            <th>Id Selife</th>
                                             <th>Date Applied</th>
                                             <th>Delete</th>
                                         </tr>
@@ -34,6 +36,7 @@
                                     <tbody>
                                         @foreach ($applicants as $applicants)
                                             <tr class="text-nowrap">
+                                                <td>{{ $applicants->id }}</td>
                                                 <td>{{ $applicants->firstname }} {{ $applicants->lastname }}</td>
                                                 <td>{{ $applicants->email }}</td>
                                                 <td>{{ $applicants->contact }}</td>
@@ -41,6 +44,7 @@
                                                 <td>{{ $applicants->gender }}</td>
                                                 <td>{{ $applicants->plan }}</td>
                                                 <td>{{ $applicants->street }} {{ $applicants->barangay }} {{ $applicants->town }} {{ $applicants->province }}</td>
+                                                <td>{{ $applicants->uploadid }}</td>
                                                 <td>{{ $applicants->created_at }}</td>
                                                 <td>
                                                     <a href="{{url('newapplication/'.$applicants->id.'/delete')}}" class="btn btn-danger delete mx-1" onclick="return confirm('Are you sure?')">

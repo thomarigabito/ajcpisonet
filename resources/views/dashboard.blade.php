@@ -20,7 +20,7 @@
                         @csrf
                         <div class="mb-3">
                             <label>Enter your account number:</label>
-                            <input type="text" name="accountNumber" class="form-control" />
+                            <input type="number" name="accountNumber" class="form-control" required/>
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary">Link</button>

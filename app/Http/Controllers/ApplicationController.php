@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Auth;
 use Hash;
+use App\Models\User;
 use App\Models\Allclient;
 use App\Models\Application;
 use Illuminate\Http\Request;
@@ -58,10 +59,32 @@ class ApplicationController extends Controller
         $request->validate([
             'accountNumber' => 'required'
         ]);
-        $data = Allclient::get();
-        if($request->accountNumber==$data->accountNumber){
-            return redirect('bill');
-        }
+
+        $linkDataAccountNumber = new User;
+        $linkDataAccountNumber->accountNumber = $request->accountNumber;
+        $linkDataAccountNumber->save();
+        echo 'saved';
+
+        // $searchAccountNumber = Allclient::get();
+        // foreach($searchAccountNumber as $searchAccountNumber){
+
+        //     $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
+            
+        //     $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
+        //     if($recvAccountNumber == $AccountNumber){
+        //         //proceed
+        //         $linkDataAccountNumber = new User;
+        //         $linkDataAccountNumber->accountNumber = $request['accountNumber'];
+        //         $linkDataAccountNumber->save();
+        //         echo 'saved';
+        //     }else{
+        //         echo 'not ok';
+        //     }
+
+        // }
+
+
+        
 
     }
 
