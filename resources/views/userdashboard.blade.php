@@ -39,7 +39,8 @@
 
                         <h1>This is user account dashboard</h1>
 
-                        
+                        {{ $application->email }} <br />
+                        {{ $application->accountNumber }}
                     </div>
                 </div>
             </div>

@@ -33,7 +33,7 @@ class DashboardController extends Controller
                     $application = User::find($id);
 
 
-                    return view('dashboard')->with('application', $application);
+                    return view('userdashboard')->with('application', $application);
                 }
             }
         }
