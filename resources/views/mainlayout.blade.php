@@ -420,7 +420,7 @@
         }
 
         .promo-card .card {
-            background-color: #fff;
+            background-color: #E9E9E9;
             transition: background-color 0.3s ease;
         }
         .promo-card .card_2 {
@@ -432,6 +432,9 @@
             background-color: #e3242b;
             color: #fff;
         }
+        .promo-card .card {
+            border: none;
+}
 
 
         .accordion {
@@ -520,12 +523,17 @@
             display: inline-block;
             text-align: center;
             color: #fff;
-            background-color: #78096D;
+            background-color: red;
             box-shadow: none;
             transition: all .2s ease-in-out;
             left: 6%;
             top: 30px;
 
+        }
+
+        .button-apply-now:hover {
+            background-color: #fff;
+            color: black;
         }
 
         @media screen and (max-width: 801px){
@@ -622,6 +630,30 @@
             }
 
         }
+
+        .upcontainer {
+            text-align: center;
+            margin: 4vh auto;
+            max-width: 600px;
+        }
+
+        .snippetTitle {
+            font-weight: 400 !important;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            padding-top: 32px;
+            letter-spacing: normal;
+            font-stretch: normal;
+            font-style: normal;
+            font-variant: normal;
+            font-size: 30px;
+        }
+
+
+
+
+
         </style>
     </head>
     <body class="antialiased">
