@@ -22,20 +22,25 @@ class DashboardController extends Controller
             }
         }
     }
-    public function userdashboard($id)
-    { {
-            if (Auth::user()->usertype != 'user') {
-                return redirect(route('admindashboard'));
-            } else if (Auth::id()) {
-                $usertype = Auth()->user()->usertype;
-                if ($usertype == 'user') {
-
-                    $application = User::find($id);
 
 
-                    return view('userdashboard')->with('application', $application);
-                }
-            }
-        }
-    }
+
+
+
+    // public function userdashboard($id)
+    // { {
+    //         if (Auth::user()->usertype != 'user') {
+    //             return redirect(route('admindashboard'));
+    //         } else if (Auth::id()) {
+    //             $usertype = Auth()->user()->usertype;
+    //             if ($usertype == 'user') {
+
+    //                 $application = User::find($id);
+
+
+    //                 return view('userdashboard')->with('application', $application);
+    //             }
+    //         }
+    //     }
+    // }
 }

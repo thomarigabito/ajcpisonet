@@ -11,7 +11,8 @@
     </x-slot>
 
     @if (Auth::user()->accountNumber == 0)
-        <div class="container mt-3">
+        <a href="{{url('linkaccount/'.$account->id.'')}}" class="btn btn-success edit mx-1"></a>
+        {{-- <div class="container mt-3">
             <div class="row flex justify-content-center mt-5">
                 <div class="col-4 p-3 border rounded shadow">
                     <h4 class="text-center">Please link your account</h4>
@@ -30,7 +31,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> --}}
     @else
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -39,7 +40,7 @@
 
                         <h1>This is user account dashboard</h1>
 
-                        
+
                     </div>
                 </div>
             </div>

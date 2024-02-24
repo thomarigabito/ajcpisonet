@@ -30,7 +30,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/bill', [AJCController::class, 'bill'])->name('bill');
 
     // Link account
-    Route::post('/linkaccount', [ApplicationController::class, 'linkaccount'])->name('linkaccount');
+    Route::get('linkaccount/{id}', [ApplicationController::class, 'link'])->name('linkaccount');
+    Route::post('/linkaccount/{id}', [ApplicationController::class, 'linkaccount'])->name('linkaccount');
 
     // CRUD clients
     Route::get('createclient', [AllclientController::class, 'createclient'])->name('createclient');

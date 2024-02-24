@@ -2,16 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Auth;
-use Hash;
 use App\Models\User;
 use App\Models\Allclient;
 use App\Models\Application;
 use Illuminate\Http\Request;
+use App\Models\AccountNumber;
+use Illuminate\Support\Facades\Auth;
 
 class ApplicationController extends Controller
 {
-    function applynowPOST(Request $request){
+    function applynowPOST(Request $request)
+    {
         $request->validateWithBag('apply', [
             'firstname' => ['required', 'string', 'max:255'],
             'middlename' => ['required', 'string', 'max:255'],
@@ -20,7 +21,7 @@ class ApplicationController extends Controller
             'birthday' => ['required'],
             'gender' => ['required'],
             'plan' => ['required'],
-            'email' => ['required','email','unique:applications,email'],
+            'email' => ['required', 'email', 'unique:applications,email'],
             'street' => ['required', 'string', 'max:255'],
             'barangay' => ['required', 'string', 'max:255'],
             'town' => ['required', 'string', 'max:255'],
@@ -48,22 +49,45 @@ class ApplicationController extends Controller
 
 
         $applicants = Application::create($data);
-        if(!$applicants){
+        if (!$applicants) {
             return redirect(route('applynow'))->with("error", "Application failed, please try again");
         }
         return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
     }
 
 
-    public function linkaccount(Request $request){
+
+    public function link(int $id)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
+                return redirect(route('dashboard'));
+            }
+        }
+        $account = Allclient::findOrFail($id);
+        return view('dashboard', ['account'=> $account]);
+    }
+
+    public function linkaccount(Request $request, int $id)
+    {
         $request->validate([
-            'accountNumber' => 'required'
+            'account_number' => 'required'
         ]);
 
-        $linkDataAccountNumber = new User;
-        $linkDataAccountNumber->accountNumber = $request->accountNumber;
-        $linkDataAccountNumber->save();
-        echo 'saved';
+        AccountNumber::create([
+            'account_number' => $request->account_number,
+        ]);
+
+        $account = Allclient::find($id);
+
+        return view('dashboard', compact('account'));
+    }
+}
+
+        // $linkDataAccountNumber = new User;
+        // $linkDataAccountNumber->accountNumber = $request->accountNumber;
+        // $linkDataAccountNumber->save();
+        // echo 'saved';
 
         // $searchAccountNumber = Allclient::get();
         // foreach($searchAccountNumber as $searchAccountNumber){
@@ -82,11 +106,3 @@ class ApplicationController extends Controller
         //     }
 
         // }
-
-
-
-
-    }
-
-}
-
