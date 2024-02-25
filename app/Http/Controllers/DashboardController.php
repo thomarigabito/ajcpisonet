@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Allclient;
 use App\Models\User;
 use App\Models\Application;
 use Illuminate\Http\Request;
@@ -15,11 +15,9 @@ class DashboardController extends Controller
     {
         if (Auth::user()->usertype != 'user') {
             return redirect(route('admindashboard'));
-        }  else if (Auth::id()) {
-            $usertype = Auth()->user()->usertype;
-            if ($usertype == 'user') {
-                return view('dashboard');
-            }
+        }
+            $user = Allclient::get();
+            return view('dashboard' , compact('user'));
         }
     }
 
@@ -43,4 +41,3 @@ class DashboardController extends Controller
     //         }
     //     }
     // }
-}

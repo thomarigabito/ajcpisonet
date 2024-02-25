@@ -23,7 +23,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'name',
         'email',
         'password',
-        'accountNumber'
+        'accountnumber'
     ];
 
     protected $hidden = [
@@ -47,5 +47,5 @@ class User extends Authenticatable implements MustVerifyEmail
             get: fn ($value) =>  ["user", "admin", "manager"][$value],
         );
     }
-    
+
 }

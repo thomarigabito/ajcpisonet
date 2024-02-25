@@ -20,6 +20,8 @@ class AllclientController extends Controller
         return view('admindashboard', compact('clientsdata'));
     }
 
+    
+
     public function createclient()
     {
         if (Auth::check()) {

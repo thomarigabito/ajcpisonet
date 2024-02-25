@@ -57,21 +57,31 @@ class ApplicationController extends Controller
 
 
 
-    public function link(int $id)
+    public function link()
     {
         if (Auth::check()) {
             if (Auth::user()->usertype == 'user') {
                 return redirect(route('dashboard'));
             }
         }
-        $account = Allclient::findOrFail($id);
         return view('dashboard', compact('account'));
     }
 
-    public function linkaccount(Request $request, int $id)
+    public function links()
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
+                return redirect(route('dashboard'));
+            }
+        }
+        $data = Allclient::get();
+        return view('dashboard', compact('data'));
+    }
+
+    public function linkaccount(Request $request)
     {
         $request->validate([
-            'account_number' => 'required'
+            'account_number' => 'required|unique:account_numbers',
         ]);
 
 
@@ -79,9 +89,8 @@ class ApplicationController extends Controller
             'account_number' => $request->account_number,
         ]);
 
-        $account = Allclient::find($id);
-
-        return view('dashboard', compact('account'));
+        $acc = User::findorFail($id);
+         return view('dashboard', compact('acc'));
     }
 }
 
@@ -90,9 +99,9 @@ class ApplicationController extends Controller
         // $linkDataAccountNumber->save();
         // echo 'saved';
 
-        $linkDataAccountNumber = new User;
-        $linkDataAccountNumber->accountNumber = $request->accountNumber;
-        $linkDataAccountNumber->save();
+        // $linkDataAccountNumber = new User;
+        // $linkDataAccountNumber->accountNumber = $request->accountNumber;
+        // $linkDataAccountNumber->save();
 
 
         // $searchAccountNumber = Allclient::get();
