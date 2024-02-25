@@ -56,42 +56,6 @@ class ApplicationController extends Controller
     }
 
 
-
-    public function link()
-    {
-        if (Auth::check()) {
-            if (Auth::user()->usertype == 'user') {
-                return redirect(route('dashboard'));
-            }
-        }
-        return view('dashboard', compact('account'));
-    }
-
-    public function links()
-    {
-        if (Auth::check()) {
-            if (Auth::user()->usertype == 'user') {
-                return redirect(route('dashboard'));
-            }
-        }
-        $data = Allclient::get();
-        return view('dashboard', compact('data'));
-    }
-
-    public function linkaccount(Request $request)
-    {
-        $request->validate([
-            'account_number' => 'required|unique:account_numbers',
-        ]);
-
-
-        AccountNumber::create([
-            'account_number' => $request->account_number,
-        ]);
-
-        $acc = User::findorFail($id);
-         return view('dashboard', compact('acc'));
-    }
 }
 
         // $linkDataAccountNumber = new User;

@@ -20,7 +20,7 @@ class AllclientController extends Controller
         return view('admindashboard', compact('clientsdata'));
     }
 
-    
+
 
     public function createclient()
     {
@@ -133,12 +133,4 @@ class AllclientController extends Controller
         return redirect()->back()->with('status', 'Application Deleted');
     }
 
-    public function accountlink(Request $request)
-    {
-
-        $request->validate([
-            'accountnumber' => 'required|unique:allclients',
-        ]);
-
-    }
 }

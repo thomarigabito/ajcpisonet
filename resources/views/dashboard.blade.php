@@ -44,11 +44,10 @@
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 text-gray-900">
-
-                        <h1>This is user account dashboard</h1>
-
-
+                    <div class="p-6 text-gray-900 align-items-end">
+                        @foreach ($user as $user )
+                        <a href="{{url('user/'.$user->id.'')}}" class="btn btn-success edit mx-1">My Profile</a>
+                        @endforeach
                     </div>
                 </div>
             </div>

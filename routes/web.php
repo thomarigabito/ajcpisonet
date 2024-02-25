@@ -48,8 +48,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 // For linking user dashboard
 
-    Route::get('/user/{id}/dashboard', [DashboardController::class, 'userdashboard'])->name('userdashboard')->where('id','[0-9]+');
-    Route::get('/index', [LinkaccountCoctroller::class, 'index']);
     Route::get('user/{id}', [LinkaccountCoctroller::class, 'show'])->name('link.account');
     Route::post('user/{id}', [LinkaccountCoctroller::class, 'update'])->name('update.account');
 
