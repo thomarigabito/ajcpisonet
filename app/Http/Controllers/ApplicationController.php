@@ -74,6 +74,7 @@ class ApplicationController extends Controller
             'account_number' => 'required'
         ]);
 
+
         AccountNumber::create([
             'account_number' => $request->account_number,
         ]);
@@ -88,6 +89,11 @@ class ApplicationController extends Controller
         // $linkDataAccountNumber->accountNumber = $request->accountNumber;
         // $linkDataAccountNumber->save();
         // echo 'saved';
+
+        $linkDataAccountNumber = new User;
+        $linkDataAccountNumber->accountNumber = $request->accountNumber;
+        $linkDataAccountNumber->save();
+
 
         // $searchAccountNumber = Allclient::get();
         // foreach($searchAccountNumber as $searchAccountNumber){
