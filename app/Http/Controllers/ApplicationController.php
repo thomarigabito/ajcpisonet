@@ -63,7 +63,6 @@ class ApplicationController extends Controller
         $linkDataAccountNumber = new User;
         $linkDataAccountNumber->accountNumber = $request->accountNumber;
         $linkDataAccountNumber->save();
-        echo 'saved';
 
         // $searchAccountNumber = Allclient::get();
         // foreach($searchAccountNumber as $searchAccountNumber){
