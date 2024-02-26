@@ -27,28 +27,49 @@ class ApplicationController extends Controller
             'town' => ['required', 'string', 'max:255'],
             'province' => ['required', 'string', 'max:255'],
             'landmark' => ['required', 'string', 'max:255'],
-            'uploadid' => ['required'],
-            'idselfie' => ['required']
+            'uploadid' => ['required', 'mimes:jpg,pnp,jpeg' ],
+            'idselfie' => ['required', 'mimes:jpg,pnp,jpeg']
         ]);
 
-        $data['firstname'] = $request->firstname;
-        $data['middlename'] = $request->middlename;
-        $data['lastname'] = $request->lastname;
-        $data['contact'] = $request->contact;
-        $data['birthday'] = $request->birthday;
-        $data['gender'] = $request->gender;
-        $data['plan'] = $request->plan;
-        $data['email'] = $request->email;
-        $data['street'] = $request->street;
-        $data['barangay'] = $request->barangay;
-        $data['town'] = $request->town;
-        $data['province'] = $request->province;
-        $data['landmark'] = $request->landmark;
-        $data['uploadid'] = $request->uploadid;
-        $data['idselfie'] = $request->idselfie;
+        if($request->has(['uploadid', 'idselfie' ])){
+                    $uploadid = $request->file('uploadid');
+                    $idselfie = $request->file('idselfie');
+
+                    $extentionupload = $uploadid->getClientOriginalExtension();
+                    $extentionid = $idselfie->getClientOriginalExtension();
+
+                    $idupload = time() . '.' . $extentionupload;
+                    $selfieid = time() . '.' . $extentionid;
+
+                    $path = 'images/';
+
+                    $uploadid->move($path, $idupload);
+                    $idselfie->move($path, $selfieid);
+                };
+
+        $applicants= Application::create([
+        'firstname' => $request->firstname,
+        'middlename' => $request->middlename,
+        'lastname' => $request->lastname,
+        'contact' => $request->contact,
+        'birthday' => $request->birthday,
+        'gender' => $request->gender,
+        'plan' => $request->plan,
+        'email' => $request->email,
+        'street' => $request->street,
+        'barangay' => $request->barangay,
+        'town' => $request->town,
+        'province' => $request->province,
+        'landmark' => $request->landmark,
+        'uploadid' => $path.$idupload,
+        'idselfie' => $path.$selfieid,
+        ]);
 
 
-        $applicants = Application::create($data);
+
+
+
+        // $applicants = Application::create($data);
         if (!$applicants) {
             return redirect(route('applynow'))->with("error", "Application failed, please try again");
         }

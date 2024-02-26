@@ -17,6 +17,7 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
+                                {{$applicants}}
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr class="text-nowrap">
@@ -44,7 +45,7 @@
                                                 <td>{{ $applicants->gender }}</td>
                                                 <td>{{ $applicants->plan }}</td>
                                                 <td>{{ $applicants->street }} {{ $applicants->barangay }} {{ $applicants->town }} {{ $applicants->province }}</td>
-                                                <td>{{ $applicants->uploadid }}</td>
+                                                <td> <img src="{{ asset($applicants->uploadid) }}" style="width=70px; height=70px;"/></td>
                                                 <td>{{ $applicants->created_at }}</td>
                                                 <td>
                                                     <a href="{{url('newapplication/'.$applicants->id.'/delete')}}" class="btn btn-danger delete mx-1" onclick="return confirm('Are you sure?')">
