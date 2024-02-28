@@ -64,11 +64,6 @@ class ApplicationController extends Controller
         'uploadid' => $path.$idupload,
         'idselfie' => $path.$selfieid,
         ]);
-
-
-
-
-
         // $applicants = Application::create($data);
         if (!$applicants) {
             return redirect(route('applynow'))->with("error", "Application failed, please try again");
