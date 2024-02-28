@@ -20,7 +20,7 @@ class DashboardController extends Controller
             return view('dashboard');
     }
 
-    public function linkaccount (Request $request, int $id) {
+    public function linkaccount (Request $request) {
         $request->validate([
             'accountnumber'=> 'required'
         ]);
