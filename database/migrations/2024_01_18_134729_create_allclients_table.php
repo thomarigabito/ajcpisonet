@@ -13,16 +13,11 @@ return new class extends Migration
     {
         Schema::create('allclients', function (Blueprint $table) {
             $table->id();
-            // $table->unsignedInteger('id');
             $table->string('fullname');
             $table->string('address');
             $table->string('plan');
-            $table->unsignedBigInteger('accountNumber');
+            $table->string('accountNumber');
             $table->timestamps();
-            // $table->foreign('id')
-            //         ->references('id')
-            //         ->on('applications')
-            //         ->onDelete('cascade');
         });
     }
 
