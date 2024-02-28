@@ -19,9 +19,11 @@ return new class extends Migration
             $table->string('password');
             $table->string('usertype')->default('user');
             $table->string('accountnumber')->nullable();
+            $table->foreign('accountnumber')->references('accountNumber')->on('allclients');
+            // ->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
-            $table->foreign('accountnumber')->references('accountNumber')->on('allclients')->onDelete('cascade');
+            
         });
     }
 
