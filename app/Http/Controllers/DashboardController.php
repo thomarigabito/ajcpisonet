@@ -23,7 +23,7 @@ class DashboardController extends Controller
             // $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
 
             $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
-            echo $AccountNumber;
+            echo gettype($AccountNumber);
 
         }
             // return view('dashboard' , compact('user'));
