@@ -20,7 +20,7 @@ class DashboardController extends Controller
             return view('dashboard');
     }
 
-    public function linkaccount (Request $request) {
+    public function linkaccount (Request $request, int $id) {
         $request->validate([
             'accountnumber'=> 'required'
         ]);
@@ -30,7 +30,7 @@ class DashboardController extends Controller
             $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
             if($recvAccountNumber == $AccountNumber){
                 //proceed
-            Auth::user()->accountnumber->update($recvAccountNumber) ;
+            echo $id;
             
 
             }else{
