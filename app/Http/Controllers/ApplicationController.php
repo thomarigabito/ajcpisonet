@@ -76,33 +76,8 @@ class ApplicationController extends Controller
         return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
     }
 
+    public function approveclient(){
+        echo $applicants->email;
+    }
 
 }
-
-        // $linkDataAccountNumber = new User;
-        // $linkDataAccountNumber->accountNumber = $request->accountNumber;
-        // $linkDataAccountNumber->save();
-        // echo 'saved';
-
-        // $linkDataAccountNumber = new User;
-        // $linkDataAccountNumber->accountNumber = $request->accountNumber;
-        // $linkDataAccountNumber->save();
-
-
-        // $searchAccountNumber = Allclient::get();
-        // foreach($searchAccountNumber as $searchAccountNumber){
-
-        //     $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
-
-        //     $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
-        //     if($recvAccountNumber == $AccountNumber){
-        //         //proceed
-        //         $linkDataAccountNumber = new User;
-        //         $linkDataAccountNumber->accountNumber = $request['accountNumber'];
-        //         $linkDataAccountNumber->save();
-        //         echo 'saved';
-        //     }else{
-        //         echo 'not ok';
-        //     }
-
-        // }

@@ -51,6 +51,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/link',[DashboardController::class, 'linkaccount'])->name('linkaccount');
 
 
+    Route::get('/approveclient', [AJCController::class, 'approveclient'])->name('approveclient');
+
+
 });
 
 
