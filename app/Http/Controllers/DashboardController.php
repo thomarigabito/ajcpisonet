@@ -38,7 +38,7 @@ class DashboardController extends Controller
                 $user['accountnumber'] = $recvAccountNumber;
                 $ConfirmLink = Auth::user()->update($user);
                     if($ConfirmLink){
-                        return view('dashboard');
+                        return redirect('dashboard');
                     }
          
             
