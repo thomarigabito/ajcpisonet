@@ -71,9 +71,9 @@ class ApplicationController extends Controller
         return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
     }
 
-    public function approveclient($id, $firstname){
+    public function approveclient($firstname, $lastname){
         echo $firstname;
-        echo $id;
+        echo $lastname;
         // return redirect('newapplication');
     }
 
