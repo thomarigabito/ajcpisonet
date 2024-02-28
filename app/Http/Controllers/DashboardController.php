@@ -17,33 +17,17 @@ class DashboardController extends Controller
             return redirect(route('admindashboard'));
         }
 
-        $searchAccountNumber = Allclient::get();
-        foreach($searchAccountNumber as $searchAccountNumber){
-
-            // $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
-
-            $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
-            echo gettype($AccountNumber);
-
-        }
-            // return view('dashboard' , compact('user'));
+            return view('dashboard');
     }
 
     public function linkaccount (Request $request) {
-
-
         $searchAccountNumber = Allclient::get();
         foreach($searchAccountNumber as $searchAccountNumber){
-
-            $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
-
+            $recvAccountNumber = $request->accountNumber; // user input
             $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
             if($recvAccountNumber == $AccountNumber){
                 //proceed
-                $linkDataAccountNumber = new User;
-                $linkDataAccountNumber->accountNumber = $request['accountNumber'];
-                $linkDataAccountNumber->save();
-                echo 'saved';
+                echo 'ok';
             }else{
                 echo 'not ok';
             }
