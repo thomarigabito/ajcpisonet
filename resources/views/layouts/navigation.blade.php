@@ -38,11 +38,11 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    @if(Auth::user()->accountNumber)
+                    
                     <x-nav-link :href="route('bill')" :active="request()->routeIs('bill')">
                         {{ __('Bill') }}
                     </x-nav-link>
-                    @endif
+                    
                 </div>
                 @endif
 
