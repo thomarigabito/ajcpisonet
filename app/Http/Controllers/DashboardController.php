@@ -38,7 +38,7 @@ class DashboardController extends Controller
                 $user['accountnumber'] = $recvAccountNumber;
                 
                 
-                Auth::user()->insert($user);
+                Auth::user()->update($user);
          
             
 
