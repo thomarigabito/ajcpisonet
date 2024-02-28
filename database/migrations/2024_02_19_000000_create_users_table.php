@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('usertype')->default('user');
-            $table->string('accountnumber')->nullable();
+            $table->string('accountnumber')->nullable()->primary();
             $table->foreign('accountnumber')->references('accountNumber')->on('allclients');
             // ->onDelete('cascade');
             $table->rememberToken();
