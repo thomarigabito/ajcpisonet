@@ -51,7 +51,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/link',[DashboardController::class, 'linkaccount'])->name('linkaccount');
 
 
-    Route::get('/approveclient/{id}.{firstname}.{lastname}{email}.{contact}.{birthday}.{gender}.{plan}{street}.{barangay}.{town}.{province}', [ApplicationController::class, 'approveclient'])->name('approveclient');
+    Route::get('/approveclient/{id}/{firstname}/{lastname}/{email}/{contact}/{birthday}/{gender}/{plan}/{street}/{barangay}/{town}/{province}', [ApplicationController::class, 'approveclient'])->name('approveclient');
 
 
 });
