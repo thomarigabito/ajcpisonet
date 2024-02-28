@@ -41,7 +41,7 @@ class DashboardController extends Controller
                         return redirect('dashboard');
                     }
             }else{
-                return redirect()->back()->with('status', 'Invalid Account Number');
+                return redirect()->back()->with('status', 'Invalid Account Number!');
 
         }
 
