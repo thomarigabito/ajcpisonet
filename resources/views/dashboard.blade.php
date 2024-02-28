@@ -24,6 +24,9 @@
                             <label>Enter your account number:</label>
                             <input type="text" name="accountnumber" class="form-control" required />
                             @error('accountnumber') <span class="text-danger">{{$message}}</span>@enderror
+                            @if(session('status'))
+                                <div class="alert alert-danger">{{session('status')}}</div>
+                            @endif
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-primary">Link Now</button>
