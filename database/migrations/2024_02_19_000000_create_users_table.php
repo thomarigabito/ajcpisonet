@@ -21,10 +21,10 @@ return new class extends Migration
             $table->unsignedBigInteger('accountnumber')->nullable();
             $table->rememberToken();
             $table->timestamps();
-            $table->foreign('accountNumber')
-                ->references('accountNumber')
-                ->on('allclients')
-                ->onDelete('cascade');
+            // $table->foreign('accountNumber')
+            //     ->references('accountNumber')
+            //     ->on('allclients')
+            //     ->onDelete('cascade');
         });
     }
 
