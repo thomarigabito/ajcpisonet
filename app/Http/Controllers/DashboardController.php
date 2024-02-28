@@ -22,7 +22,7 @@ class DashboardController extends Controller
 
     public function linkaccount (Request $request) {
         $request->validate([
-            'accountnumber'=> 'required'
+            'accountnumber'=> 'required|unique:users'
         ]);
         $searchAccountNumber = Allclient::get();
         foreach($searchAccountNumber as $searchAccountNumber){
@@ -40,7 +40,6 @@ class DashboardController extends Controller
                     if($ConfirmLink){
                         return redirect('dashboard');
                     }
-
             }else{
                 echo 'not okay';
 
