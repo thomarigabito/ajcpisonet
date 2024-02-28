@@ -16,9 +16,18 @@ class DashboardController extends Controller
         if (Auth::user()->usertype != 'user') {
             return redirect(route('admindashboard'));
         }
-            $user = Allclient::get();
-            return view('dashboard' , compact('user'));
+
+        $searchAccountNumber = Allclient::get();
+        foreach($searchAccountNumber as $searchAccountNumber){
+
+            // $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
+
+            $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
+            echo $AccountNumber;
+
         }
+            // return view('dashboard' , compact('user'));
+    }
 
     public function linkaccount (Request $request) {
 
