@@ -29,14 +29,14 @@
             </h4>
             <div class="mb-10 pt-5">
             <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
-            <p class="fw-light opo"><small>1. Engage in all your online passions effortlessly.</small></p>
-            <p class="fw-light opo"><small>2. Crafted for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
+            <p class="fw-light opo">•<small> Dive into all your online passions effortlessly.</small></p>
+            <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
             </div>
           </div>
         </div>
       </div>
       <div class="promo-card col-sm-6 col-lg-3">
-        <div class="card">
+        <div class="card h-100">
           <div class=" bg-none border-0 rounded-0 mt-5 mx-4">
             <h4 class="mb-0" style="font-size:24px;">30Mbps</h4>
             <h4 class="mb-0" style="font-size: 24px;">
@@ -44,23 +44,26 @@
             </h4>
             <div class="mb-10 pt-5">
             <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
-            <p class="fw-light opo"><small>1. Engage in all your online passions effortlessly.</small></p>
-            <p class="fw-light opo"><small>2. Crafted for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
+            <p class="fw-light opo">•<small> Seamlessly indulge in all your online activities</small></p>
+            <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady access to various online activities. Enjoy smooth browsing and streaming to fulfill your daily entertainment and productivity needs.</small></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="promo-card col-sm-6 col-lg-3">
-        <div class="card">
+      <div class="promo-card card2 col-sm-6 col-lg-3">
+        <div class="best-seller-2 py-2">
+                <p class="text-18 text-white text-center pb-0 mb-0">BEST SELLER</p>
+            </div>
+        <div class="card2">
           <div class=" bg-none border-0 rounded-0 mt-5 mx-4">
             <h4 class="mb-0" style="font-size:24px;">50Mbps</h4>
             <h4 class="mb-0" style="font-size: 24px;">
                 <span class="text-pink-500">PHP1300</span>/month
             </h4>
             <div class="mb-10 pt-5">
-            <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
-            <p class="fw-light opo"><small>1. Engage in all your online passions effortlessly.</small></p>
-            <p class="fw-light opo"><small>2. Crafted for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
+            <small class="fw-bold">Premium Internet Experience for Enhanced Connectivity</small>
+            <p class="fw-light opo">•<small> Engage in all your online passions effortlessly.</small></p>
+            <p class="fw-light opo">•<small> Tailored for small households, guaranteeing consistent access to a diverse range of online activities. Enjoy seamless browsing and streaming for all your daily entertainment and productivity needs.</small></p>
             </div>
           </div>
         </div>
@@ -74,8 +77,8 @@
             </h4>
             <div class="mb-10 pt-5">
             <small class="fw-bold">High-Performance Streaming and Gaming</small>
-            <p class="fw-light opo"><small>1. Effortlessly stream, game, and share large files.</small></p>
-            <p class="fw-light opo"><small>2. Crafted for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
+            <p class="fw-light opo">•<small> Dive into your online world effortlessly with lightning-fast speeds.</small></p>
+            <p class="fw-light opo">•<small> Designed for households craving unparalleled access to a wide range of digital content, ensuring seamless streaming, rapid downloads, and smooth browsing for all your online needs.</small></p>
             </div>
           </div>
         </div>

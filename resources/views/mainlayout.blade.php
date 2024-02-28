@@ -434,7 +434,7 @@
         }
         .promo-card .card {
             border: none;
-}
+        }
 
 
         .accordion {
@@ -650,6 +650,43 @@
             font-size: 30px;
         }
 
+        .best-seller-2 {
+            padding: 5px 10px 18px 10px;
+            border-radius: 15px 15px 0 0;
+            border: none !important;
+            background-color: #6015b7;
+            min-height: 40px;
+            width: 35.7vh; /* Adjust this value as needed */
+            position: absolute;
+            top: 92.2vh; /* Adjust this value as needed */
+            left: 117vh; /* Adjust this value as needed */
+            transform: translate(-50.9%, -50%);
+        }
+
+
+        .text-18 {
+            font-size: 18px!important;
+
+        }
+
+        p {
+            color: #000000;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .best-seller-2 {
+                position: relative;
+                left: 17vh;
+                top: 6vh;
+                z-index: 11;
+                height: 10px;
+                min-height: 40px;
+                min-width: 6px;
+
+            }
+        }
 
 
 
