@@ -79,7 +79,7 @@ class AllclientController extends Controller
         }
         $request->validate([
             // 'id'=>'nullable',
-            'fullname' => 'required|unique:allclients',
+            'fullname' => 'required',
             'address' => 'required',
             'plan' => 'required',
             'accountNumber' => 'required',
