@@ -73,8 +73,6 @@ class ApplicationController extends Controller
 
     public function approveclient($id,$firstname, $lastname, $email, $contact, $birthday, $gender, $plan, $street, $barangay, $town, $province){
         echo $firstname;
-        echo $lastname;
-        echo $contact;
         // return redirect('newapplication');
     }
 
