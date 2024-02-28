@@ -48,7 +48,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 // For linking user dashboard
 
-    Route::post('/link',[DashboardController::class, 'linkaccount'])->name('linkaccount');
+    Route::post('/dashboard',[DashboardController::class, 'linkaccount'])->name('linkaccount');
 
 
 });
