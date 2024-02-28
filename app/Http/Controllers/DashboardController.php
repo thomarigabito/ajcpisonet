@@ -30,7 +30,7 @@ class DashboardController extends Controller
             $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
 
             if($recvAccountNumber != $AccountNumber){
-                return redirect()->back()->with('status', 'Invalid account number!');
+                return redirect('dashboard');
             }else{
                 //proceed
                 $user['name'] = Auth::user()->name; // giving default value from user
