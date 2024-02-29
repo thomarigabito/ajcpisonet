@@ -76,7 +76,7 @@ class ApplicationController extends Controller
             'fullname' => $firstname . $lastname,
             'address' => $street . $barangay . $town . $province,
             'plan' => $plan,
-            'accountNumber' => NULL
+            'accountNumber' => 0
         ]);
         // return redirect('newapplication');
     }
