@@ -1085,7 +1085,7 @@
         }
 
         .main-footer {
-            background-color: #c5bbb6;
+            background-color: #e4e3e3;
             box-sizing: border-box;
             width: 100%;
             text-align: left;
