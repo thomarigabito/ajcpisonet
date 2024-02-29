@@ -7,11 +7,11 @@
                 <div class="shrink-0 flex items-center">
                     @if(Auth::user()->usertype=='admin')
                         <a href="{{ route('admindashboard') }}">
-                            <img class="logo" src="./assets/agclogo.png">
+                            <img class="logo" src="/assets/agclogo.png">
                         </a>
                     @else
                         <a href="{{ route('dashboard') }}">
-                            <img class="logo" src="./assets/agclogo.png">
+                            <img class="logo" src="/assets/agclogo.png">
                         </a>
                     @endif
                 </div>
