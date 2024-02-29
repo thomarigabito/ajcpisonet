@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('bill_months', function (Blueprint $table) {
             $table->id();
-            $table->string('March');
+            $table->string('March')->nullable();
             $table->timestamps();
         });
     }
