@@ -1,7 +1,7 @@
 <x-app-layout>
-  <x-slot name="header">
+    <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Update Client') }}
+            {{ __('Dashboard') }}
         </h2>
     </x-slot>
 
@@ -14,36 +14,40 @@
                     @endif
                    <div class="card">
                     <div class="card-header">
-                        <h4>Edit Clients
+                        <h4>Add Client
                             <a href="{{route('admindashboard')}}" class="btn btn-primary float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">
-                        <form action="{{url('clients/'.$client->id.'/edit')}}" method="POST">
+                        <form action="{{route('storeclient')}}" method="POST">
                             @csrf
-                            @method('PUT')
                             <div class="mb-3">
                                 <label>Fullname</label>
-                                <input type="text" class="form-control uppercase" name="fullname" value="{{$client->fullname}}"  />
+                                <input type="text" class="form-control" name="fullname" value="{{old('fullname')}}" style="text-transform: capitalize" />
                                 @error('fullname') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
                                 <label>Address</label>
-                                <input type="text" class="form-control uppercase" name="address" value="{{$client->address}}"  />
+                                <input type="text" class="form-control" name="address" value="{{old('address')}}" style="text-transform: capitalize" />
                                 @error('address') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
                                 <label>Plan</label>
-                                <input type="text" class="form-control" name="plan" value="{{$client->plan}}" />
+                                <input type="text" class="form-control" name="plan" value="{{old('plan')}}" />
                                 @error('plan') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
+                            {{-- <div class="mb-3">
+                                <label>User_ID</label>
+                                <input type="text" class="form-control" name="id" value="{{old('id')}}" />
+                                @error('id') <span class="text-danger">{{$message}}</span>@enderror
+                            </div> --}}
                             <div class="mb-3">
                                 <label>Account Number</label>
-                                <input type="text" class="form-control" name="accountNumber" value="{{$client->accountNumber}}" />
+                                <input type="text" class="form-control" name="accountNumber" value="{{old('accountNumber')}}" />
                                 @error('accountNumber') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="submit" class="btn btn-primary">Add</button>
                             </div>
                         </form>
                     </div>
