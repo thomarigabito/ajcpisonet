@@ -434,6 +434,21 @@
 
         }
 
+        .card {
+            padding-bottom: 3rem !important;
+            height: auto;
+        }
+
+        .multiple-card {
+            border-radius: 0 !important;
+            margin-top: 3rem !important;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            border: 0 !important;
+            background-image: none;
+            border-width: 0px;
+        }
+
 
 
 
