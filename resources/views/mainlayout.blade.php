@@ -452,7 +452,6 @@
 
 
 
-
         .accordion {
             display: flex;
             flex-direction: column;
@@ -704,6 +703,8 @@
             font-weight: bolder;
             background-color: #FFDD59;
             height: 20px;
+            position: relative;
+            top: 50px;
         }
 
 
