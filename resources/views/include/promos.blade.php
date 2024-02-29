@@ -22,7 +22,7 @@
     <div class="row gx-3 justify-content-between overflow-auto scrollbar style-7">
       <div class="promo-card col-sm-6 col-lg-3 position-relative left-5">
         <div class="card h-auto pb-5 ">
-          <div class="multiple-card bg-none border-0 rounded-0 mt-5 mx-4">
+          <div class="multiple-card">
             <h4 class="mb-0" style="font-size:24px;">20Mbps</h4>
             <h4 class="mb-0" style="font-size: 24px;">
                 <span class="text-pink-500">PHP899</span>/month
