@@ -38,7 +38,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    @if(Auth::user()->accountNumber > 0)
+                    @if(Auth::user()->accountnumber != NULL)
                     <x-nav-link :href="route('bill')" :active="request()->routeIs('bill')">
                         {{ __('Bill') }}
                     </x-nav-link>
@@ -108,9 +108,11 @@
                 <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                     {{ __('Dashboard') }}
                 </x-responsive-nav-link>
+                @if(Auth::user()->accountnumber != NULL)
                 <x-responsive-nav-link :href="route('bill')" :active="request()->routeIs('bill')">
                     {{ __('Bill') }}
                 </x-responsive-nav-link>
+                @endif
             @endif
         </div>
 

@@ -37,8 +37,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // CRUD clients
     Route::get('createclient', [AllclientController::class, 'createclient'])->name('createclient');
     Route::post('createclient', [AllclientController::class, 'storeclient'])->name('storeclient');
-    Route::get('clients/{id}/edit', [AllclientController::class, 'edit']);
-    Route::put('clients/{id}/edit', [AllclientController::class, 'update']);
+
+    Route::get('createclient/{id}', [AllclientController::class, 'modi'])->name('edit');
+
+    // Route::get('clients/{id}', [AllclientController::class, 'edit'])->name('edit');
+    Route::put('clients/{id}', [AllclientController::class, 'update']);
     Route::get('clients/{id}/delete', [AllclientController::class, 'deleteclient']);
 
     // For new Application admin dashboard
@@ -48,8 +51,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 // For linking user dashboard
 
-    Route::get('user/{id}', [LinkaccountCoctroller::class, 'show'])->name('link.account');
-    Route::post('user/{id}', [LinkaccountCoctroller::class, 'update'])->name('update.account');
+    Route::post('/link',[DashboardController::class, 'linkaccount'])->name('linkaccount');
+
+    // For Approve client auto add and auto delete from new application
+    Route::get('/approveclient/{id}/{firstname}/{lastname}/{email}/{contact}/{birthday}/{gender}/{plan}/{street}/{barangay}/{town}/{province}', [ApplicationController::class, 'approveclient'])->name('approveclient');
 
 
 });

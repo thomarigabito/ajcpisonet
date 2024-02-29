@@ -64,11 +64,6 @@ class ApplicationController extends Controller
         'uploadid' => $path.$idupload,
         'idselfie' => $path.$selfieid,
         ]);
-
-
-
-
-
         // $applicants = Application::create($data);
         if (!$applicants) {
             return redirect(route('applynow'))->with("error", "Application failed, please try again");
@@ -76,33 +71,17 @@ class ApplicationController extends Controller
         return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
     }
 
+    //For Approve and auto add auto delete
+    public function approveclient($id,$firstname, $lastname, $email, $contact, $birthday, $gender, $plan, $street, $barangay, $town, $province){
+        Allclient::create([
+            'fullname' => $firstname .' '. $lastname,
+            'address' => $street .' '. $barangay .' '. $town .' '. $province,
+            'plan' => $plan,
+            'accountNumber' => 0
+        ]);
+        $newapplicant = Application::findOrFail($id);
+        $newapplicant->delete();
+        return redirect('admindashboard');
+    }
 
 }
-
-        // $linkDataAccountNumber = new User;
-        // $linkDataAccountNumber->accountNumber = $request->accountNumber;
-        // $linkDataAccountNumber->save();
-        // echo 'saved';
-
-        // $linkDataAccountNumber = new User;
-        // $linkDataAccountNumber->accountNumber = $request->accountNumber;
-        // $linkDataAccountNumber->save();
-
-
-        // $searchAccountNumber = Allclient::get();
-        // foreach($searchAccountNumber as $searchAccountNumber){
-
-        //     $recvAccountNumber = (integer)$request->accountNumber; // converting user input into integer
-
-        //     $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
-        //     if($recvAccountNumber == $AccountNumber){
-        //         //proceed
-        //         $linkDataAccountNumber = new User;
-        //         $linkDataAccountNumber->accountNumber = $request['accountNumber'];
-        //         $linkDataAccountNumber->save();
-        //         echo 'saved';
-        //     }else{
-        //         echo 'not ok';
-        //     }
-
-        // }

@@ -40,7 +40,7 @@ class AllclientController extends Controller
             }
         }
         $request->validate([
-            'id'=> 'required|unique:allclients',
+            // 'id'=> 'required|unique:allclients',
             'fullname' => 'required|unique:allclients',
             'address' => 'required',
             'plan' => 'required',
@@ -48,7 +48,7 @@ class AllclientController extends Controller
 
         ]);
         Allclient::create([
-            'id'=> $request->id,
+            // 'id'=> $request->id,
             'fullname' => $request->fullname,
             'address' => $request->address,
             'plan' => $request->plan,
@@ -59,15 +59,15 @@ class AllclientController extends Controller
 
     }
 
-    public function edit(int $id)
+    public function modi($id)
     {
         if (Auth::check()) {
-            if (Auth::user()->usertype == 'user') {
+            if (Auth::user()->usertype != 'admin') {
                 return redirect(route('dashboard'));
             }
         }
         $client = Allclient::findOrFail($id);
-        return view('include.editclient', compact('client'));
+        return view('include.modifyclient', compact('client'));
     }
 
     public function update(Request $request, int $id)
@@ -78,8 +78,8 @@ class AllclientController extends Controller
             }
         }
         $request->validate([
-            'id'=>'nullable',
-            'fullname' => 'required|unique:allclients',
+            // 'id'=>'nullable',
+            'fullname' => 'required',
             'address' => 'required',
             'plan' => 'required',
             'accountNumber' => 'required',
@@ -87,7 +87,7 @@ class AllclientController extends Controller
 
         ]);
         Allclient::findOrFail($id)->update([
-            'id'=> $request->id,
+            // 'id'=> $request->id,
             'fullname' => $request->fullname,
             'address' => $request->address,
             'plan' => $request->plan,

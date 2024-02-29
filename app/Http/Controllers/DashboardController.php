@@ -16,28 +16,43 @@ class DashboardController extends Controller
         if (Auth::user()->usertype != 'user') {
             return redirect(route('admindashboard'));
         }
-            $user = Allclient::get();
-            return view('dashboard' , compact('user'));
-        }
+
+            return view('dashboard');
     }
 
+    public function linkaccount (Request $request) {
+        $request->validate([
+            'accountnumber'=> 'required|unique:users'
+        ]);
+
+        $searchAccountNumber = Allclient::get();
+            foreach($searchAccountNumber as $searchAccountNumber){
+                $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
+            }
+        $recvAccountNumber = $request->accountnumber; // user input
+        if($recvAccountNumber === $AccountNumber){
+            //proceed
+            $user['name'] = Auth::user()->name; // giving default value from user
+            $user['email'] = Auth::user()->email; // giving default value from user
+            $user['password'] = Auth::user()->password; // giving default value from user
+            $user['usertype'] = Auth::user()->usertype; // giving default value from user
+            $user['email_verified_at'] = Auth::user()->email_verified_at; // giving default value from user
+            $user['accountnumber'] = $recvAccountNumber; // This is from user input to link account
+            $ConfirmLink = Auth::user()->update($user);
+                if($ConfirmLink){
+                    return redirect('dashboard');
+                }else{
+                    return redirect()->back()->with('status', 'Invalid account number!');
+                } 
+        }else{
+            return redirect()->back()->with('status', 'Invalid account number!');
+        }     
+
+
+    }
+}
 
 
 
 
-    // public function userdashboard($id)
-    // { {
-    //         if (Auth::user()->usertype != 'user') {
-    //             return redirect(route('admindashboard'));
-    //         } else if (Auth::id()) {
-    //             $usertype = Auth()->user()->usertype;
-    //             if ($usertype == 'user') {
 
-    //                 $application = User::find($id);
-
-
-    //                 return view('userdashboard')->with('application', $application);
-    //             }
-    //         }
-    //     }
-    // }
