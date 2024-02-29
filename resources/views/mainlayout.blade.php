@@ -428,13 +428,12 @@
             transition: background-color 0.3s ease;
         }
 
-        .promo-card .card:hover {
-            background-color: #e3242b;
-            color: #fff;
-        }
+
         .promo-card .card {
             border: none;
         }
+
+
 
 
         .accordion {
@@ -650,11 +649,11 @@
             font-size: 30px;
         }
 
-        .best-seller-2 {
+        .Bseller {
             padding: 5px 10px 18px 10px;
             border-radius: 15px 15px 0 0;
             border: none !important;
-            background-color: #6015b7;
+            background-color: #FF0000;
             min-height: 40px;
             width: 35.7vh; /* Adjust this value as needed */
             position: absolute;
@@ -669,11 +668,6 @@
 
         }
 
-        p {
-            color: #000000;
-            font-size: 16px;
-            margin-bottom: 0;
-        }
 
         @media (max-width: 768px) {
             .best-seller-2 {
@@ -687,6 +681,15 @@
 
             }
         }
+
+        .sign-up-free {
+            font-size: 10px;
+            font-weight: bolder;
+            background-color: #FFDD59;
+            height: 20px;
+        }
+
+
 
 
 
