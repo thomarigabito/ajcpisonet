@@ -38,7 +38,7 @@
                                             <td>{{$item->plan}}</td>
                                             <td>{{$item->accountNumber}}</td>
                                             <td>
-                                                <a href="{{route('edit',[
+                                                <a href="{{route('createclient',[
                                                     $item->id,
                                                     $item->fullname,
                                                     $item->address,
