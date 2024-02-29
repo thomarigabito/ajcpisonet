@@ -2,16 +2,12 @@
 @section('title', 'AJC-Promos')
 @section('content')
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 <div class="hero-section2">
   <div class="container">
     <h1 class="text-white" id="texts">Get your free install today and enjoy 2 months of internet on the house!</h1>
     <h1 class="mt-2" id="paragraph">Elevate your home experience with fast, reliable plans.</h1>
   </div>
-  <button type="button" id="apply-now" class=" btn text-decoration-none bg-danger w-28 h-10 mx-24 d-inline-block text-center text-white shadow-none">
-  <a href='{{ route('applynow') }}' style="text-decoration: none; color: inherit;">Apply Now</a>
-  </button>
+  <button type="button"  class="btn button-apply-now"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 </div>
 <section class="support-section pt-5 pb-5">
   <div class="container" data-scroll-into-view="active">
@@ -65,7 +61,7 @@
         </div>
       </div>
       <div class="promo-card card2 col-sm-6 col-lg-3">
-        <div class="Bseller py-2 mt-4">
+        <div class="Bseller py-2">
                 <p class="text-18 text-white text-center pb-0 mb-0">BEST SELLER</p>
             </div>
         <div class="card2">
@@ -175,7 +171,7 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 
 
 @endsection

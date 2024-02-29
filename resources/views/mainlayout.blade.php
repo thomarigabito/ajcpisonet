@@ -516,6 +516,26 @@
             }
         }
 
+        .button-apply-now {
+            width: 129px;
+            height: 40px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+            box-shadow: none;
+            transition: all .2s ease-in-out;
+            left: 6%;
+            top: 30px;
+
+        }
+
+        .button-apply-now:hover {
+            background-color: #fff;
+            color: black;
+        }
+
         @media screen and (max-width: 801px){
             .button-apply-now {
                 position: sticky;
