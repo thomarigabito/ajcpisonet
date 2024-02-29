@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Allclient;
 use App\Models\Application;
 use Illuminate\Http\Request;
@@ -91,7 +92,7 @@ class AllclientController extends Controller
             'fullname' => $request->fullname,
             'address' => $request->address,
             'plan' => $request->plan,
-            'accountNumber' => $request-> accountNumber,
+            'accountNumber' => $request->accountNumber,
 
 
         ]);
@@ -131,6 +132,21 @@ class AllclientController extends Controller
         $newapplicant = Application::findOrFail($id);
         $newapplicant->delete();
         return redirect()->back()->with('status', 'Application Deleted');
+    }
+
+
+    //users admin page
+
+    public function newuser()
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
+                return redirect(route('dashboard'));
+            }
+        }
+        $users = User::get();
+        return view('include.users', compact('users'));
+
     }
 
 }

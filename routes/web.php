@@ -48,6 +48,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/newapplication', [AllclientController::class, 'newapplication'])->name('newapplication');
     Route::get('newapplication/{id}/delete', [AllclientController::class, 'deletenewapplication']);
 
+    //Users View Blade
+    Route::get('/users', [AllclientController::class, 'newuser'])->name('users');
+
 
 // For linking user dashboard
 
