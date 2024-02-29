@@ -22,7 +22,7 @@
     <div class="row gx-3 justify-content-between overflow-auto scrollbar style-7">
       <div class="promo-card col-sm-6 col-lg-3 position-relative left-5">
         <div class="card h-auto pb-5 ">
-          <div class="GG" style="border-radius: 0 !important; margin-top: 3rem !important; margin-left: 1.5rem; margin-right: 1.5rem; border: 0 !important; background-image: none; border-width: 0px;">
+          <div class="multiple-card">
             <h4 class="mb-0" style="font-size:24px;">20Mbps</h4>
             <h4 class="mb-0" style="font-size: 24px;">
                 <span class="text-pink-500">PHP899</span>/month
@@ -33,7 +33,7 @@
             <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
             <div class="sign-up-free text-center position-relative top-24 border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
             <div class="fs-4 pt-5 fw-bold mt-14">
-                Two Months Freeee
+                Two Months Free
             </div>
             <hr class="mt-5">
             </div>
