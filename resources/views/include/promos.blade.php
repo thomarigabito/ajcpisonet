@@ -20,7 +20,7 @@
   </div>
   <div class="container pt-5">
     <div class="row gx-3 justify-content-between overflow-auto scrollbar style-7">
-      <div class="promo-card col-sm-6 col-lg-3 position-relative left-5">
+      <div class="promo-card col-sm-6 col-lg-3">
         <div class="card h-auto pb-5 ">
           <div class="multiple-card">
             <h4 class="mb-0" style="font-size:24px;">20Mbps</h4>

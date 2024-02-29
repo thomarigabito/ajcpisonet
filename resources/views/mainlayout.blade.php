@@ -442,12 +442,12 @@
         .multiple-card {
             border-radius: 0 !important;
             margin-top: 3rem !important;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
+            margin-left: 1.5rem !important;
+            margin-right: 1.5rem !important;
             border: 0 !important;
             background-image: none;
             border-width: 0px;
-            background-color: #333;
+
         }
 
 
