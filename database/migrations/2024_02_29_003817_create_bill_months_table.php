@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('bill_months', function (Blueprint $table) {
             $table->unsignedBigInteger('id');
             $table->string('March');
-            
             $table->timestamps();
         });
     }
