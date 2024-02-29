@@ -33,7 +33,7 @@
             <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
             <div class="sign-up-free text-center position-relative top-24 border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
             <div class="fs-4 pt-5 fw-bold mt-14">
-                Two Months Free
+                Two Months Freeee
             </div>
             <hr class="mt-5">
             </div>
