@@ -431,6 +431,7 @@
 
         .promo-card .card {
             border: none;
+
         }
 
 
