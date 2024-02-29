@@ -2,17 +2,16 @@
 @section('title', 'AJC Pisonet')
 @section('content')
     <div class="head container-fluid px-5">
-
-        <h3 style="font-size:35px;" class="pt-5">A Greater Life Together, at Home</h3>
-
-        <p>A Greater Life Together, at Home
+        <div class="container">
+        <h3 style="width: 55%;" id="texts" class="pt-5 fs-1">A Greater Life Together, at Home</h3>
+        <p id="paragraph">A Greater Life Together, at Home
             Get the whole family connected with the greatest deal.</p>
-
-
+        <button type="button"  class="btn button-apply-now"><a href='{{ route('applynow') }}'>Apply Now</a></button>
+        </div>
     </div>
 
 
-    <div class="container-fluid Fiber_Experience px-5 ">
+    <div class="container-fluid Fiber_Experience px-5 h-60 ">
         <h1 class="" style="font-size:35px;">Elevate Your Fiber Experience at AJC Internet</h1>
         <div class="row">
             <div class="col-12 col-md-12 col-lg-4 py-5 d-flex">
@@ -116,7 +115,7 @@
 
 
 
-    <h1 class="col text-center mb-0 p-5 text_title ">We’re here to help you.</h1>
+    <h1 class="col text-center mb-0 p-5 text_title fs-1 ">We’re here to help you.</h1>
 
     <div class="container-fluid">
         <div class="row">
@@ -131,15 +130,12 @@
                 <h1 style="font-size:32px; font-weight:700;">Support</h1>
                 <p>We’ll find the best solution for you.</p>
                 <div class="py-5">
-                    <button class="btn btn-outline-dark rounded-2 py-2"><i
+                    <a href='{{route('contactus')}}'><button class="btn btn-outline-dark rounded-2 py-2"><i
                             class="fa-solid fa-circle-question btnicon px-1"></i>Go to
-                        Support</button>
+                        Support</button></a>
                 </div>
 
             </div>
         </div>
     </div>
-
-
-
 @endsection

@@ -88,7 +88,7 @@
                             <textarea class="form-control" name="message" id="" rows="7" placeholder="Message"></textarea>
                         </div>
                         <div>
-                            <button class="btn btn-outline-success " type="submit" value="Send Message">Send message</button>
+                            <button class="btn btn-outline-dark " type="submit" value="Send Message">Send message</button>
                         </div>
                     </form>
                 </div>

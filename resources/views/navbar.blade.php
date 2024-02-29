@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-white border border-gray-100 px-5 font-sans antialiased">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
                         <img class="logo" src="./assets/agclogo.png">
@@ -9,7 +10,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav justify-content-center  me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link {{ \Request::route()->getName() == 'internet' ? 'active' : '' }}"
                                     href="{{ route('internet') }}">Internet</a>
@@ -29,8 +30,8 @@
                         </ul>
 
                     @if (Route::has('login'))
-                        <div class="nav-item ">              
-                            <a class="nav-link" href="{{ route('login') }}">Log in</a>
+                        <div class="nav-item ">
+                            <a class="nav-link" href="{{ route('login') }}"><button class="btn btn-outline-dark "><i class="fa-solid fa-user"></i> Log in</button></a>
                         </div>
                     @endif
                 </div>
