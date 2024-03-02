@@ -31,7 +31,7 @@
 
                     @if (Route::has('login'))
                         <div class="nav-item ">
-                            <a class="nav-link" href="{{ route('login') }}"><button class="btn btn-outline-dark "><i class="fa-solid fa-user"></i> Log in</button></a>
+                            <a class="nav-link" href="{{ route('login') }}"><button class="btn btn-outline-dark "> Log in</button></a>
                         </div>
                     @endif
                 </div>
