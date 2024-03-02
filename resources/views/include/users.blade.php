@@ -18,11 +18,11 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-
-                                <table class="table table-bordered">
-                                    <thead>
+                                <table class="table table-bordered table-striped">
+                                    <thead class="table-secondary">
                                         <tr class="text-nowrap">
                                             <th>ID</th>
+                                            <th>Name</th>
                                             <th>Email</th>
                                             <th>User Type</th>
                                             <th>Date Resgister</th>
@@ -32,6 +32,7 @@
                                         @foreach ($users as $users)
                                             <tr class="text-nowrap">
                                                 <td>{{ $users->id }}</td>
+                                                <td>{{$users->name}}</td>
                                                 <td>{{ $users->email }}</td>
                                                 <td>{{ $users->usertype }}</td>
                                                 <td>{{ $users->created_at}}</td>

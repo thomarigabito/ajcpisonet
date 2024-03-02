@@ -17,9 +17,9 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                     
-                                <table class="table table-bordered">
-                                    <thead>
+
+                                <table class="table table-bordered table-striped">
+                                    <thead class="table-secondary">
                                         <tr class="text-nowrap">
                                             <th>ID</th>
                                             <th>Fullname</th>
@@ -29,7 +29,8 @@
                                             <th>Gender</th>
                                             <th>Plan</th>
                                             <th>Address</th>
-                                            <th>Id Selife</th>
+                                            <th>Upload Id</th>
+                                            <th>Selife</th>
                                             <th>Date Applied</th>
                                             <th>Deny</th>
                                             <th>Approve</th>
@@ -47,6 +48,7 @@
                                                 <td>{{ $applicants->plan }}</td>
                                                 <td>{{ $applicants->street }} {{ $applicants->barangay }} {{ $applicants->town }} {{ $applicants->province }}</td>
                                                 <td> <img src="{{ asset($applicants->uploadid) }}" style="width=70px; height=70px;"/></td>
+                                                <td> <img src="{{ asset($applicants->idselfie) }}" style="width=70px; height=70px;"/></td>
                                                 <td>{{ $applicants->created_at }}</td>
                                                 <td>
                                                     <a href="{{url('newapplication/'.$applicants->id.'/delete')}}" class="btn btn-danger delete mx-1" onclick="return confirm('Are you sure?')">
@@ -56,7 +58,7 @@
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a href="{{route('approveclient', 
+                                                    <a href="{{route('approveclient',
                                                             [
                                                                 $applicants->id,
                                                                 $applicants->firstname,
@@ -70,7 +72,7 @@
                                                                 $applicants->barangay,
                                                                 $applicants->town,
                                                                 $applicants->province
-                                                            ])}}" 
+                                                            ])}}"
                                                             class="btn btn-success mx-1" >
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
                                                             <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>

@@ -115,7 +115,7 @@
 
 
 
-    <h1 class="col text-center mb-0 p-5 text_title fs-1 ">We’re here to help you.</h1>
+    <h1 class="col text-center mb-0 p-5 text_title fs-1 fw-bold ">We’re here to help you.</h1>
 
     <div class="container-fluid">
         <div class="row">
