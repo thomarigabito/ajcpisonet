@@ -31,7 +31,7 @@
         .logo{
                 width: 120px;
             }
-        table td{
+       td{
             font-size: 3px;
         }
          /* Query here */
