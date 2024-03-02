@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('fullname');
             $table->string('address');
             $table->string('accountNumber');
+            $table->integer('plan');
             $table->timestamps();
         });
     }

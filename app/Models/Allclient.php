@@ -16,6 +16,7 @@ class Allclient extends Model
     protected $fillable = [
         'fullname',
         'address',
+        'plan',
         'accountNumber',
     ];
 
