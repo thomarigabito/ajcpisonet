@@ -17,8 +17,18 @@ return new class extends Migration
             $table->foreign('client_id')->references('id')->on('allclients')->onUpdate('cascade')->onDelete('cascade');
             $table->string('fullname');
             $table->integer('plan');
+            $table->integer('january')->nullable();
+            $table->integer('febuary')->nullable();
             $table->integer('march')->nullable();
             $table->integer('april')->nullable();
+            $table->integer('may')->nullable();
+            $table->integer('june')->nullable();
+            $table->integer('july')->nullable();
+            $table->integer('august')->nullable();
+            $table->integer('september')->nullable();
+            $table->integer('october')->nullable();
+            $table->integer('november')->nullable();
+            $table->integer('december')->nullable();
             $table->timestamps();
         });
     }

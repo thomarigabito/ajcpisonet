@@ -37,6 +37,30 @@
                                         @if(date('m')>=4)
                                             <th>Apr</th>
                                         @endif
+                                        @if(date('m')>=15)
+                                            <th>May</th>
+                                        @endif
+                                        @if(date('m')>=1)
+                                            <th>Jun</th>
+                                        @endif
+                                        @if(date('m')>=1)
+                                            <th>Jul</th>
+                                        @endif
+                                        @if(date('m')>=1)
+                                            <th>Aug</th>
+                                        @endif
+                                        @if(date('m')>=1)
+                                            <th>Sep</th>
+                                        @endif
+                                        @if(date('m')>=1)
+                                            <th>Oct</th>
+                                        @endif
+                                        @if(date('m')>=1)
+                                            <th>Nov</th>
+                                        @endif
+                                        @if(date('m')>=1)
+                                            <th>Dec</th>
+                                        @endif
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -44,8 +68,43 @@
                                         <td>{{$billdata->client_id}}</td>
                                         <td>{{$billdata->fullname}}</td>
                                         <td>{{$billdata->plan}}</td>
-                                        {{-- <td>{{$billdata->march}}</td>
-                                        <td>{{$billdata->april}}</td> --}}
+                                        @if(date('m')>=1)
+                                            <td>{{$billdata->january}}</td>
+                                        @endif
+                                        @if(date('m')>=2)
+                                            <td>{{$billdata->febuary}}</td>
+                                        @endif
+                                        @if(date('m')>=3)
+                                            <td>{{$billdata->march}}</td>
+                                        @endif
+                                        @if(date('m')>=4)
+                                            <td>{{$billdata->april}}</td>
+                                        @endif
+                                        @if(date('m')>=5)
+                                            <td>{{$billdata->may}}</td>
+                                        @endif
+                                        @if(date('m')>=6)
+                                            <td>{{$billdata->june}}</td>
+                                        @endif
+                                        @if(date('m')>=7)
+                                            <td>{{$billdata->july}}</td>
+                                        @endif
+                                        @if(date('m')>=8)
+                                            <td>{{$billdata->august}}</td>
+                                        @endif
+                                        @if(date('m')>=9)
+                                            <td>{{$billdata->september}}</td>
+                                        @endif
+                                        @if(date('m')>=10)
+                                            <td>{{$billdata->october}}</td>
+                                        @endif
+                                        @if(date('m')>=11)
+                                            <td>{{$billdata->november}}</td>
+                                        @endif
+                                        @if(date('m')>=12)
+                                            <td>{{$billdata->december}}</td>
+                                        @endif
+
                                     </tr>
                                     
                                                 

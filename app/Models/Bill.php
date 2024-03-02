@@ -16,8 +16,18 @@ class Bill extends Model
         'client_id',
         'fullname',
         'plan',
+        'january',
+        'febuary',
         'march',
         'april',
+        'may',
+        'june',
+        'july',
+        'august',
+        'september',
+        'october',
+        'november',
+        'december'
         
     ];
 }
