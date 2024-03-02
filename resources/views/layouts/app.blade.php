@@ -31,8 +31,8 @@
         .logo{
                 width: 120px;
             }
-       td{
-            font-size: 3px;
+        td{
+            text-transform: capitalize;
         }
          /* Query here */
          @media screen and (max-width:700px){
