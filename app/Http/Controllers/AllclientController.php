@@ -150,8 +150,9 @@ class AllclientController extends Controller
     }
 
     //Bill page admin side
-    public function bill(){
-        return view ('include.bill');
+    public function bill($id){
+        $billdata = Bill::all();
+        return view ('include.bill', compact('billdata'));
     }
 
 }
