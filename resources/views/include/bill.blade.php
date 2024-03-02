@@ -12,8 +12,9 @@
                    <div class="card">
                     <div class="card-header">
                         <h4>Clients
-                            <a href="{{url('clients/'.$billdata->client_id.'/bill')}}" class="btn btn-success mx-1 float-end">Edit</a>
+                            
                             <a href="{{route('admindashboard')}}" class="btn btn-primary float-end">Back</a>
+                            <a href="{{url('clients/'.$billdata->client_id.'/bill')}}" class="btn btn-success mx-1 float-end">Edit</a>
                         </h4>
                     </div>
                     <div class="card-body">
