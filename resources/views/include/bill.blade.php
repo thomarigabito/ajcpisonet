@@ -11,7 +11,7 @@
                 <div class="p-4 text-gray-900">
                    <div class="card">
                     <div class="card-header">
-                        <h4>Clients
+                        <h4>{{$billdata->fullname}}
                             
                             <a href="{{route('admindashboard')}}" class="btn btn-primary float-end">Back</a>
                             <a href="{{url('clients/'.$billdata->client_id.'/bill')}}" class="btn btn-success mx-1 float-end">Edit</a>
@@ -22,8 +22,6 @@
                             <table class="table table-bordered table-striped table-sm text-center">
                                 <thead class="table-dark">
                                     <tr>
-                                        <th>Client ID</th>
-                                        <th>Fullname</th>
                                         <th>Plan</th>
                                         @if(date('m')>=1)
                                             <th>Jan</th>
@@ -65,8 +63,6 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>{{$billdata->client_id}}</td>
-                                        <td>{{$billdata->fullname}}</td>
                                         <td>{{$billdata->plan}}</td>
                                         @if(date('m')>=1)
                                             <td>{{$billdata->january}}</td>
