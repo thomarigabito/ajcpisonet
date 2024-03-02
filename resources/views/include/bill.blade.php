@@ -27,7 +27,7 @@
                                         <th>Plan</th>
                                         <th>March</th>
                                         <th>April</th>
-                                        <th>{{echo new Date()}}</th>
+                                        <th>{{echo 'hello'}}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
