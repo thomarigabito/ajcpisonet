@@ -125,7 +125,7 @@ class AllclientController extends Controller
     }
 
     //For Bill Update
-    public function billupdate(Request $request, int $client_id)
+    public function billupdate(Request $request, int $client_id, $fullname)
     {
         $request->validate([
             'january' => 'required',
