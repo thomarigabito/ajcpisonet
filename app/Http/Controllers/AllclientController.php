@@ -36,7 +36,7 @@ class AllclientController extends Controller
     }
 
     //For Update
-    public function update(Request $request, int $id, $plan)
+    public function update(Request $request, int $id)
     {
         if (Auth::check()) {
             if (Auth::user()->usertype == 'user') {
