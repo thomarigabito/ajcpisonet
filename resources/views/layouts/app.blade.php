@@ -22,6 +22,9 @@
         .logo{
                 width: 120px;
             }
+        td{
+            color: red;
+        }
          /* Query here */
          @media screen and (max-width:700px){
                 .logo{
