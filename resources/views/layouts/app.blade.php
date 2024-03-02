@@ -32,7 +32,7 @@
                 width: 120px;
             }
         table td{
-            color: red;
+            font-size: 3px;
         }
          /* Query here */
          @media screen and (max-width:700px){
@@ -46,6 +46,7 @@
                     width: 8 !important;
                     height: 8 !important;
                  }
+                }
 
         .main {
             width: 100%;
