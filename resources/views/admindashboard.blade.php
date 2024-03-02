@@ -11,9 +11,7 @@
                 <div class="p-4 text-gray-900">
                    <div class="card">
                     <div class="card-header">
-                        <h4>Clients
-                            <a href="{{route('createclient')}}" class="btn btn-primary float-end">Add Client</a>
-                        </h4>
+                        <h4>Clients</h4>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
