@@ -28,8 +28,10 @@
                                         <th>March</th>
                                         <th>April</th>
                                         <th>
-                                            @if (date('m') >= 03)
+                                            @if (date('m') >= 3)
                                                 OK
+                                            @else
+                                                Indi equal
                                             @endif
                                         </th>
                                     </tr>
