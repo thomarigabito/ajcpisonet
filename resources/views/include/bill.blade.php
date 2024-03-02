@@ -28,7 +28,7 @@
                                         <th>March</th>
                                         <th>April</th>
                                         <th>
-                                            @if({{date('m')}} > 1)
+                                            @if({{date('m')}} == 1)
                                                 OK
                                             @else
                                                 haha
