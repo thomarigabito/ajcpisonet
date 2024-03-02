@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('client_id');
             $table->foreign('client_id')->references('id')->on('allclients')->onUpdate('cascade')->onDelete('cascade');
+            $table->string('fullname');
             $table->String('March')->nullable();
+            $table->String('April')->nullable();
             $table->timestamps();
         });
     }
