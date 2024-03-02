@@ -52,13 +52,13 @@ class AllclientController extends Controller
             'fullname' => $request->fullname,
             'address' => $request->address,
             'accountNumber' => $request->accountNumber,
-            'plan' => $plan
+            'plan' => $request->plan
         ]);
         Bill::findOrFail($id)->update([
             'fullname' => $request->fullname,
             'plan' => $request->plan,
             'accountNumber' => $request->accountNumber,
-            'plan' => $plan
+            'plan' => $request->plan
         ]);
         return redirect()->back()->with('status', 'Client Updated');
     }

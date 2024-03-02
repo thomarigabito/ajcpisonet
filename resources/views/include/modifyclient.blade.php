@@ -33,6 +33,11 @@
                                 @error('address') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="mb-3">
+                                <label>Plan</label>
+                                <input type="text" class="form-control uppercase" name="plan" value="{{$client->plan}}"  />
+                                @error('address') <span class="text-danger">{{$message}}</span>@enderror
+                            </div>
+                            <div class="mb-3">
                                 <label>Account Number</label>
                                 <input type="text" class="form-control" name="accountNumber" value="{{$client->accountNumber}}" />
                                 @error('accountNumber') <span class="text-danger">{{$message}}</span>@enderror
