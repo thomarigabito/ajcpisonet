@@ -30,7 +30,9 @@
                                 </svg>
                             </a>
                         </h4>
-                        <h6>Account # : {{$billdata->accountnumber}}</h6>
+                        <h6>Account # : {{$billdata->accountnumber}}
+                        <span class="float-end">Put 0 for Paid</span>
+                        </h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
