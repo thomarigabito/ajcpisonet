@@ -14,7 +14,6 @@ class Allclient extends Model
     // protected $primaryKey = 'id';
 
     protected $fillable = [
-        'id',
         'fullname',
         'address',
         'plan',
