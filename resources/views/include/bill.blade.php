@@ -12,7 +12,7 @@
                    <div class="card">
                     <div class="card-header">
                         <h4>Clients
-                            <a href="{{route('createclient')}}" class="btn btn-primary float-end">Add Client</a>
+                            <a href="{{route('admindashboard')}}" class="btn btn-primary float-end">Back</a>
                         </h4>
                     </div>
                     <div class="card-body">
