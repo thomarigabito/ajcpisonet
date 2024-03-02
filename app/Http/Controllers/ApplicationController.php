@@ -83,7 +83,8 @@ class ApplicationController extends Controller
         Bill::create([
             'client_id' => $id,
             'fullname' => $firstname .' '. $lastname,
-            'plan' => $plan
+            'plan' => $plan,
+            'accountNumber' => 0
         ]);
         $newapplicant = Application::findOrFail($id);
         $newapplicant->delete();
