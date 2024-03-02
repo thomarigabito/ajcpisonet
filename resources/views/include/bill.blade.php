@@ -31,7 +31,7 @@
                             </a>
                         </h4>
                         <h6>Account # : {{$billdata->accountnumber}}
-                        <span class="float-end mx-1 italic">Note: Put 0 for Paid</span>
+                        <span class="float-end mx-1" style="font-size: 10px">Note: Put 0 for Paid</span>
                         </h6>
                     </div>
                     <div class="card-body">
