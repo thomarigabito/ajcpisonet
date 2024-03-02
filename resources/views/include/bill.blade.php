@@ -25,15 +25,9 @@
                                         <th>Client ID</th>
                                         <th>Fullname</th>
                                         <th>Plan</th>
-                                        <th>March</th>
-                                        <th>April</th>
-                                        <th>
-                                            @if (date('m') >= 4)
-                                                OK
-                                            @else
-                                                Indi equal
-                                            @endif
-                                        </th>
+                                        @if(date('m')>=1 && date('m') <= 4)
+                                            OK 
+                                        @endif
                                     </tr>
                                 </thead>
                                 <tbody>
