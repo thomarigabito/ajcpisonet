@@ -31,7 +31,7 @@
         .logo{
                 width: 120px;
             }
-        td{
+        table td{
             color: red;
         }
          /* Query here */
