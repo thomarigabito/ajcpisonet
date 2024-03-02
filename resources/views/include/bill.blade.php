@@ -27,8 +27,8 @@
                                 <tbody>
                                     @foreach ($billdata as $billdata)
                                         <tr class="text-nowrap">
-                                            <td>{{$item->clientid}}</td>
-                                            <td>{{$item->March}}</td>
+                                            <td>{{$billdata->client_id}}</td>
+                                            <td>{{$billdata->March}}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
