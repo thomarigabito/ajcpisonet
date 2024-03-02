@@ -47,6 +47,7 @@
                                                     $item->fullname,
                                                     $item->address,
                                                     $item->accountNumber,
+                                                    $item->plan
                                                     ])}}" 
                                                 class="btn btn-success edit mx-1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

@@ -35,6 +35,7 @@ class AllclientController extends Controller
         return view('include.modifyclient', compact('client'));
     }
 
+    //For Update
     public function update(Request $request, int $id)
     {
         if (Auth::check()) {
@@ -46,8 +47,6 @@ class AllclientController extends Controller
             'fullname' => 'required',
             'address' => 'required',
             'accountNumber' => 'required',
-
-
         ]);
         Allclient::findOrFail($id)->update([
             'fullname' => $request->fullname,
