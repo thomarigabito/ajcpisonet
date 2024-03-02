@@ -28,7 +28,7 @@
                                         <th>March</th>
                                         <th>April</th>
                                         <th>
-                                            @if (date('m') >= 3)
+                                            @if (date('m') >= 4)
                                                 OK
                                             @else
                                                 Indi equal
