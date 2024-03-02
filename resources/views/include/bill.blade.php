@@ -27,7 +27,8 @@
                                         <th>Plan</th>
                                         @if(date('m')>=1)
                                             <th>Jan</th>
-                                        @elseif(date('m')>=2)
+                                        @endif
+                                        @if(date('m')>=2)
                                             <th>Feb</th>
                                         @endif
                                     </tr>
