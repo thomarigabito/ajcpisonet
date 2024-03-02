@@ -25,10 +25,10 @@
                                         <th>Client ID</th>
                                         <th>Fullname</th>
                                         <th>Plan</th>
-                                        @if(date('m')>=1 && date('m') <= 4)
-                                        <th>January</th>
-                                        @else
-                                        <th>Dec</th>
+                                        @if(date('m')>=1)
+                                            <th>Jan</th>
+                                        @elseif(date('m')>=2)
+                                            <th>Feb</th>
                                         @endif
                                     </tr>
                                 </thead>
