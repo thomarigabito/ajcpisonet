@@ -23,44 +23,7 @@ class AllclientController extends Controller
     }
 
 
-
-    public function createclient()
-    {
-        if (Auth::check()) {
-            if (Auth::user()->usertype == 'user') {
-                return redirect(route('dashboard'));
-            }
-        }
-        return view('include.createclient');
-    }
-
-    public function storeclient(Request $request)
-    {
-        if (Auth::check()) {
-            if (Auth::user()->usertype == 'user') {
-                return redirect(route('dashboard'));
-            }
-        }
-        $request->validate([
-            // 'id'=> 'required|unique:allclients',
-            'fullname' => 'required|unique:allclients',
-            'address' => 'required',
-            'plan' => 'required',
-            'accountNumber' => 'required|unique:allclients',
-
-        ]);
-        Allclient::create([
-            // 'id'=> $request->id,
-            'fullname' => $request->fullname,
-            'address' => $request->address,
-            'plan' => $request->plan,
-            'accountNumber' => $request->accountNumber,
-
-        ]);
-        return redirect('createclient')->with('status', 'Client Added');
-
-    }
-
+    // Edit client section
     public function modi($id)
     {
         if (Auth::check()) {
@@ -80,7 +43,6 @@ class AllclientController extends Controller
             }
         }
         $request->validate([
-            // 'id'=>'nullable',
             'fullname' => 'required',
             'address' => 'required',
             'plan' => 'required',
@@ -89,7 +51,6 @@ class AllclientController extends Controller
 
         ]);
         Allclient::findOrFail($id)->update([
-            // 'id'=> $request->id,
             'fullname' => $request->fullname,
             'address' => $request->address,
             'plan' => $request->plan,
