@@ -152,7 +152,7 @@ class AllclientController extends Controller
 
     //Bill page admin side
     public function bill($id){
-        $billdata = Bill::all();
+        $billdata = Bill::findOrFail($id);
         return view ('include.bill', compact('billdata'));
     }
 
