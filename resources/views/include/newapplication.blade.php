@@ -31,7 +31,7 @@
                                             <th>Address</th>
                                             <th>Id Selife</th>
                                             <th>Date Applied</th>
-                                            <th>Delete</th>
+                                            <th>Deny</th>
                                             <th>Approve</th>
                                         </tr>
                                     </thead>
