@@ -27,6 +27,8 @@
                                         <th>Plan</th>
                                         @if(date('m')>=1 && date('m') <= 4)
                                             OK 
+                                        @else
+                                            indi
                                         @endif
                                     </tr>
                                 </thead>
@@ -35,8 +37,8 @@
                                         <td>{{$billdata->client_id}}</td>
                                         <td>{{$billdata->fullname}}</td>
                                         <td>{{$billdata->plan}}</td>
-                                        <td>{{$billdata->march}}</td>
-                                        <td>{{$billdata->april}}</td>
+                                        {{-- <td>{{$billdata->march}}</td>
+                                        <td>{{$billdata->april}}</td> --}}
                                     </tr>
                                     
                                                 
