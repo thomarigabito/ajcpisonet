@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('client_id');
             $table->foreign('client_id')->references('id')->on('allclients')->onUpdate('cascade')->onDelete('cascade');
             $table->string('fullname');
-            $table->string('accountnumber');
+            $table->string('accountnumber')->nullable();
             $table->integer('plan');
             $table->integer('january')->nullable();
             $table->integer('febuary')->nullable();

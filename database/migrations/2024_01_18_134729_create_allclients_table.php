@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('fullname');
             $table->string('address');
-            $table->string('accountNumber');
+            $table->string('accountNumber')->nullable();
             $table->integer('plan');
             $table->timestamps();
         });
