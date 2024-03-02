@@ -27,7 +27,13 @@
                                         <th>Plan</th>
                                         <th>March</th>
                                         <th>April</th>
-                                        <th>{{date('m')}}</th>
+                                        <th>
+                                            @if({{date('m')}} > 1)
+                                                OK
+                                            @else
+                                                haha
+                                            @endif
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
