@@ -33,7 +33,7 @@
             <p class="fw-light opo">•<small> Dive into all your online passions effortlessly.</small></p>
             <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
             <div class="sign-up-free text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
-            <div class="fs-4 pt-5 fw-bold mt-14">
+            <div class="two-months-free fs-4 pt-5 fw-bold mt-14">
                 Two Months Free
             </div>
             <hr class="mt-5">
@@ -53,10 +53,10 @@
                         <p class="fw-light opo">•<small> Seamlessly indulge in all your online activities</small></p>
                         <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady access to various online activities. Enjoy smooth browsing and streaming to fulfill your daily entertainment and productivity needs.</small></p>
                 <div class="sign-up-free text-center border rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
-                <div class="fs-4 pt-14 fw-bold">
+                <div class="two-months-free fs-4 pt-14 fw-bold mt-5">
                 Two Months Free
             </div>
-            <hr class="mt-5">
+            <hr>
             </div>
           </div>
         </div>
@@ -76,10 +76,10 @@
             <p class="fw-light opo">•<small> Engage in all your online passions effortlessly.</small></p>
             <p class="fw-light opo">•<small> Tailored for small households, guaranteeing consistent access to a diverse range of online activities. Enjoy seamless browsing and streaming for all your daily entertainment and productivity needs.</small></p>
             <div class="sign-up-free text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
-            <div class="fs-4 mt-5 fw-bold">
+            <div class="two-months-free fs-4 mt-5 fw-bold">
                 Two Months Free
             </div>
-            <hr class="mt-5">
+            <hr>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
             <p class="fw-light opo">•<small> Dive into your online world effortlessly with lightning-fast speeds.</small></p>
             <p class="fw-light opo">•<small> Designed for households craving unparalleled access to a wide range of digital content, ensuring seamless streaming, rapid downloads, and smooth browsing for all your online needs.</small></p>
             <div class="sign-up-free text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
-            <div class="fs-4 pt-14 fw-bold">
+            <div class="two-months-free fs-4 pt-14 fw-bold">
                 Two Months Free
             </div>
             <hr class="mt-5">
