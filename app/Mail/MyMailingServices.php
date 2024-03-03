@@ -37,7 +37,7 @@ class MyMailingServices extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail',
+            view:('mail'),
             with: ['name' => $this->name]
         );
     }
