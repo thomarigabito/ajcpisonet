@@ -93,7 +93,7 @@ class ApplicationController extends Controller
         $newapplicant = Application::findOrFail($id); 
         $newapplicant->delete(); 
 
-        return redirect()->back()->with('status', '');
+        return redirect('admindashboard');
     }
 
 }
