@@ -65,9 +65,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // To be customize
     Route::get('clients/{email}', function($email){
         //Send email to anyone
-        // Mail::to($email)->send (new MyMailingServices('Jupiter'));
-        echo $email;
-    })->name('sendmail');
+        Mail::to($email)->send (new MyMailingServices('Jupiter'));
+    });
 });
 
 
