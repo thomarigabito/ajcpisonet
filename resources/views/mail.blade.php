@@ -1,4 +1,4 @@
-<img  src="{{ $message->embed(public_path().'/assets/agclogo.png')}}">
+<img style="width: 576" height="96" src="{{ $message->embed(public_path().'/assets/agclogo.png')}}">
 
 <h2>Hi <strong style="text-transform: capitalize">{{$name}}</strong>,</h2>
 <p>
