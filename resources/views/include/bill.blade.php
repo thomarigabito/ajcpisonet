@@ -35,7 +35,7 @@
                         <div id="myModal" class="modal">
                             <!-- Modal content -->
                             <div class="modal-content">
-                            <span class="close float-end">&times;</span>
+                            <span class="close">&times;</span>
                             {{$billdata->email}}
                             </div>
                         </div>
