@@ -67,7 +67,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         //Send email to anyone
         Mail::to('deepong25@gmail.com')->send (new MyMailingServices('Jupiter'));
         return redirect('clients/{client_id}/bill');
-    })-name('sendmail');
+    })->name('sendmail');
 });
 
 
