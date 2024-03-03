@@ -1545,9 +1545,21 @@
             font-size: 10px;
             font-weight: bolder;
             background-color: #FFDD59;
-            height: 20px;
-            position: relative;
-            top: 50px;
+            height: auto;
+            width: auto;
+            position: absolute;
+            border-width: 10px;
+            padding: 2px 10px;
+
+
+        }
+
+        .text-pink-500 {
+            color: #EC4899;
+        }
+
+        .two-months-free {
+
         }
     </style>
 </head>
