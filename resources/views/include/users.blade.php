@@ -33,12 +33,13 @@
                                             <tr class="text-nowrap">
                                                 <td>{{ $users->id }}</td>
                                                 <td>{{$users->name}}</td>
-                                                <td>{{ $users->email }}</td>
+                                                <td class="lowercase">{{ $users->email }}</td>
                                                 <td>{{ $users->usertype }}</td>
                                                 <td>{{ $users->created_at}}</td>
                                             </tr>
+                                        @endforeach
                                     </tbody>
-                                    @endforeach
+
                                 </table>
                             </div>
 
