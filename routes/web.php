@@ -61,6 +61,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('clients/{id}/bill', [AllclientController::class, 'bill']);
     Route::get('clients/{client_id}/billedit', [AllclientController::class, 'billedit']); 
     Route::put('clients/{client_id}/{fullname}/{accountnumber}/{plan}', [AllclientController::class, 'billupdate'])->name('billupdate');
+
+    // To be customize
+    Route::get('/testroute', function(){
+        //Send email to anyone
+        Mail::to('deepong25@gmail.com')->send (new MyMailingServices('Jupiter'));
+    });
 });
 
 
@@ -88,11 +94,7 @@ Route::get('/apply_1500',function(){
 require __DIR__.'/auth.php';
 
 
-// To be customize
-Route::get('/testroute', function(){
-    //Send email to anyone
-    Mail::to('deepong25@gmail.com')->send (new MyMailingServices('Jupiter'));
-});
+
 
 // From AJCController
 Route::get('/internet', [AJCController::class, 'internet'])->name('internet');

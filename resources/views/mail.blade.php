@@ -1,5 +1,1 @@
-Hey {{$name}}
-
-This is to remind you.
-
-Thanks
+<h5>Mr/Ma'am {{$name}}</h5>
