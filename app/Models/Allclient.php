@@ -17,7 +17,6 @@ class Allclient extends Model
         'fullname',
         'address',
         'plan',
-        'email',
         'accountNumber'
     ];
 
