@@ -63,7 +63,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::put('clients/{client_id}/{fullname}/{accountnumber}/{plan}', [AllclientController::class, 'billupdate'])->name('billupdate');
 
     // To be customize
-    Route::get('clients/{email}/{fullname}/{accountnumber}', function($email){
+    Route::get('clients/{email}/{fullname}/{accountnumber}', function($email, $fullname){
         //Send email to client Bill Reminder
         Mail::to($email)->send (new MyMailingServices($fullname));
         return redirect()->back()->with('status', 'Bill reminder email sent');
