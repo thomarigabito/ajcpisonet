@@ -49,7 +49,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/users', [AllclientController::class, 'newuser'])->name('users');
 
 
-// For linking user dashboard
+    // For linking user dashboard
 
     Route::post('/link',[DashboardController::class, 'linkaccount'])->name('linkaccount');
 
