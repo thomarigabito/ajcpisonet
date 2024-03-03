@@ -1,6 +1,6 @@
-<h5>Hi {{$name}},</h5>
+<h2>Hi <strong style="text-transform: capitalize">{{$name}}</strong>,</h2>
 <p>
     This is to remind you abount your bill
 </p>
 
-<h6>Regards</h6>
+<h3>Regards</h3>
