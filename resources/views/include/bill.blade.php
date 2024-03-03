@@ -83,7 +83,7 @@
                                         <td>{{$billdata->plan}}</td>
                                         @if(date('m')>=1)
                                             <td>@if($billdata->january === 0)
-                                                    $billdata->email
+                                                {{$billdata->email}}
                                                 @else 
                                                     {{$billdata->january}}
                                                 @endif
