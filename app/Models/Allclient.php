@@ -16,7 +16,8 @@ class Allclient extends Model
     protected $fillable = [
         'fullname',
         'address',
-        'plan'
+        'plan',
+        'accountNumber'
     ];
 
     public function user(){
