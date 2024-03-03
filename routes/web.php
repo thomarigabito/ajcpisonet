@@ -63,10 +63,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::put('clients/{client_id}/{fullname}/{accountnumber}/{plan}', [AllclientController::class, 'billupdate'])->name('billupdate');
 
     // To be customize
-    Route::get('clients/{client_id}/{email}', function($email){
+    Route::get('clients/{client_id}/{email}', function($client_id){
         //Send email to anyone
         // Mail::to($email)->send (new MyMailingServices('Jupiter'));
-        echo $email;
+        echo $client_id;
     })->name('sendmail');
 });
 
