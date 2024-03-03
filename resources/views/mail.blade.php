@@ -1,1 +1,6 @@
-<h5>Mr/Ma'am {{$name}}</h5>
+<h5>Hi {{$name}},</h5>
+<p>
+    This is to remind you abount your bill
+</p>
+
+<h6>Regards</h6>
