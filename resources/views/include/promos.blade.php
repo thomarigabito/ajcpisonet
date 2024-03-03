@@ -3,25 +3,26 @@
 @section('content')
 
 <div class="hero-section2">
-  <div class="container">
-    <h1 class="text-white" id="texts">Get your free install today and enjoy 2 months of internet on the house!</h1>
-    <h1 class="mt-2" id="paragraph">Elevate your home experience with fast, reliable plans.</h1>
-  </div>
-  <button type="button"  class="btn button-apply-now"><a href='{{ route('applynow') }}'>Apply Now</a></button>
+    <div class="container">
+        <h1 class="text-white" id="texts">Get your free install today and enjoy 2 months of internet on the house!</h1>
+        <h1 class="mt-2" id="paragraph">Elevate your home experience with fast, reliable plans.</h1>
+    </div>
+    <button type="button" class="btn button-apply-now"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 </div>
+
 <section class="support-section pt-5 pb-5">
-  <div class="container" data-scroll-into-view="active">
-    <div class="row mb-4">
-        <div class="col-sm-12">
-            <h1 class="text-center fw-bold fs-1">Find the Best Broadband Plan for You</h1>
-            <p class="text-center mt-3 fw-normal">Our home Internet is fast, stable and unlimited. Find your perfect match.</p>
+    <div class="container" data-scroll-into-view="active">
+        <div class="row mb-4">
+            <div class="col-sm-12">
+                <h1 class="text-center fw-bold fs-1">Find the Best Broadband Plan for You</h1>
+                <p class="text-center mt-3 fw-normal">Our home Internet is fast, stable and unlimited. Find your perfect match.</p>
+            </div>
         </div>
     </div>
-  </div>
-  <div class="container pt-5">
-    <div class="row gx-3 justify-content-between overflow-auto scrollbar style-7">
-      <div class="promo-card col-sm-6 col-lg-3">
-        <div class="card h-auto pb-5 ">
+    <div class="container pt-5">
+        <div class="row gx-3 justify-content-between overflow-auto scrollbar style-7">
+            <div class="promo-card col-sm-6 col-lg-3">
+        <div class="card h-100 pb-5 ">
           <div class="multiple-card">
             <h4 class="mb-0" style="font-size:24px;">20Mbps</h4>
             <h4 class="mb-0" style="font-size: 24px;">
@@ -44,15 +45,15 @@
         <div class="card h-100">
           <div class=" bg-none border-0 rounded-0 mt-5 mx-4">
             <h4 class="mb-0" style="font-size:24px;">30Mbps</h4>
-            <h4 class="mb-0" style="font-size: 24px;">
-                <span class="text-pink-500">PHP1000</span>/month
-            </h4>
-            <div class="mb-10 pt-5">
-            <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
-            <p class="fw-light opo">•<small> Seamlessly indulge in all your online activities</small></p>
-            <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady access to various online activities. Enjoy smooth browsing and streaming to fulfill your daily entertainment and productivity needs.</small></p>
-            <div class="sign-up-free text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
-            <div class="fs-4 pt-14 fw-bold">
+                <h4 class="mb-0" style="font-size: 24px;">
+                    <span class="text-pink-500">PHP1000</span>/month
+                </h4>
+                <div class="mb-10 pt-5">
+                    <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
+                        <p class="fw-light opo">•<small> Seamlessly indulge in all your online activities</small></p>
+                        <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady access to various online activities. Enjoy smooth browsing and streaming to fulfill your daily entertainment and productivity needs.</small></p>
+                <div class="sign-up-free text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
+                <div class="fs-4 pt-14 fw-bold">
                 Two Months Free
             </div>
             <hr class="mt-5">
@@ -103,20 +104,22 @@
           </div>
         </div>
       </div>
+    </div>
 </section>
 
+<!-- Hero Section 3 -->
 <div class="hero-section3">
     <div class="container">
-
         <div class="row col-sm-5">
             <img src="./assets/ads2.png" alt="ads2" class="w-100">
         </div>
     </div>
 </div>
 
+<!-- Container Fluid -->
 <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-4 p-2 p-md-3 p-lg-4 justify-content-center text-center">
+    <div class="row">
+        <div class="col-12 col-md-4 p-2 p-md-3 p-lg-4 justify-content-center text-center">
                 <img class="py-4 m-auto" src="./assets/productivity.png">
                 <h4>Be more productive than ever</h4>
                 <p>with faster speeds that Fiber Unli can provide.</p>
@@ -132,7 +135,9 @@
             </div>
         </div>
     </div>
+</div>
 
+<!-- Accordion Section -->
 <div class="accordion">
     <h1>Frequently Asked Questions</h1>
     <div class="accordion-item">
@@ -164,14 +169,10 @@
         <label for="accordion5" class="accordion-item-title"><span class="icon"></span>Can I use AJC PISONET for online gaming?</label>
         <div class="accordion-item-desc">Yes, AJC PISONET is suitable for online gaming with its low-latency connections and gaming-friendly services. Many gamers prefer AJC PISONET for their gaming sessions due to its reliable connectivity and affordable rates.</div>
     </div>
+</div>
+    <!-- More Accordion Items -->
     <div class="upcontainer">
         <h5 class="snippetTitle">Not what you're looking for?</h5>
     </div>
-</div>
-
-
-
-
-
 
 @endsection
