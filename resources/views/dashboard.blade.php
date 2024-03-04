@@ -50,12 +50,16 @@
     @else
 
 
-        <div class="py-10">
+        <div class="py-12">
             <div class="max-w-9xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900 align-items-end">
-                        <div class="col-12 col-lg-6">Hello</div>
-                        <div class="col-12 col-lg-6">hi</div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">Hello</div>
+                                <div class="col-12 col-lg-6">hi</div>
+                            </div>
+                        </div>
 
                         {{-- <div >
                             Billing
