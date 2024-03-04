@@ -89,9 +89,15 @@
                                             </tr>
                                             <tr>
                                                 <td style="border:none">
-                                                    helo
+                                                  
                                                 </td>
-                                                <td style="border:none"> helo</td>
+                                                <td style="border:none"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:none">
+                                                    SUMMARY OF CHARGES AND CREDITS
+                                                </td>
+                                                <td style="border:none"></td>
                                             </tr>
                                         </table>
                                     </div>
