@@ -64,7 +64,7 @@
                                     <h6 class="text-center uppercase p-0 m-0">
                                         Statement of account
                                     </h6>
-                                    <p class="p-0 m-0">Zone 7, Punta, Carles, Iloilo 5019 VAT REG TIN:000012120000</p>
+                                    <p class="p-0 m-0" style="font-size: 10px; font-style:italic">Zone 7, Punta, Carles, Iloilo 5019 VAT REG TIN:000012120000</p>
 
 
                                 </div>
