@@ -1564,6 +1564,7 @@
             position: absolute;
             border-width: 10px;
             padding: 2px 10px;
+            margin-top: 4vh;
 
 
         }
@@ -1575,7 +1576,7 @@
         }
 
         .two-months-free {
-
+            margin-top: 6vh;
         }
     </style>
 </head>
