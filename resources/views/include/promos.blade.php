@@ -32,7 +32,7 @@
             <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
             <p class="fw-light opo">•<small> Dive into all your online passions effortlessly.</small></p>
             <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to Facebook, YouTube, Instagram, and Netflix.</small></p>
-            <div class="sign-up-free text-center border-0 rounded-pill w-auto text-dark" style="top: 71%;">SIGN UP TO GET FREE</div>
+            <div class="sign-up-free text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
             <div class="two-months-free fs-4 fw-bold">
                 Two Months Free
             </div>
