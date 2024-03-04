@@ -94,10 +94,8 @@
                                                 <td style="border:none"></td>
                                             </tr>
                                             <tr>
-                                                <td style="border:none">
-                                                    <p style="font-size: 12px" class="p-0 m-0">
+                                                <td style="border:none; ont-size: 12px" class="p-0 m-0">
                                                         SUMMARY OF CHARGES AND CREDITS
-                                                    </p> 
                                                 </td>
                                                 <td style="border:none"></td>
                                             </tr>
