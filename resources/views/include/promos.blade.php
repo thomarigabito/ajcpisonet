@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="container pt-5">
-        <div class="row gx-3 justify-content-between overflow-auto scrollbar style-7">
+        <div class="row gx-3 justify-content-between">
             <div class="promo-card col-sm-6 col-lg-3">
         <div class="card h-100 pb-5">
           <div class="multiple-card">
