@@ -49,6 +49,16 @@
 
     @else
 
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-6 lg-6">
+                <h3>left section</h3>
+            </div>
+            <div class="col col-md-6 lg-6">
+                right
+            </div>
+        </div>
+    </div>
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
