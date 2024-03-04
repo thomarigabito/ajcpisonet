@@ -19,21 +19,22 @@ class DashboardController extends Controller
             return redirect(route('admindashboard'));
         }
 
-        // Getting data for user client
+        // Getting data current user client
         $currentAccountNumber = Auth::user()->accountnumber;
+        //Getting all data from bill table
         $searchBillAccountNumber = Bill::get();
 
+        
         $accountnumber;
         $fullname;
-
-
+        echo $fullname;
         foreach ($searchBillAccountNumber as $searchBillAccountNumber) {
             if($currentAccountNumber == $searchBillAccountNumber->accountnumber){
                 $stndby=$searchBillAccountNumber->accountnumber;
                 $fullname=$searchBillAccountNumber->fullname;
             }
         }
-        echo $fullname;
+        
         
 
     }
