@@ -59,6 +59,10 @@
                             Billing
                         </div>
                         <div>{{$accountnumber}}</div>
+                        <div>{{$fullname}}</div>
+                        <div>{{$january}}</div>
+                        <div>{{$febuary}}</div>
+                        <div>{{$march}}</div>
                     </div>
                 </div>
             </div>
