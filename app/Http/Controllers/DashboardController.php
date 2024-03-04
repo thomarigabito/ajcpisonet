@@ -36,9 +36,10 @@ class DashboardController extends Controller
                 $fullname=$searchBillAccountNumber->fullname;
             }
         }
+        $datacurrent = [$accountnumber];
 
        
-        return view('dashboard', ['accountnumber' => $accountnumber]);
+        return view('dashboard', [ $accountnumber]);
         
         
 
