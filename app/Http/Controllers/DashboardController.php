@@ -24,22 +24,56 @@ class DashboardController extends Controller
         //Getting all data from bill table
         $searchBillAccountNumber = Bill::get();
 
-        
-        $accountnumber;
-        $fullname;
+
+
 
 
         foreach ($searchBillAccountNumber as $searchBillAccountNumber) {
             if($currentAccountNumber == $searchBillAccountNumber->accountnumber){
                 $stndby=$searchBillAccountNumber->accountnumber;
                 $fullname=$searchBillAccountNumber->fullname;
+                $contact=$searchBillAccountNumber->contact;
+                $plan=$searchBillAccountNumber->plan;
+                $email=$searchBillAccountNumber->email;
+                $january=$searchBillAccountNumber->january;
+                $febuary=$searchBillAccountNumber->febuary;
+                $march=$searchBillAccountNumber->march;
+                $april=$searchBillAccountNumber->aplril;
+                $may=$searchBillAccountNumber->may;
+                $june=$searchBillAccountNumber->june;
+                $july=$searchBillAccountNumber->july;
+                $august=$searchBillAccountNumber->august;
+                $september=$searchBillAccountNumber->september;
+                $october=$searchBillAccountNumber->october;
+                $november=$searchBillAccountNumber->november;
+                $december=$searchBillAccountNumber->december;
             }
         }
 
         // passing data to dashboard view
-        return view('dashboard', ['accountnumber' => $accountnumber, 'fullname' => $fullname]);
-        
-        
+        return view('dashboard', [
+            'accountnumber' => $stndby,
+            'fullname' => $fullname,
+            'contact' => $contact,
+            'plan'=> $plan,
+            'email'=> $email,
+            'january' => $january,
+            'febuary'=> $febuary,
+            'march'=> $march,
+            'april'=> $april,
+            'may'=> $may,
+            'june' => $june,
+            'july'=> $july,
+            'august' => $august,
+            'sepetember' => $september,
+            'october'=> $october,
+            'november'=> $november,
+            'december' => $december,
+
+
+        ]);
+
+
 
     }
 
