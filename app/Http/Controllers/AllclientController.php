@@ -161,9 +161,20 @@ class AllclientController extends Controller
     public function billupdate(Request $request, int $client_id, $fullname, $accountnumber, $plan)
     {
         $request->validate([
-            'january' => 'required',
-            'febuary' => 'required',
-            'march' => 'required',
+            'january' => 'nullable|integer',
+            'febuary' => 'nullable|integer',
+            'march' => 'nullable|integer',
+            'april' => 'nullable|integer',
+            'may' => 'nullable|integer',
+            'june' => 'nullable|integer',
+            'july' => 'nullable|integer',
+            'august' => 'nullable|integer',
+            'september' => 'nullable|integer',
+            'october' => 'nullable|integer',
+            'november' => 'nullable|integer',
+            'december' => 'nullable|integer',
+
+
         ]);
         Bill::findOrFail($client_id)->update([
             'client_id' => $client_id,
@@ -172,7 +183,15 @@ class AllclientController extends Controller
             'plan' => $plan,
             'january' => $request->january,
             'febuary' => $request->febuary,
-            'march' => $request->march
+            'april' => $request->april,
+            'may' => $request->may,
+            'june' => $request->june,
+            'july' => $request->july,
+            'august' => $request->august,
+            'september' => $request->september,
+            'october' => $request->october,
+            'november' => $request->november,
+            'december' => $request->december,
         ]);
         return redirect()->back()->with('status', 'Bill Updated');
     }
