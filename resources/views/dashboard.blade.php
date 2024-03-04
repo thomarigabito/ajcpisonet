@@ -79,6 +79,10 @@
                                                 <td>Bill Date</td>
                                                 <td>{{date('m')}}</td>
                                             </tr>
+                                            <tr>
+                                                <td>Bill Due Date</td>
+                                                <td>{{date('m')}}</td>
+                                            </tr>
                                         </table>
                                     </div>
 
