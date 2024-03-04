@@ -36,7 +36,7 @@
             <div class="two-months-free fs-4 pt-5 fw-bold mt-14">
                 Two Months Free
             </div>
-            <hr class="mt-5">
+            <hr>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
             <p class="fw-light opo">•<small> Dive into your online world effortlessly with lightning-fast speeds.</small></p>
             <p class="fw-light opo">•<small> Designed for households craving unparalleled access to a wide range of digital content, ensuring seamless streaming, rapid downloads, and smooth browsing for all your online needs.</small></p>
             <div class="sign-up-free text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO GET FREE</div>
-            <div class="two-months-free fs-4 pt-14 fw-bold">
+            <div class="two-months-free fs-4 pt-14 fw-bold mt-5">
                 Two Months Free
             </div>
             <hr class="mt-5">
