@@ -37,7 +37,7 @@ class DashboardController extends Controller
             }
         }
 
-        // passing data to dashboard view
+        // /
         return view('dashboard', [$accountnumber]);
         
         
