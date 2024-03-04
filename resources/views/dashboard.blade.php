@@ -93,9 +93,14 @@
                                                 </td>
                                                 <td style="border:none"></td>
                                             </tr>
-                                            <tr>
-                                                <td>SUMMARY OF CHARGES AND CREDITS</td>
+                                            <tr style="border:1px solid white" class="py-4">
+                                                <td style="border:none">
+                                                    SUMMARY OF CHARGES AND CREDITS
+                                                </td>
+                                                <td style="border:none"></td>
                                             </tr>
+
+                                            
                                             {{-- <tr>
                                                 <td style="border:none; ont-size: 12px" class="p-0 m-0">
                                                         SUMMARY OF CHARGES AND CREDITS
