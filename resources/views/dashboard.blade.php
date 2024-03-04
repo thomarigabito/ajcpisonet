@@ -61,9 +61,10 @@
                                     <div class="logobill">
                                         <img src="/assets/agclogo.png" alt="BillLogo" width="80px" height="40px" >
                                     </div>
-                                    <h6 class="text-center uppercase">
+                                    <h6 class="text-center uppercase p-0 m-0">
                                         Statement of account
                                     </h6>
+                                    <p class="p-0 m-0">Zone 7, Punta, Carles, Iloilo 5019 VAT REG TIN:000012120000</p>
 
 
                                 </div>
