@@ -26,7 +26,7 @@ Route::get('/', [AJCController::class, 'homepage']);
 
 Route::middleware(['auth', 'verified'])->group(function () {
 
-    Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+    Route::get('/dashboard/', [DashboardController::class, 'dashboard'])->name('dashboard');
     Route::get('/admindashboard', [AllclientController::class, 'admindashboard'])->name('admindashboard');
     Route::get('/bill', [AJCController::class, 'bill'])->name('bill');
 
@@ -47,9 +47,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     //Users View Blade
     Route::get('/users', [AllclientController::class, 'newuser'])->name('users');
+    Route::get('usertype/{id}', [AllclientController::class, 'modiuser'])->name('modi');
+    Route::put('usertype/{id}', [AllclientController::class, 'modiUsers']);
 
-
-// For linking user dashboard
+    // For linking user dashboard
 
     Route::post('/link',[DashboardController::class, 'linkaccount'])->name('linkaccount');
 
@@ -59,7 +60,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     //For Bill admin side
     Route::get('clients/{id}/bill', [AllclientController::class, 'bill']);
-    Route::get('clients/{client_id}/billedit', [AllclientController::class, 'billedit']); 
+    Route::get('clients/{client_id}/billedit', [AllclientController::class, 'billedit']);
     Route::put('clients/{client_id}/{fullname}/{accountnumber}/{plan}', [AllclientController::class, 'billupdate'])->name('billupdate');
 
     // To be customize

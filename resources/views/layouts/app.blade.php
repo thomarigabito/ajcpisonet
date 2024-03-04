@@ -34,7 +34,7 @@
         td{
             text-transform: capitalize;
         }
-        
+
 
 
          /* Query here */
@@ -307,7 +307,30 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
     </script>
+
+        <script>
+        function totalBill(){
+            var jan = document.getElementById('january').value;
+            var feb = document.getElementById('february').value;
+            var mar = document.getElementById('march').value;
+            var april = document.getElementById('april').value;
+            var may = document.getElementById('may').value;
+            var june = document.getElementById('june').value;
+            var july = document.getElementById('july').value;
+            var august = document.getElementById('august').value;
+            var sept = document.getElementById('september').value;
+            var oct = document.getElementById('october').value;
+            var nov = document.getElementById('november').value;
+            var dec = document.getElementById('december').value;
+
+            var total = jan + feb + mar + april + may + june + july + august + sept + oct + nov + dec;
+
+            console.log(total);
+        }
+    </script>
+    
 
 
 </body>

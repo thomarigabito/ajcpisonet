@@ -73,7 +73,9 @@ class ApplicationController extends Controller
     }
 
     //For Approve and auto add auto delete
-    public function approveclient($id,$firstname, $lastname, $email, $contact, $birthday, $gender, $plan, $street, $barangay, $town, $province){
+    public function approveclient(Request $request, $id,$firstname, $lastname, $email, $contact, $birthday, $gender, $plan, $street, $barangay, $town, $province){
+        // Patira sir validate
+        
         Allclient::create([
             'fullname' => $firstname .' '. $lastname,
             'address' => $street .' '. $barangay .' '. $town .' '. $province,
@@ -88,8 +90,9 @@ class ApplicationController extends Controller
             'email' => $email,
             'contact' => $contact
         ]);
-        $newapplicant = Application::findOrFail($id);
-        $newapplicant->delete();
+        $newapplicant = Application::findOrFail($id); 
+        $newapplicant->delete(); 
+
         return redirect('admindashboard');
     }
 

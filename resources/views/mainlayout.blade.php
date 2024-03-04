@@ -876,6 +876,18 @@
             color: red !important;
         }
 
+        .card-body{
+            background: rgba( 185, 83, 83, 0.15 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 12px );
+            -webkit-backdrop-filter: blur( 12px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+        .card_body:focus{
+            background: rgba( 185, 83, 83,);
+
+        }
 
 
         /* Query here */
@@ -986,6 +998,8 @@
         .p_mbps {
             color: #fefefe;
         }
+
+
 
         .center_bundle {
             border-right: 1px #fefefe solid;

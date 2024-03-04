@@ -29,8 +29,8 @@
                                             <th>Gender</th>
                                             <th>Plan</th>
                                             <th>Address</th>
-                                            <th>Upload Id</th>
-                                            <th>Selife</th>
+                                            <th>Valid Id</th>
+                                            <th>Selife Id</th>
                                             <th>Date Applied</th>
                                             <th>Deny</th>
                                             <th>Approve</th>
@@ -47,8 +47,8 @@
                                                 <td>{{ $applicants->gender }}</td>
                                                 <td>{{ $applicants->plan }}</td>
                                                 <td>{{ $applicants->street }} {{ $applicants->barangay }} {{ $applicants->town }} {{ $applicants->province }}</td>
-                                                <td> <img src="{{ asset($applicants->uploadid) }}" style="width=70px; height=70px;"/></td>
-                                                <td> <img src="{{ asset($applicants->idselfie) }}" style="width=70px; height=70px;"/></td>
+                                                <td > <img src="{{ asset($applicants->uploadid) }}" style="width=100px; height=70px;"/></td>
+                                                <td > <img src="{{ asset($applicants->idselfie) }}" style="width=150px; height=75px;"/></td>
                                                 <td>{{ $applicants->created_at }}</td>
                                                 <td>
                                                     <a href="{{url('newapplication/'.$applicants->id.'/delete')}}" class="btn btn-danger delete mx-1" onclick="return confirm('Are you sure?')">

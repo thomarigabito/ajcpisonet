@@ -109,8 +109,41 @@ class AllclientController extends Controller
         }
         $users = User::get();
         return view('include.users', compact('users'));
-
     }
+    public function modiuser($id)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype != 'admin') {
+                return redirect(route('dashboard'));
+            }
+        }
+        $usertype = User::findOrFail($id);
+        return view('include.modifyuser', compact('usertype'));
+    }
+
+    public function modiUsers(Request $request, int $id)
+    {
+        if (Auth::check()) {
+            if (Auth::user()->usertype == 'user') {
+                return redirect(route('dashboard'));
+            }
+        }
+        $request->validate([
+            'usertype' => 'required',
+        ]);
+        User::findOrFail($id)->update([
+            'usertype' => $request->usertype,
+        ]);
+        return redirect()->back()->with('status', 'UserType Updated');
+    }
+
+
+
+
+
+
+
+
 
     //Bill page admin side
     public function bill(int $id){
@@ -119,18 +152,30 @@ class AllclientController extends Controller
     }
     //Bill Edit
     public function billedit($client_id){
-        
+
         $BillEdit = Bill::findOrFail($client_id);
-        return view('include.billedit',compact('BillEdit')); 
+        return view('include.billedit',compact('BillEdit'));
     }
 
     //For Bill Update
     public function billupdate(Request $request, int $client_id, $fullname, $accountnumber, $plan)
     {
         $request->validate([
-            'january' => 'required',
-            'febuary' => 'required',
-            'march' => 'required',
+            'january' => 'nullable|integer',
+            'febuary' => 'nullable|integer',
+            'march' => 'nullable|integer',
+            'april' => 'nullable|integer',
+            'may' => 'nullable|integer',
+            'june' => 'nullable|integer',
+            'july' => 'nullable|integer',
+            'august' => 'nullable|integer',
+            'september' => 'nullable|integer',
+            'october' => 'nullable|integer',
+            'november' => 'nullable|integer',
+            'december' => 'nullable|integer',
+            'total'=> 'integer',
+
+
         ]);
         Bill::findOrFail($client_id)->update([
             'client_id' => $client_id,
@@ -139,7 +184,17 @@ class AllclientController extends Controller
             'plan' => $plan,
             'january' => $request->january,
             'febuary' => $request->febuary,
-            'march' => $request->march
+            'march'=> $request->march,
+            'april' => $request->april,
+            'may' => $request->may,
+            'june' => $request->june,
+            'july' => $request->july,
+            'august' => $request->august,
+            'september' => $request->september,
+            'october' => $request->october,
+            'november' => $request->november,
+            'december' => $request->december,
+
         ]);
         return redirect()->back()->with('status', 'Bill Updated');
     }

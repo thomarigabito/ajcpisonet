@@ -80,6 +80,7 @@
                                         @if(date('m')>=12)
                                             <th>Dec</th>
                                         @endif
+                                        <th>Total</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -88,7 +89,7 @@
                                         @if(date('m')>=1)
                                             <td>@if($billdata->january === 0)
                                                     Paid
-                                                @else 
+                                                @else
                                                     {{$billdata->january}}
                                                 @endif
                                             </td>
@@ -96,7 +97,7 @@
                                         @if(date('m')>=2)
                                             <td>@if($billdata->febuary === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->febuary}}
                                             @endif
                                             </td>
@@ -104,7 +105,7 @@
                                         @if(date('m')>=3)
                                             <td>@if($billdata->march === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->march}}
                                             @endif
                                             </td>
@@ -112,7 +113,7 @@
                                         @if(date('m')>=4)
                                             <td>@if($billdata->april === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->april}}
                                             @endif
                                             </td>
@@ -120,7 +121,7 @@
                                         @if(date('m')>=5)
                                             <td>@if($billdata->may === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->may}}
                                             @endif
                                             </td>
@@ -128,7 +129,7 @@
                                         @if(date('m')>=6)
                                             <td>@if($billdata->june === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->june}}
                                             @endif
                                             </td>
@@ -136,7 +137,7 @@
                                         @if(date('m')>=7)
                                             <td>@if($billdata->july === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->july}}
                                             @endif
                                             </td>
@@ -144,7 +145,7 @@
                                         @if(date('m')>=8)
                                             <td>@if($billdata->august === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->august}}
                                             @endif
                                             </td>
@@ -152,7 +153,7 @@
                                         @if(date('m')>=9)
                                             <td>@if($billdata->september === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->september}}
                                             @endif
                                             </td>
@@ -160,7 +161,7 @@
                                         @if(date('m')>=10)
                                             <td>@if($billdata->october === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->october}}
                                             @endif
                                             </td>
@@ -168,7 +169,7 @@
                                         @if(date('m')>=11)
                                             <td>@if($billdata->november === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->november}}
                                             @endif
                                             </td>
@@ -176,25 +177,29 @@
                                         @if(date('m')>=12)
                                             <td>@if($billdata->december === 0)
                                                 Paid
-                                            @else 
+                                            @else
                                                 {{$billdata->december}}
                                             @endif
                                             </td>
                                         @endif
+                                        <td></td>
 
                                     </tr>
-                                    
-                                                
-                                  
+
+
+
                                 </tbody>
                             </table>
                         </div>
                     </div>
                    </div>
-                   
+
 
                 </div>
             </div>
         </div>
     </div>
+    
+
+
 </x-app-layout>
