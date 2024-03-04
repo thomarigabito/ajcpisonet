@@ -87,7 +87,7 @@
                                                 <td>Total Amount Due</td>
                                                 <td>&#8369; {{$january+$febuary+$march+$april}}.00</td>
                                             </tr>
-                                            <tr style="border:none">
+                                            <tr style="border:1px solid red">
                                                 <td style="border:none">
                                                   
                                                 </td>
@@ -95,7 +95,9 @@
                                             </tr>
                                             <tr>
                                                 <td style="border:none">
-                                                    SUMMARY OF CHARGES AND CREDITS
+                                                    <p style="font-size: 14px">
+                                                        SUMMARY OF CHARGES AND CREDITS
+                                                    </p> 
                                                 </td>
                                                 <td style="border:none"></td>
                                             </tr>
