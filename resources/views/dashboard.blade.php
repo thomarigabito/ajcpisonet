@@ -59,9 +59,9 @@
                                 <div class="col-12 col-lg-8 col-md-6 ">Hello</div>
                                 <div class="col-12 col-lg-4 col-md-6 bg-white overflow-hidden shadow-sm sm:rounded-lg ">
                                     <div class="logobill">
-                                        <img src="/assets/agclogo.png" alt="BillLogo" width="50px" height="20px" >
+                                        <img src="/assets/agclogo.png" alt="BillLogo" width="80px" height="40px" >
                                     </div>
-                                    <h6 class="text-center">
+                                    <h6 class="text-center uppercase">
                                         Statement of account
                                     </h6>
 
