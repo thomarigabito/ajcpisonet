@@ -93,12 +93,12 @@
                                                 </td>
                                                 <td style="border:none"></td>
                                             </tr>
-                                            {{-- <tr style="border:1px solid white" class="py-4">
+                                            <tr style="border:1px solid white" >
                                                 <td style="border:none">
                                                     SUMMARY OF CHARGES AND CREDITS
                                                 </td>
                                                 <td style="border:none"></td>
-                                            </tr> --}}
+                                            </tr>
 
                                             
                                             {{-- <tr>
