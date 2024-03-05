@@ -66,7 +66,7 @@
                                     </h6>
                                     <p class="p-0 m-0 text-center" style="font-size: 10px; font-style:italic">Zone 7, Punta, Carles, Iloilo 5019 VAT REG TIN:000012120000</p>
                                     <div class="responsive-table">
-                                        <table class="table table-bordered table-sm " style="font-size: 12px">
+                                        <table class="table table-bordered table-sm text-center" style="font-size: 12px">
                                             <tr>
                                                 <td>Name</td>
                                                 <td class="text-nowrap">{{$fullname}}</td>
