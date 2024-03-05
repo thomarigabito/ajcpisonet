@@ -94,9 +94,9 @@
                                                 <td style="border:none"></td>
                                             </tr>
                                             <tr style="border:transparent" >
-                                                
+                                                <td style="border:none; width:100%" class="text-nowrap">
                                                     SUMMARY OF CHARGES AND CREDITS
-                                            
+                                                </td>
                                             </tr>
 
                                             
