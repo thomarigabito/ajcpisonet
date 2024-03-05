@@ -11,10 +11,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav justify-content-center  me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link {{ \Request::route()->getName() == 'internet' ? 'active' : '' }}"
                                     href="{{ route('internet') }}">Internet</a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ \Request::route()->getName() == 'promos' ? 'active' : '' }}"
                                     href="{{ route('promos') }}">Promos</a>
