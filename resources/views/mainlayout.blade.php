@@ -1413,10 +1413,10 @@
         @media screen and (max-width: 768px) {
             .button-apply-now {
                 position: sticky;
-                padding: 16px;
+                padding: 6px;
                 top: 0;
                 font-size: 14px;
-                margin-top: 6px;
+                margin-top: 16px;
                 left: auto;
             }
 
@@ -1452,12 +1452,6 @@
 
             }
 
-            .button-apply-now {
-                width: auto;
-                padding: 6px;
-                font-size: 12px;
-            }
-
             .exclusive-deals {
                 font-size: 10px;
             }
@@ -1475,7 +1469,7 @@
 
             .button-apply-now {
                 width: auto;
-                font-size: 9px;
+                font-size: 12px;
             }
 
         }
