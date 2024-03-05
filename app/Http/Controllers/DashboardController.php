@@ -49,6 +49,10 @@ class DashboardController extends Controller
                 $october=$searchBillAccountNumber->october;
                 $november=$searchBillAccountNumber->november;
                 $december=$searchBillAccountNumber->december;
+
+                $total= $january+$febuary+$march+$april+$may+$june+$july+$august+$september+$october+$november+$december;
+
+
             }
         }
 
@@ -73,6 +77,7 @@ class DashboardController extends Controller
             'october'=> $october,
             'november'=> $november,
             'december' => $december,
+            'total' => $total,
 
 
         ]);
