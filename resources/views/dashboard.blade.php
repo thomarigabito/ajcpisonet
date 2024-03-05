@@ -79,7 +79,7 @@
                                                 <td>Bill Date</td>
                                                 <td>{{date('01-'.'M'.'-'.'Y')}}</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="text-nowrap">
                                                 <td class="bg-danger text-light">Bill Due Date</td>
                                                 <td class="bg-danger text-light">{{date('30-'.'M'.'-'.'Y')}}</td>
                                             </tr>
