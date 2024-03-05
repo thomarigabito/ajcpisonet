@@ -117,7 +117,7 @@
 
     <h1 class="col text-center mb-0 p-5 text_title fs-1 fw-bold ">We’re here to help you.</h1>
 
-    <div class="container-fluid">
+    {{-- <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 py-5 text-center chat">
                 <h1 style="font-size:32px; font-weight:700;">Chat with Us !</h1>
@@ -137,5 +137,5 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection
