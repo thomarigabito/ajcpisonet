@@ -108,7 +108,7 @@ Route::post('/applynow', [ApplicationController::class, 'applynowPOST'])->name('
 
 
 // Mail inquirer
-Route::get('contactus/sendinquire', function(Request $request){
+Route::post('contactus/sendinquire', function(Request $request){
         $request->validate([
         'inquire_client_name' => 'required',
         'inquire_client_email' => 'required',
