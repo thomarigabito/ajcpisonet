@@ -241,7 +241,7 @@
             var printcontent = document.getElementById(el).innerHTML;
             document.body.innerHTML = printcontent;
             window.print();
-            // document.body.innerHTML = restorpage;
+            document.body.innerHTML = restorpage;
             
         }
     </script>

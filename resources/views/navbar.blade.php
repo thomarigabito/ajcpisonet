@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-white border border-gray-100 px-5 font-sans antialiased">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-white border border-gray-100 px-1 font-sans antialiased">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
                         <img class="logo" src="./assets/agclogo.png">
