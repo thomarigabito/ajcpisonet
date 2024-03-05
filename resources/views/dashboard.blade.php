@@ -60,7 +60,7 @@
 
 
                                 </div>
-                                <div class="col-12 col-lg-4 col-md-6 bg-white overflow-hidden shadow-sm sm:rounded-lg ">
+                                <div class="col-12 col-lg-4 col-md-6 bg-white overflow-hidden shadow-sm sm:rounded-lg " id="soa">
                                     <div class="logobill">
                                         <img src="/assets/agclogo.png" alt="BillLogo" width="80px" height="40px">
                                     </div>
@@ -69,7 +69,7 @@
                                     </h6>
                                     <p class="p-0 m-0 text-center" style="font-size: 10px; font-style:italic">Zone 7,
                                         Punta, Carles, Iloilo 5019 VAT REG TIN:000012120000</p>
-                                    <div id="soa" class="soa responsive-table">
+                                    <div  class="soa responsive-table">
                                         <table class="table table-bordered table-sm " style="font-size: 12px">
                                             <tr>
                                                 <td>Name</td>
@@ -240,8 +240,9 @@
             var restorepage = document.body.innerHTML;
             var printcontent = document.getElementById(el).innerHTML;
             document.body.innerHTML = printcontent;
-            print();
-            document.body.innerHTML = restorpage;
+            window.print();
+            // document.body.innerHTML = restorpage;
+            
         }
     </script>
 
