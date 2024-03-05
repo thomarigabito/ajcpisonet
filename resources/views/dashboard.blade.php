@@ -245,5 +245,5 @@
         }
     </script>
 
-    {{-- @include('footer') --}}
+    @include('footer')
 </x-app-layout>
