@@ -6,7 +6,8 @@
         <h3 style="width: 55%;" id="texts" class="pt-5 fs-1">A Greater Life Together, at Home</h3>
         <p id="paragraph">A Greater Life Together, at Home
             Get the whole family connected with the greatest deal.</p>
-        <button type="button" class="btn button-apply-now text-nowrap w-fit"><a href='{{ route('applynow') }}'>Apply Now</a></button>
+        <button type="button" class="btn
+         text-nowrap w-fit"><a href='{{ route('applynow') }}'>Apply Now</a></button>
         </div>
     </div>
 

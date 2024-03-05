@@ -1262,13 +1262,22 @@
             color: #f0525f;
         }
 
-        .promo-card .card {
+        .promo-card{
+            display:flex;
+            flex-direction: column;
+            /* box-shadow: -2px 2px 29px -3px rgba(108,106,106,0.65);
+            -webkit-box-shadow: -2px 2px 29px -3px rgba(108,106,106,0.65);
+            -moz-box-shadow: -2px 2px 29px -3px rgba(108,106,106,0.65); */
+            /* justify-content: space-evenly; */
+        }
+
+        /* .promo-card .card {
             background-color: #E9E9E9;
             transition: background-color 0.3s ease;
         }
 
-        .promo-card .card_2 {
-            background-color: transparent;
+        .promo-card .card2 {
+            background-color: #E9E9E9;
             transition: background-color 0.3s ease;
         }
 
@@ -1276,7 +1285,7 @@
         .promo-card .card {
             border: none;
 
-        }
+        } */
 
         .card {
             padding-bottom: 3rem !important;
@@ -1553,10 +1562,10 @@
             background-color: #FFDD59;
             height: auto;
             width: auto;
-            position: absolute;
+            /* position: absolute; */
             border-width: 10px;
             padding: 2px 10px;
-            margin-top: 4vh;
+
 
 
         }
@@ -1568,7 +1577,7 @@
         }
 
         .two-months-free {
-            margin-top: 6vh;
+
         }
     </style>
 </head>
