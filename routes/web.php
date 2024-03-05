@@ -121,7 +121,7 @@ Route::post('/applynow', [ApplicationController::class, 'applynowPOST'])->name('
 //     return redirect('contactus')->with('status', 'Thanks for reaching out.');
 // })->name('sendemailinquire');
 
-Route::get('contactus/sendinquire', [AJCController::class, 'applynow'])->name('sendemailinquire');
+Route::post('contactus/sendinquire', [AJCController::class, 'applynow'])->name('sendemailinquire');
 
 
 
