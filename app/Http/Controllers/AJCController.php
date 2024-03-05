@@ -63,11 +63,7 @@ class AJCController extends Controller
         }
         return view('include.applynow');
     }
-    public function bill(){
-        // to avoid unauthorized access
-        if(Auth::user()->usertype!='user'){
-            return redirect(route('admindashboard'));
-        }
-        return view('bill');
-    }
+
+   
+   
 }
