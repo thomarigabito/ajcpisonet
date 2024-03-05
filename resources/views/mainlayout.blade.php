@@ -1402,24 +1402,22 @@
             color: black;
         }
 
-        @media screen and (max-width: 801px) {
+        /* @media screen and (max-width: 801px) {
             .button-apply-now {
                 position: sticky;
                 padding: 0 16px;
                 top: 0;
             }
-        }
+        } */
 
         @media screen and (max-width: 768px) {
             .button-apply-now {
                 position: sticky;
-                padding: 0 16px;
+                padding: 16px;
                 top: 0;
                 font-size: 14px;
                 margin-top: 16px;
                 left: auto;
-
-
             }
 
             #texts {
@@ -1456,6 +1454,8 @@
 
             .button-apply-now {
                 width: auto;
+                padding: 4px;
+                font-size: 12px;
             }
 
             .exclusive-deals {
