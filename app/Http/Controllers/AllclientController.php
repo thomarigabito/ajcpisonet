@@ -148,7 +148,55 @@ class AllclientController extends Controller
     //Bill page admin side
     public function bill(int $id){
         $billdata = Bill::findOrFail($id);
-        return view ('include.bill', compact('billdata'));
+
+                $accountnumber=$billdata->accountnumber;
+                $fullname=$billdata->fullname;
+                $contact=$billdata->contact;
+                $plan=$billdata->plan;
+                $client_id = $billdata->client_id;
+                $email=$billdata->email;
+                $january=$billdata->january;
+                $febuary=$billdata->febuary;
+                $march=$billdata->march;
+                $april=$billdata->aplril;
+                $may=$billdata->may;
+                $june=$billdata->june;
+                $july=$billdata->july;
+                $august=$billdata->august;
+                $september=$billdata->september;
+                $october=$billdata->october;
+                $november=$billdata->november;
+                $december=$billdata->december;
+                $total= $january+$febuary+$march+$april+$may+$june+$july+$august+$september+$october+$november+$december;
+
+
+
+
+
+
+        return view ('include.bill', [
+            'accountnumber' => $accountnumber,
+            'fullname' => $fullname,
+            'contact' => $contact,
+            'plan'=> $plan,
+            'client_id'=>$client_id,
+            'email'=> $email,
+            'january' => $january,
+            'febuary'=> $febuary,
+            'march'=> $march,
+            'april'=> $april,
+            'may'=> $may,
+            'june' => $june,
+            'july'=> $july,
+            'august' => $august,
+            'sepetember' => $september,
+            'october'=> $october,
+            'november'=> $november,
+            'december' => $december,
+            'total' => $total,
+
+
+        ]);
     }
     //Bill Edit
     public function billedit($client_id){

@@ -27,29 +27,32 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        .logo {
+            width: 120px;
+        }
 
-        .logo{
-                width: 120px;
-            }
-        td{
+        td {
             text-transform: capitalize;
         }
 
 
 
-         /* Query here */
-         @media screen and (max-width:700px){
-                .logo{
-                    width: 80px;
-                 }
-                 .table-responsive{
-                    font-size: 10px !important;
-                 }
-                 .edit, .delete{
-                    width: 8 !important;
-                    height: 8 !important;
-                 }
-                }
+        /* Query here */
+        @media screen and (max-width:700px) {
+            .logo {
+                width: 80px;
+            }
+
+            .table-responsive {
+                font-size: 10px !important;
+            }
+
+            .edit,
+            .delete {
+                width: 8 !important;
+                height: 8 !important;
+            }
+        }
 
         .main {
             width: 100%;
@@ -64,11 +67,12 @@
             padding: 10%;
         }
 
-        .texts{
+        .texts {
             font-size: 45px;
             font-weight: 600;
         }
-        .paragraph{
+
+        .paragraph {
             font-size: 19px;
             font-weight: 500;
             word-wrap: break-word;
@@ -82,14 +86,16 @@
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             height: 250px;
-            color:black;
+            color: black;
         }
+
         @media (max-width:768px) {
-            .main{
+            .main {
                 padding: 0 1%;
                 height: fit-content;
             }
         }
+
         /* Footer */
         footer {
             position: fixed;
@@ -250,6 +256,8 @@
             color: #3F71EA;
         }
 
+        
+
         @media (max-width: 880px) {
 
             .main-footer .footer-left,
@@ -283,6 +291,14 @@
             }
 
         }
+
+        @media print {
+
+
+            .soa tr {
+                background-color: red
+            }
+        }
     </style>
 </head>
 
@@ -307,30 +323,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-
     </script>
+    >
 
-        <script>
-        function totalBill(){
-            var jan = document.getElementById('january').value;
-            var feb = document.getElementById('february').value;
-            var mar = document.getElementById('march').value;
-            var april = document.getElementById('april').value;
-            var may = document.getElementById('may').value;
-            var june = document.getElementById('june').value;
-            var july = document.getElementById('july').value;
-            var august = document.getElementById('august').value;
-            var sept = document.getElementById('september').value;
-            var oct = document.getElementById('october').value;
-            var nov = document.getElementById('november').value;
-            var dec = document.getElementById('december').value;
-
-            var total = jan + feb + mar + april + may + june + july + august + sept + oct + nov + dec;
-
-            console.log(total);
-        }
-    </script>
-    
 
 
 </body>
