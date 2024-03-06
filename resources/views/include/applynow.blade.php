@@ -124,7 +124,7 @@
         <div class="col-12 col-md-12 col-lg-6 plan2 my-md-2">
             <div class="row my-lg-5">
                 <div class="col col-md-2"><span></span></div>
-                <div class="promo-card col-10 col-md-12 col-lg-4 text-center px-md-0 p-lg-2 m-1">
+                <div class="promo-card col-12 col-md-12 col-lg-4 text-center px-md-0 p-lg-2 m-1">
                     <div class="card card_2 h-100">
                         <div class="card-body text-black shadow rounded">
                         <a href="{{ route('20mbps') }}">
