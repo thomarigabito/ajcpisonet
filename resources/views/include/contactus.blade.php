@@ -74,9 +74,8 @@
         <div class="container-fluid px-5 py-5 min-h-100 bg-gray-100">
             <div class="row ">
                 <div class="col-12 col-md-6 w-full sm:max-w-md px-6 bg-white py-4 shadow-md overflow-hidden sm:rounded-lg">
-                    <form action="{{route('sendemailinquire')}}" method="post">
+                    <form action="{{route('sendemailinquire')}}" method="POST">
                         @csrf
-                        @method('PUT')
                         <div class="mb-3">
                             <div class="mb-3">
                                 <input type="text" class="form-control" name="inquire_client_name" id=""
