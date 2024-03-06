@@ -74,7 +74,7 @@
         <div class="container-fluid px-5 py-5 min-h-100 bg-gray-100">
             <div class="row ">
                 <div class="col-12 col-md-6 w-full sm:max-w-md px-6 bg-white py-4 shadow-md overflow-hidden sm:rounded-lg">
-                    <form action="{{route('sendemailinquire')}}" method="POST">
+                    <form action="{{route('sendemailinquire')}}">
                         @csrf
                         <div class="mb-3">
                             <div class="mb-3">
@@ -91,7 +91,7 @@
                             <textarea class="form-control" name="inquire_client_message" id="" rows="7" placeholder="Message"></textarea>
                         </div>
                         <div>
-                            <button class="btn btn-outline-dark " type="button" value="Send Message">Send message</button>
+                            <button class="btn btn-outline-dark " type="submit" value="Send Message">Send message</button>
                         </div>
                     </form>
                 </div>
