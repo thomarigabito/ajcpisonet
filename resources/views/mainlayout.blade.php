@@ -1557,17 +1557,14 @@
         }
 
         .sign-up-free {
-            font-size: 10px;
+            font-size: 14px;
             font-weight: bolder;
             background-color: #FFDD59;
             height: auto;
             width: auto;
             /* position: absolute; */
             border-width: 10px;
-            padding: 2px 10px;
-
-
-
+            padding: 5px 10px;
         }
 
 

@@ -47,8 +47,8 @@
 
         {{-- User account linked --}}
     @else
-        <div class="py-12">
-            <div class="max-w-9xl mx-auto sm:px-6 lg:px-8">
+        <div class="pt-12 ">
+            <div class="max-w-9xl mx-auto sm:px-6 lg:px-8 mb-3">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900 align-items-end">
                         <div class="container-fluid">
@@ -60,7 +60,8 @@
 
 
                                 </div>
-                                <div class="col-12 col-lg-4 col-md-6 bg-white overflow-hidden shadow-sm sm:rounded-lg " id="soa">
+                                <div class="col-12 col-lg-4 col-md-6 bg-white overflow-hidden shadow-sm sm:rounded-lg ">
+                                    <div id="soa">
                                     <div class="logobill">
                                         <img src="/assets/agclogo.png" alt="BillLogo" width="80px" height="40px">
                                     </div>
@@ -215,6 +216,7 @@
 
                                         </table>
                                     </div>
+                                </div>
                                     <div class="mx-2 py-2 flex">
                                         <svg onclick="printTable('soa')" class="cursor-pointer" width="16"
                                             height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
@@ -241,10 +243,9 @@
             var printcontent = document.getElementById(el).innerHTML;
             document.body.innerHTML = printcontent;
             window.print();
-            document.body.innerHTML = restorpage;
-            
+            // document.body.innerHTML = restorpage;
+            window.location.reload();
         }
     </script>
-
     @include('footer')
 </x-app-layout>

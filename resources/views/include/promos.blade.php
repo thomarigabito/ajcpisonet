@@ -27,6 +27,7 @@
             <div class="row gx-3 justify-content-between">
 
                 <div class="promo-card col-md-5 col-lg-6 col-xl-3  py-sm-2 rounded">
+                    <div class="p-2 rounded-lg shadow-lg m-1">
                     <div>
                         <h4 class="mb-0" style="font-size:24px;">20Mbps</h4>
                         <h4 class="mb-0" style="font-size: 24px;">
@@ -38,17 +39,19 @@
                         <p class="fw-light opo">•<small> Dive into all your online passions effortlessly.</small>
                         </p>
                         <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to
-                                Facebook, YouTube, Instagram, and Netflix.</small></p>
-                        <div class="sign-up-free text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
+                                Facebook, YouTube, Instagram.</small></p>
+                        <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
                             FREE</div>
                         <div class="two-months-free fs-4 fw-bold">
                             Two Months Free
                         </div>
                         <hr>
                     </div>
+                    </div>
                 </div>
 
                 <div class="promo-card col-md-5 col-lg-6 col-xl-3 py-sm-2 rounded">
+                    <div class="p-2 rounded-lg shadow-lg m-1">
                     <div>
                         <h4 class="mb-0" style="font-size:24px;">30Mbps</h4>
                         <h4 class="mb-0" style="font-size: 24px;">
@@ -61,16 +64,18 @@
                         </p>
                         <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady
                                 access to various online activities. </small></p>
-                        <div class="sign-up-free text-center border rounded-pill w-auto text-dark">SIGN UP TO GET
+                        <div class="sign-up-free my-3 text-center border rounded-pill w-auto text-dark">SIGN UP TO GET
                             FREE</div>
                         <div class="two-months-free fs-4 fw-bold">
                             Two Months Free
                         </div>
                         <hr>
                     </div>
+                    </div>
                 </div>
 
                 <div class="promo-card col-md-5 col-lg-6 col-xl-3 py-sm-2 rounded">
+                    <div class="p-2 rounded-lg shadow-lg m-1">
                     <div>
                         <h4 class="mb-0" style="font-size:24px;">50Mbps</h4>
                             <h4 class="mb-0" style="font-size: 24px;">
@@ -82,16 +87,18 @@
                                 <p class="fw-light opo">•<small> Engage in all your online passions effortlessly.</small>
                                 </p>
                                 <p class="fw-light opo">•<small> Tailored for small households,</small></p>
-                                <div class="sign-up-free text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
+                                <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
                                     FREE</div>
                                 <div class="two-months-free fs-4 fw-bold" >
                                     Two Months Free
                                 </div>
                                 <hr>
                     </div>
+                    </div>
                 </div>
 
                 <div class="promo-card col-md-5 col-lg-6 col-xl-3 py-sm-2 rounded">
+                    <div class="p-2 rounded-lg shadow-lg m-1">
                     <div>
                         <h4 class="mb-0" style="font-size:24px;">100Mbps</h4>
                             <h4 class="mb-0" style="font-size: 24px;">
@@ -103,12 +110,13 @@
                                 <p class="fw-light opo">•<small> Dive into your online world effortlessly with
                                         lightning-fast speeds.</small></p>
                                 <p class="fw-light opo">•<small> Designed for households craving</small></p>
-                                <div class="sign-up-free text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
+                                <div class="sign-up-free my-3 text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
                                     FREE</div>
                                 <div class="two-months-free fs-4 fw-bold">
                                     Two Months Free
                                 </div>
                                 <hr>
+                    </div>
                     </div>
                 </div>
 

@@ -3,16 +3,17 @@
 @section('content')
     <div class="head container-fluid px-5">
         <div class="container">
-        <h3 style="width: 55%;" id="texts" class="pt-5 fs-1">A Greater Life Together, at Home</h3>
-        <p id="paragraph">A Greater Life Together, at Home
-            Get the whole family connected with the greatest deal.</p>
-        <button type="button" class="btn
-         text-nowrap w-fit"><a href='{{ route('applynow') }}'>Apply Now</a></button>
+            <h3 style="width: 55%;" id="texts" class="pt-5 fs-1">A Greater Life Together, at Home</h3>
+            <p id="paragraph">A Greater Life Together, at Home
+                Get the whole family connected with the greatest deal.</p>
+            <button type="button" class="btn
+         text-nowrap w-fit" style="background-color: rgb(229, 74, 74)"><a
+                    href='{{ route('applynow') }}' class="text-light">Apply Now</a></button>
         </div>
     </div>
 
 
-    <div class="container-fluid Fiber_Experience px-5 h-60 ">
+    <div class="container-fluid Fiber_Experience px-5 h-70 ">
         <h1 class="" style="font-size:35px;">Elevate Your Fiber Experience at AJC Internet</h1>
         <div class="row">
             <div class="col-12 col-md-12 col-lg-4 py-5 d-flex">
@@ -54,8 +55,8 @@
             <div class="row">
                 <div class="col col-md-2"><span></span></div>
                 <div class="col-12 col-md-4 px-2 py-5 text-center border-e-2 border-2 m-1 rounded-4 ">
-                    <a href="{{ route('20mbps') }}">
-                        <h3 class="mbps">20 Mbps</h3>
+                    <a href="{{ route('20mbps') }}" class="hover\:text-gray-900">
+                        <h3 class="mbps hover\:text-gray-900">20 Mbps</h3>
                         <p class="p_mbps">Fiber Unli Plan 899</p>
                     </a>
                 </div>
