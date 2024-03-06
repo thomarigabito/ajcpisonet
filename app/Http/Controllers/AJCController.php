@@ -64,19 +64,19 @@ class AJCController extends Controller
         return view('include.applynow');
     }
 
-    public function sendemailinquire () 
+    public function sendemailinquire (Request $request) 
     {
-        // $request->validate([
-        //     'inquire_client_name' => 'required',
-        //     'inquire_client_email' => 'required',
-        //     'inquire_client_message' => 'required'
-        // ]);
+        $request->validate([
+            'inquire_client_name' => 'required',
+            'inquire_client_email' => 'required',
+            'inquire_client_message' => 'required'
+        ]);
         // $inquire_client_name = $request->inquire_client_name;
         // $inquire_client_email = $request->inquire_client_email;
         // $inquire_client_message = $request->inquire_client_message;
         // Mail::to('ajcpisonet@gmail.com')->send (new InquireMail($inquire_client_name, $inquire_client_email, $inquire_client_message));
         // return redirect()->back()->with('status', 'Thanks for reaching out.');
-        echo "hello";
+        echo $request->inquire_client_name;
     }
 
    
