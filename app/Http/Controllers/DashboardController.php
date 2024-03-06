@@ -54,33 +54,29 @@ class DashboardController extends Controller
 
             }
         }
-
-
-
         // passing data to dashboard view
-        return view('dashboard');
-        // , [
-        //     'accountnumber' => $accountnumber,
-        //     'fullname' => $fullname,
-        //     'contact' => $contact,
-        //     'plan'=> $plan,
-        //     'email'=> $email,
-        //     'january' => $january,
-        //     'febuary'=> $febuary,
-        //     'march'=> $march,
-        //     'april'=> $april,
-        //     'may'=> $may,
-        //     'june' => $june,
-        //     'july'=> $july,
-        //     'august' => $august,
-        //     'sepetember' => $september,
-        //     'october'=> $october,
-        //     'november'=> $november,
-        //     'december' => $december,
-        //     'total' => $total,
+        return view('dashboard' , [
+            'accountnumber' => $accountnumber,
+            'fullname' => $fullname,
+            'contact' => $contact,
+            'plan'=> $plan,
+            'email'=> $email,
+            'january' => $january,
+            'febuary'=> $febuary,
+            'march'=> $march,
+            'april'=> $april,
+            'may'=> $may,
+            'june' => $june,
+            'july'=> $july,
+            'august' => $august,
+            'sepetember' => $september,
+            'october'=> $october,
+            'november'=> $november,
+            'december' => $december,
+            'total' => $total,
 
 
-        // ]
+        ]);
 
 
     }
