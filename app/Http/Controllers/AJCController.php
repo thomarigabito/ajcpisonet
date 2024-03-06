@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class AJCController extends Controller
 {
@@ -76,7 +77,6 @@ class AJCController extends Controller
         $inquire_client_message = $request->inquire_client_message;
         Mail::to('ajcpisonet@gmail.com')->send (new InquireMail($inquire_client_name, $inquire_client_email, $inquire_client_message));
         return redirect()->back()->with('status', 'Thanks for reaching out.');
-
     }
 
    
