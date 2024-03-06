@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Allclient;
-use App\Models\User;
-use App\Models\Application;
+// use App\Models\User;
+// use App\Models\Application;
 use App\Models\Bill;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -20,15 +20,22 @@ class DashboardController extends Controller
         }
 
         // Getting data current user client
-        $currentAccountNumber = Auth::user()->accountnumber;
-        //Getting all data from bill table
-        $searchBillAccountNumber = Bill::get();
 
-        $accountnumber;
-        $fullname;
-        $january;
-        $febuary;
-        $march;
+
+
+
+        if(Auth::user()->accountnumber == null){
+            return view('dashboard');
+        }else{
+            $currentAccountNumber = Auth::user()->accountnumber;
+             //Getting all data from bill table
+            $searchBillAccountNumber = Bill::get();
+
+        // $accountnumber;
+        // $fullname;
+        // $january;
+        // $febuary;
+        // $march;
 
         foreach ($searchBillAccountNumber as $searchBillAccountNumber) {
             if($currentAccountNumber == $searchBillAccountNumber->accountnumber){
@@ -54,33 +61,31 @@ class DashboardController extends Controller
 
             }
         }
-
-
-
         // passing data to dashboard view
-        return view('dashboard');
-        // , [
-        //     'accountnumber' => $accountnumber,
-        //     'fullname' => $fullname,
-        //     'contact' => $contact,
-        //     'plan'=> $plan,
-        //     'email'=> $email,
-        //     'january' => $january,
-        //     'febuary'=> $febuary,
-        //     'march'=> $march,
-        //     'april'=> $april,
-        //     'may'=> $may,
-        //     'june' => $june,
-        //     'july'=> $july,
-        //     'august' => $august,
-        //     'sepetember' => $september,
-        //     'october'=> $october,
-        //     'november'=> $november,
-        //     'december' => $december,
-        //     'total' => $total,
+        return view('dashboard' , [
+            'accountnumber' => $accountnumber,
+            'fullname' => $fullname,
+            'contact' => $contact,
+            'plan'=> $plan,
+            'email'=> $email,
+            'january' => $january,
+            'febuary'=> $febuary,
+            'march'=> $march,
+            'april'=> $april,
+            'may'=> $may,
+            'june' => $june,
+            'july'=> $july,
+            'august' => $august,
+            'sepetember' => $september,
+            'october'=> $october,
+            'november'=> $november,
+            'december' => $december,
+            'total' => $total,
 
 
-        // ]
+        ]);
+        }
+
 
 
     }

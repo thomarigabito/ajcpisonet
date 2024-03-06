@@ -26,114 +26,101 @@
         <div class="container pt-5">
             <div class="row gx-3 justify-content-between">
 
-                <div class="promo-card col-md-5 col-lg-6 col-xl-3  py-sm-2 rounded">
+                <div class="promo-card col-md-6 col-lg-6 col-xl-3  py-sm-2 rounded">
                     <div class="p-2 rounded-lg shadow-lg m-1">
-                    <div>
-                        <h4 class="mb-0" style="font-size:24px;">20Mbps</h4>
-                        <h4 class="mb-0" style="font-size: 24px;">
-                            <span class="text-pink-500">PHP899</span>/month
-                        </h4>
-                    </div>
-                    <div class="mb-10 pt-3">
-                        <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
-                        <p class="fw-light opo">•<small> Dive into all your online passions effortlessly.</small>
-                        </p>
-                        <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to
-                                Facebook, YouTube, Instagram.</small></p>
-                        <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
-                            FREE</div>
-                        <div class="two-months-free fs-4 fw-bold">
-                            Two Months Free
+                        <div>
+                            <h4 class="mb-0" style="font-size:24px;">20Mbps</h4>
+                            <h4 class="mb-0" style="font-size: 24px;">
+                                <span class="text-pink-500">PHP899</span>/month
+                            </h4>
                         </div>
-                        <hr>
-                    </div>
+                        <div class="mb-10 pt-3">
+                            <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
+                            <p class="fw-light opo">•<small> Dive into all your online passions effortlessly.</small>
+                            </p>
+                            <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to
+                                    Facebook, YouTube, Instagram.</small></p>
+                            <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
+                                FREE</div>
+                            <div class="two-months-free fs-4 fw-bold">
+                                Two Months Free
+                            </div>
+                            <hr>
+                        </div>
                     </div>
                 </div>
 
-                <div class="promo-card col-md-5 col-lg-6 col-xl-3 py-sm-2 rounded">
+                <div class="promo-card col-md-6 col-lg-6 col-xl-3 py-sm-2 rounded">
                     <div class="p-2 rounded-lg shadow-lg m-1">
-                    <div>
-                        <h4 class="mb-0" style="font-size:24px;">30Mbps</h4>
-                        <h4 class="mb-0" style="font-size: 24px;">
-                            <span class="text-pink-500">PHP1000</span>/month
-                        </h4>
-                    </div>
-                    <div class="mb-10 pt-3">
-                        <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
-                        <p class="fw-light opo">•<small> Seamlessly indulge in all your online activities</small>
-                        </p>
-                        <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady
-                                access to various online activities. </small></p>
-                        <div class="sign-up-free my-3 text-center border rounded-pill w-auto text-dark">SIGN UP TO GET
-                            FREE</div>
-                        <div class="two-months-free fs-4 fw-bold">
-                            Two Months Free
+                        <div>
+                            <h4 class="mb-0" style="font-size:24px;">30Mbps</h4>
+                            <h4 class="mb-0" style="font-size: 24px;">
+                                <span class="text-pink-500">PHP1000</span>/month
+                            </h4>
                         </div>
-                        <hr>
-                    </div>
+                        <div class="mb-10 pt-3">
+                            <small class="fw-bold">Effortless Internet Access for Your Daily Needs</small>
+                            <p class="fw-light opo">•<small> Seamlessly indulge in all your online activities</small>
+                            </p>
+                            <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady
+                                    access to various online activities. </small></p>
+                            <div class="sign-up-free my-3 text-center border rounded-pill w-auto text-dark">SIGN UP TO GET
+                                FREE</div>
+                            <div class="two-months-free fs-4 fw-bold">
+                                Two Months Free
+                            </div>
+                            <hr>
+                        </div>
                     </div>
                 </div>
 
-                <div class="promo-card col-md-5 col-lg-6 col-xl-3 py-sm-2 rounded">
+                <div class="promo-card col-md-6 col-lg-6 col-xl-3 py-sm-2 rounded">
                     <div class="p-2 rounded-lg shadow-lg m-1">
-                    <div>
-                        <h4 class="mb-0" style="font-size:24px;">50Mbps</h4>
+                        <div>
+                            <h4 class="mb-0" style="font-size:24px;">50Mbps</h4>
                             <h4 class="mb-0" style="font-size: 24px;">
                                 <span class="text-pink-500">PHP1300</span>/month
                             </h4>
-                    </div>
-                    <div class="mb-10 pt-3">
-                        <small class="fw-bold">Premium Internet Experience for Enhanced Connectivity</small>
-                                <p class="fw-light opo">•<small> Engage in all your online passions effortlessly.</small>
-                                </p>
-                                <p class="fw-light opo">•<small> Tailored for small households,</small></p>
-                                <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
-                                    FREE</div>
-                                <div class="two-months-free fs-4 fw-bold" >
-                                    Two Months Free
-                                </div>
-                                <hr>
-                    </div>
+                        </div>
+                        <div class="mb-10 pt-3">
+                            <small class="fw-bold">Premium Internet Experience for Enhanced Connectivity</small>
+                            <p class="fw-light opo">•<small> Engage in all your online passions effortlessly.</small>
+                            </p>
+                            <p class="fw-light opo">•<small> Tailored for small households,</small></p>
+                            <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
+                                FREE</div>
+                            <div class="two-months-free fs-4 fw-bold">
+                                Two Months Free
+                            </div>
+                            <hr>
+                        </div>
                     </div>
                 </div>
 
-                <div class="promo-card col-md-5 col-lg-6 col-xl-3 py-sm-2 rounded">
+                <div class="promo-card col-md-6 col-lg-6 col-xl-3 py-sm-2 rounded">
                     <div class="p-2 rounded-lg shadow-lg m-1">
-                    <div>
-                        <h4 class="mb-0" style="font-size:24px;">100Mbps</h4>
+                        <div>
+                            <h4 class="mb-0" style="font-size:24px;">100Mbps</h4>
                             <h4 class="mb-0" style="font-size: 24px;">
                                 <span class="text-pink-500">PHP1500</span>/month
                             </h4>
-                    </div>
-                    <div class="mb-10 pt-3">
-                        <small class="fw-bold">High-Performance Streaming and Gaming</small>
-                                <p class="fw-light opo">•<small> Dive into your online world effortlessly with
-                                        lightning-fast speeds.</small></p>
-                                <p class="fw-light opo">•<small> Designed for households craving</small></p>
-                                <div class="sign-up-free my-3 text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
-                                    FREE</div>
-                                <div class="two-months-free fs-4 fw-bold">
-                                    Two Months Free
-                                </div>
-                                <hr>
-                    </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            {{-- <div class="promo-card col-sm-6 col-lg-3 py-sm-2">
-                    <div class="card h-100">
-                        <div class=" bg-none border-0 rounded-0 mt-5 mx-4">
-
-                            <div class="mb-10 pt-5">
-
+                        </div>
+                        <div class="mb-10 pt-3">
+                            <small class="fw-bold">High-Performance Streaming and Gaming</small>
+                            <p class="fw-light opo">•<small> Dive into your online world effortlessly with
+                                    lightning-fast speeds.</small></p>
+                            <p class="fw-light opo">•<small> Designed for households craving</small></p>
+                            <div class="sign-up-free my-3 text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO
+                                GET
+                                FREE</div>
+                            <div class="two-months-free fs-4 fw-bold">
+                                Two Months Free
                             </div>
+                            <hr>
                         </div>
                     </div>
-                </div> --}}
+                </div>
+            </div>
         </div>
     </section>
 

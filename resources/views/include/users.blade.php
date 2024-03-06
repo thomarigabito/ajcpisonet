@@ -34,7 +34,7 @@
                                             <tr class="text-nowrap">
                                                 <td>{{ $users->id }}</td>
                                                 <td>{{ $users->name }}</td>
-                                                <td class="lowercase">{{ $users->email }}</td>
+                                                <td style="text-transform: lowercase">{{ $users->email }}</td>
                                                 <td>{{ $users->usertype }}</td>
                                                 <td>{{ $users->created_at }}</td>
                                                 <td class="px-auto">
