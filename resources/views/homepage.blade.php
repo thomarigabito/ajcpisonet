@@ -45,8 +45,8 @@
                     class="btn btn-light rounded-5 text-uppercase plan_btn">View Plans</a></div>
             <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{ route('applynow') }}'
                     class="btn btn-light rounded-5 text-uppercase plan_btn">Apply Plan</a></div>
-            <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{ route('login') }}'
-                    class="btn btn-light rounded-5 text-uppercase plan_btn">Upgrade Plan</a></div>
+            {{-- <div class="col-12 col-md-4 p-sm-2 p-1 text-center"><a href='{{ route('login') }}'
+                    class="btn btn-light rounded-5 text-uppercase plan_btn">Upgrade Plan</a></div> --}}
         </div>
     </div>
 
