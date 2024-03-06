@@ -37,9 +37,7 @@ class InquireMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: '
-                Good day, My name is  $this->inquire_client_name      
-            ',
+            view: 'Good day, My name is'. $this->inquire_client_name,
             with: ['inquire_client_name' => $this->inquire_client_name, 'inquire_client_email' => $this->inquire_client_email, 'inquire_client_message' => $this->inquire_client_message ]
         );
     }
