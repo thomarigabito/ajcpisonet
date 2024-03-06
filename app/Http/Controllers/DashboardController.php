@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Allclient;
-use App\Models\User;
-use App\Models\Application;
+// use App\Models\User;
+// use App\Models\Application;
 use App\Models\Bill;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -22,7 +22,7 @@ class DashboardController extends Controller
         // Getting data current user client
 
 
-        
+
 
         if(Auth::user()->accountnumber == null){
             return view('dashboard');
@@ -85,7 +85,7 @@ class DashboardController extends Controller
 
         ]);
         }
-       
+
 
 
     }
