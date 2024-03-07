@@ -156,7 +156,7 @@
                             <div class="col col-md-2"><span></span></div>
                             <div class=" col-12 col-md-12 col-lg-4 text-center px-md-0 p-lg-2 m-1">
                                 <div class=" h-100 p-3 shadow rounded">
-                                    <div class="card-body text-black ">
+                                    <div class="card-body text-black py-3">
                                         <a href="{{ route('20mbps') }}">
                                             <h5 class="card-title fw-bold">Exclusive Offer!</h5>
                                             <h3 class="card-text fs-1 fw-bolder">20 Mbps</h3>
@@ -168,7 +168,7 @@
 
                             <div class=" col-12 col-md-12 col-lg-4 text-center p-lg-2 px-md-0 m-1">
                                 <div class=" h-100 p-3 shadow rounded">
-                                    <div class="card-body text-black ">
+                                    <div class="card-body text-black py-3">
                                         <a href="{{ route('30mbps') }}">
                                             <h5 class="card-title fw-bold">Exclusive Offer!</h5>
                                             <h3 class="card-text fs-1 fw-bolder">30Mbps</h3>
@@ -184,7 +184,7 @@
                             <div class="col col-md-2"><span></span></div>
                             <div class=" col-12 col-md-12 col-lg-4 text-center p-lg-2 px-md-0 m-1">
                                 <div class=" h-100 p-3 shadow rounded">
-                                    <div class=" text-black rounded py-3">
+                                    <div class="card-body text-black rounded py-3">
                                         <a href="{{ route('50mbps') }}">
                                             <h5 class="card-title fw-bold">Exclusive Offer!</h5>
                                             <h3 class="card-text fs-1 fw-bolder">50Mbps</h3>
@@ -195,7 +195,7 @@
                             </div>
                             <div class=" col-12 col-md-12 col-lg-4 text-center p-lg-2 px-md-0 m-1">
                                 <div class=" h-100 p-3 shadow rounded ">
-                                    <div class=" text-black  rounded py-3">
+                                    <div class="card-body text-black  rounded py-3">
                                         <a href="{{ route('100mbps') }}">
                                             <h5 class="card-title fw-bold">Exclusive Offer!</h5>
                                             <h3 class="card-text fs-1 fw-bolder">100Mbps</h3>
