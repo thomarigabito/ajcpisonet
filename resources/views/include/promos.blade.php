@@ -9,7 +9,7 @@
             </h1>
             <h1 class="mt-2" id="paragraph">Elevate your home experience with fast, reliable plans.</h1>
         </div>
-        <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
+        <!-- <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button> -->
     </div>
 
     <section class="support-section pt-5 pb-5">
