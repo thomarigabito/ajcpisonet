@@ -1179,6 +1179,7 @@
             color: #594A4E;
             vertical-align: middle;
             margin: 0;
+
         }
 
         .main-footer .footer-center p span {
@@ -1255,7 +1256,15 @@
 
             .main-footer .footer-center i {
                 margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: relative;
+                left: 90px;
+
             }
+
+
         }
 
         h2 {
@@ -1455,9 +1464,9 @@
         @media screen and (max-width: 320px) {
             .agc-logo {
                 position: relative;
-                left: 9vh;
+                left: 5vh;
                 margin: 0;
-                height: 50%;
+
 
             }
 
@@ -1488,10 +1497,8 @@
         @media screen and (max-width: 425px) {
             .agc-logo {
                 position: relative;
-                left: 14vh;
+                left: 10vh;
                 margin: 0;
-                height: 50%;
-
             }
 
             .button-apply-now {

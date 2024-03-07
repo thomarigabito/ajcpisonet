@@ -31,8 +31,8 @@
             </p>
             <div class="footer-icons">
                 <a href="https://www.facebook.com/profile.php?id=100093338891270"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.linkedin.com/login"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="bi bi-twitter"></i></a>
             </div>
         </div>
     </footer>
