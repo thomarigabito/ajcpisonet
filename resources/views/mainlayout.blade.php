@@ -1265,10 +1265,10 @@
         .promo-card{
             display:flex;
             flex-direction: column;
-            /* box-shadow: -2px 2px 29px -3px rgba(108,106,106,0.65);
+            box-shadow: -2px 2px 29px -3px rgba(108,106,106,0.65);
             -webkit-box-shadow: -2px 2px 29px -3px rgba(108,106,106,0.65);
             -moz-box-shadow: -2px 2px 29px -3px rgba(108,106,106,0.65); */
-            /* justify-content: space-evenly; */
+            /* justify-content: space-evenly;
         }
 
         /* .promo-card .card {
