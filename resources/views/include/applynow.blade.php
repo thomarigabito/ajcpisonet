@@ -176,7 +176,7 @@
                         <div class="col col-md-2"><span></span></div>
                     </div>
 
-                    <div class="row my-lg-5">
+                    {{-- <div class="row my-lg-5">
                         <div class="col col-md-2"><span></span></div>
                         <div class=" col-12 col-md-12 col-lg-4 text-center p-lg-2 px-md-0 m-1">
                             <div class=" h-100 p-3 shadow rounded">
@@ -202,7 +202,7 @@
                         </div>
                         <div class="col col-md-2"><span></span></div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
         </div>
