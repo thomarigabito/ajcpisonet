@@ -88,7 +88,6 @@ class ApplicationController extends Controller
             'plan' => $plan,
             'accountNumber' => NULL,
             'email' => $email,
-            'contact' => $contact
         ]);
         $newapplicant = Application::findOrFail($id);
         $newapplicant->delete();
