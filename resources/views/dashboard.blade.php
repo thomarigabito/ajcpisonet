@@ -47,13 +47,8 @@
 
         {{-- User account linked --}}
     @else
-<<<<<<< HEAD
-        <div class="pt-12 ">
-            <div class="max-w-9xl mx-auto sm:px-6 lg:px-8">
-=======
         <div class="pt-12 mt-2">
             <div class="max-w-9xl mx-auto sm:px-6 lg:px-8 mb-3">
->>>>>>> c1dc8a4a810db29688d582e950e49bca6f6bd277
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900 align-items-end">
                         <div class="container-fluid">
