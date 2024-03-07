@@ -41,10 +41,9 @@
                             </p>
                             <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to
                                     Facebook, YouTube, Instagram.</small></p>
-                            <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
-                                FREE</div>
+                                    <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 
-                            <hr>
+
                         </div>
                     </div>
                 </div>
@@ -63,10 +62,9 @@
                             </p>
                             <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady
                                     access to various online activities. </small></p>
-                            <div class="sign-up-free my-3 text-center border rounded-pill w-auto text-dark">SIGN UP TO GET
-                                FREE</div>
+                                    <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 
-                            <hr>
+
                         </div>
                     </div>
                 </div>
@@ -84,10 +82,9 @@
                             <p class="fw-light opo">•<small> Engage in all your online passions effortlessly.</small>
                             </p>
                             <p class="fw-light opo">•<small> Tailored for small households,</small></p>
-                            <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
-                                FREE</div>
+                            <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 
-                            <hr>
+
                         </div>
                     </div>
                 </div>
@@ -105,11 +102,9 @@
                             <p class="fw-light opo">•<small> Dive into your online world effortlessly with
                                     lightning-fast speeds.</small></p>
                             <p class="fw-light opo">•<small> Designed for households craving</small></p>
-                            <div class="sign-up-free my-3 text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO
-                                GET
-                                FREE</div>
+                            <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 
-                            <hr>
+
                         </div>
                     </div>
                 </div>
