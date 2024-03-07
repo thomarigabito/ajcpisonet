@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <label class="text-body-secondary">Installation address:</label>
+                                <label class="text-body-secondary">Installation Address:</label>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 mt-md-1 p-1">
