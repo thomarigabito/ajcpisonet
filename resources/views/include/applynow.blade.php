@@ -145,20 +145,6 @@
                         </div>
                     </form>
 
-          </div>
-                <div class="row mt-3">
-                    <div class="col-lg-6 col-md-12 mt-md-1 p-1">
-                        <a href="/" type="button" class="form-control btn btn-danger text-danger">Cancel</a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mt-md-1 p-1">
-                        <button type="submit" class="form-control btn btn-primary text-dark">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-        </div>
-
-
 
         <div class="col-12 col-md-12 col-lg-6 plan2 my-md-2">
             <div class="row my-lg-5">
