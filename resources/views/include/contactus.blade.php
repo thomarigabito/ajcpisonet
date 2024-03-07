@@ -101,9 +101,9 @@
                         top-notch. Don't hesitate to drop us a message—we're here for you!</p>
                         <div class="row">
                             <div class="col">
-                            <a href="/"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="/"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                      </div>
 
