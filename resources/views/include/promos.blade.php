@@ -2,13 +2,14 @@
 @section('title', 'AJC-Promos')
 @section('content')
 
+
     <div class="hero-section2">
         <div class="container">
             <h1 class="text-white" id="texts">Get your free install today and enjoy 2 months of internet on the house!
             </h1>
             <h1 class="mt-2" id="paragraph">Elevate your home experience with fast, reliable plans.</h1>
         </div>
-        <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
+        <!-- <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button> -->
     </div>
 
     <section class="support-section pt-5 pb-5">
@@ -40,10 +41,9 @@
                             </p>
                             <p class="fw-light opo">•<small> Designed for small households to enjoy seamless access to
                                     Facebook, YouTube, Instagram.</small></p>
-                            <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
-                                FREE</div>
+                                    <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 
-                            <hr>
+
                         </div>
                     </div>
                 </div>
@@ -62,10 +62,9 @@
                             </p>
                             <p class="fw-light opo">•<small> Specially designed for small households, ensuring steady
                                     access to various online activities. </small></p>
-                            <div class="sign-up-free my-3 text-center border rounded-pill w-auto text-dark">SIGN UP TO GET
-                                FREE</div>
+                                    <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 
-                            <hr>
+
                         </div>
                     </div>
                 </div>
@@ -83,10 +82,9 @@
                             <p class="fw-light opo">•<small> Engage in all your online passions effortlessly.</small>
                             </p>
                             <p class="fw-light opo">•<small> Tailored for small households,</small></p>
-                            <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
-                                FREE</div>
+                            <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 
-                            <hr>
+
                         </div>
                     </div>
                 </div>
@@ -104,11 +102,9 @@
                             <p class="fw-light opo">•<small> Dive into your online world effortlessly with
                                     lightning-fast speeds.</small></p>
                             <p class="fw-light opo">•<small> Designed for households craving</small></p>
-                            <div class="sign-up-free my-3 text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO
-                                GET
-                                FREE</div>
+                            <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
 
-                            <hr>
+
                         </div>
                     </div>
                 </div>
@@ -117,13 +113,13 @@
     </section>
 
     <!-- Hero Section 3 -->
-    <div class="hero-section3">
+    <!--<div class="hero-section3">
         <div class="container">
             <div class="row col-sm-5">
                 <img src="./assets/ads2.png" alt="ads2" class="w-100">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Container Fluid -->
     <div class="container-fluid">
@@ -146,12 +142,16 @@
     </div>
 
     <!-- Accordion Section -->
+
     <!--<div class="accordion">
 
     {{-- <!-- Accordion Section -->
     <div class="accordion">
 
-        781a2c2b9bf8f96c7afb34db2e3f6d6dfec8898d
+
+
+    {{-- <div class="accordion">
+
         <h1>Frequently Asked Questions</h1>
         <div class="accordion-item">
             <input type="checkbox" id="accordion1">
@@ -195,7 +195,7 @@
                 connections and gaming-friendly services. Many gamers prefer AJC PISONET for their gaming sessions due to
                 its reliable connectivity and affordable rates.</div>
         </div>
-    </div> -->
+    </div>
     <!-- More Accordion Items -->
     <div class="upcontainer">
         <h5 class="snippetTitle">Not what you're looking for?</h5>
