@@ -1063,14 +1063,12 @@
         }
 
         #texts {
-            width: 55%;
             color: #f5f5f5;
             font-size: 40px;
 
         }
 
         #paragraph {
-            width: 55%;
             color: #f5f5f5;
             font-size: 20px;
         }
@@ -1318,7 +1316,7 @@
                 flex-direction: column;
                 justify-content: space-around;
                 position: relative;
-                left: 140px;
+                left: 145px;
 
             }
 
@@ -1454,6 +1452,7 @@
             border-top: 1px dashed #ddd;
             padding: 10px 20px 20px;
             box-sizing: border-box;
+
         }
 
         .accordion-item input[type="checkbox"] {
@@ -1504,7 +1503,7 @@
             background-color: red;
             box-shadow: none;
             transition: all .2s ease-in-out;
-            left: 6%;
+            left: 10vh;
             top: 30px;
 
         }
@@ -1514,13 +1513,13 @@
             color: black;
         }
 
-        /* @media screen and (max-width: 801px) {
+         @media screen and (max-width: 801px) {
             .button-apply-now {
                 position: sticky;
                 padding: 0 16px;
                 top: 0;
             }
-        } */
+        }
 
         @media screen and (max-width: 768px) {
             .button-apply-now {
@@ -1672,12 +1671,14 @@
 
         .text-pink-500 {
             color: #EC4899;
-        }
+       }
+    }
 
-        .two-months-free {
 
-        }
-    </style>
+
+
+
+   </style>
 </head>
 
 <body class="antialiased">

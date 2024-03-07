@@ -8,7 +8,7 @@
             </h1>
             <h1 class="mt-2" id="paragraph">Elevate your home experience with fast, reliable plans.</h1>
         </div>
-        <button type="button" class="btn button-apply-now"><a href='{{ route('applynow') }}'>Apply Now</a></button>
+        <button type="button" class="btn button-apply-now bg-danger text-white mx-10 mt-7 position-relative left-12"><a href='{{ route('applynow') }}'>Apply Now</a></button>
     </div>
 
     <section class="support-section pt-5 pb-5">
@@ -42,9 +42,7 @@
                                     Facebook, YouTube, Instagram.</small></p>
                             <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
                                 FREE</div>
-                            <div class="two-months-free fs-4 fw-bold">
-                                Two Months Free
-                            </div>
+
                             <hr>
                         </div>
                     </div>
@@ -66,9 +64,7 @@
                                     access to various online activities. </small></p>
                             <div class="sign-up-free my-3 text-center border rounded-pill w-auto text-dark">SIGN UP TO GET
                                 FREE</div>
-                            <div class="two-months-free fs-4 fw-bold">
-                                Two Months Free
-                            </div>
+
                             <hr>
                         </div>
                     </div>
@@ -89,9 +85,7 @@
                             <p class="fw-light opo">•<small> Tailored for small households,</small></p>
                             <div class="sign-up-free my-3 text-center border-0 rounded-pill w-auto text-dark">SIGN UP TO GET
                                 FREE</div>
-                            <div class="two-months-free fs-4 fw-bold">
-                                Two Months Free
-                            </div>
+
                             <hr>
                         </div>
                     </div>
@@ -113,9 +107,7 @@
                             <div class="sign-up-free my-3 text-center  border-0 rounded-pill w-auto text-dark">SIGN UP TO
                                 GET
                                 FREE</div>
-                            <div class="two-months-free fs-4 fw-bold">
-                                Two Months Free
-                            </div>
+
                             <hr>
                         </div>
                     </div>
@@ -152,10 +144,9 @@
             </div>
         </div>
     </div>
-    </div>
 
     <!-- Accordion Section -->
-    <div class="accordion">
+    <!--<div class="accordion">
         <h1>Frequently Asked Questions</h1>
         <div class="accordion-item">
             <input type="checkbox" id="accordion1">
@@ -199,7 +190,7 @@
                 connections and gaming-friendly services. Many gamers prefer AJC PISONET for their gaming sessions due to
                 its reliable connectivity and affordable rates.</div>
         </div>
-    </div>
+    </div> -->
     <!-- More Accordion Items -->
     <div class="upcontainer">
         <h5 class="snippetTitle">Not what you're looking for?</h5>
