@@ -2,7 +2,7 @@
     <footer class="main-footer">
         <div class="footer-left">
 
-        <img src="./assets/agclogo.png" alt="logohere" class="w-25 mr-2 agc-logo">
+        <img src="./assets/agclogo.png" alt="logohere" class="mr-2 agc-logo" style="width: 200px;">
 
             <p class="footer-company-name">Copyright © 2024 <strong>AJC</strong> All rights reserved</p>
         </div>

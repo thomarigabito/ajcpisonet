@@ -1264,8 +1264,102 @@
 
             }
 
+            .agc-logo {
+                position: relative;
+                left: 10px;
+            }
+
 
         }
+
+        @media (max-width: 375px) {
+
+            .main-footer .footer-left,
+            .main-footer .footer-center,
+            .main-footer .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .main-footer .footer-center i {
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: relative;
+                left: 120px;
+
+            }
+
+            .agc-logo {
+                position: relative;
+                left: 40px;
+            }
+
+
+        }
+
+        @media (max-width: 425px) {
+
+            .main-footer .footer-left,
+            .main-footer .footer-center,
+            .main-footer .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .main-footer .footer-center i {
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: relative;
+                left: 140px;
+
+            }
+
+            .agc-logo {
+                position: relative;
+                left: 60px;
+            }
+
+
+        }
+
+        @media (max-width: 768px) {
+
+            .main-footer .footer-left,
+            .main-footer .footer-center,
+            .main-footer .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .main-footer .footer-center i {
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: relative;
+                left: 40%;
+
+            }
+
+            .agc-logo {
+                position: relative;
+                left: 10%;
+            }
+
+
+        }
+
+
 
         h2 {
             color: #f0525f;
