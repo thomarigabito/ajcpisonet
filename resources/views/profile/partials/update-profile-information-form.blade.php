@@ -49,7 +49,7 @@
 
         <div>
             <x-input-label for="profilepicture" :value="__('Profilepicture')" />
-            <x-text-input id="name" name="profilepicture" type="file" class="mt-1 block w-full" :value="old('profilepicture', $user->profilepicture)" required autofocus  />
+            <x-text-input id="name" name="profilepicture" type="file" class="mt-1 block w-full" :value="old('profilepicture', $user->profilepicture)" autofocus  />
             <x-input-error class="mt-2" :messages="$errors->get('profilepicture')" />
         </div>
 
