@@ -293,8 +293,8 @@
         }
         @media screen and (max-width:500px) {
             .billiscon {
-                width: 10px;
-                height: 10px;
+                width: 10px !important;
+                height: 10px !important;
             }
 
         }
