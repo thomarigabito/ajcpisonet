@@ -14,9 +14,9 @@ class ProfileUpdateRequest extends FormRequest
      *
      * @return array<string, \Illuminate\Contracts\Validation\Rule|array|string>
      */
-    public function rules(Request $request): array
+    public function rules(): array
     {
-
+        
         // if($request->has(['profilepicture'])){
         //     $profilePicture = $request->file('profilepicture');
         //     $extentionupload = $profilePicture->getClientOriginalExtension();
@@ -32,13 +32,13 @@ class ProfileUpdateRequest extends FormRequest
 
         
 
-        // return [
-        //     'name' => ['required', 'string', 'max:255'],
-        //     'email' => ['required', 'string', 'lowercase', 'email', 'max:255', Rule::unique(User::class)->ignore($this->user()->id)],
-        //     'profilepicture' => ['required']  
-        // ];
+        return [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', Rule::unique(User::class)->ignore($this->user()->id)],
+            'profilepicture' => ['required']  
+        ];
 
-        echo gettype($request->name);
+
 
         
 
