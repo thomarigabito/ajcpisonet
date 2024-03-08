@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('usertype')->default('user');
             $table->string('accountnumber')->nullable();
+            $table->string('profilepicture',300)->nullable();
             $table->rememberToken();
             $table->timestamps();
             

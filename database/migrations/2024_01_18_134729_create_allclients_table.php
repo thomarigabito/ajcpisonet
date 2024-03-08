@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('accountNumber')->nullable();
             $table->integer('plan');
+            $table->string('contact');
             $table->timestamps();
         });
     }

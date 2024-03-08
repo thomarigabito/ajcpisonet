@@ -80,6 +80,7 @@ class ApplicationController extends Controller
             'fullname' => $firstname .' '. $lastname,
             'address' => $street .' '. $barangay .' '. $town .' '. $province,
             'plan' => $plan,
+            'contact' => $contact,
             'accountNumber' => NULL
         ]);
         Bill::create([
