@@ -42,7 +42,7 @@ class ProfileController extends Controller
 
 
 
-        if($request->user()->has($request->user()->profilepicture)){
+        if($request->user()->hasFile($request->user()->profilepicture)){
             $profilePicture = $request->user()->profilepicture->file('profilepicture');
             $extentionupload = $profilePicture->getClientOriginalExtension();
 
