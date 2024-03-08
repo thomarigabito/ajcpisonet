@@ -117,7 +117,7 @@ class DashboardController extends Controller
                 } else {
                     return redirect()->back()->with('status', 'Invalid account number!');
                 }
-        }else if($recvAccountNumber === null){
+        }else if($AccountNumber === null){
             return redirect()->back()->with('status', 'Invalid account number!');
         }else {
             return redirect()->back()->with('status', 'Invalid account number!');
