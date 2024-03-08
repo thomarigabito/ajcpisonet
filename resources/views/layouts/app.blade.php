@@ -291,6 +291,15 @@
             }
 
         }
+        @media screen and (max-width:500px) {
+            .billiscon {
+                width: 10px;
+                height: 10px;
+            }
+
+        }
+
+
 
         @media print {
 
