@@ -40,7 +40,7 @@ class ProfileController extends Controller
         //     echo "negative";
         // }
 
-        echo $request->user()->email;
+        echo $request->user()->profilepicture;
 
         // if($request->user()->has('profilepicture')){
         //     $profilePicture = $request->user()->file('profilepicture');
