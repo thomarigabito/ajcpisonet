@@ -18,7 +18,7 @@ class ApplicationController extends Controller
             'firstname' => ['required', 'string', 'max:255'],
             'middlename' => ['required', 'string', 'max:255'],
             'lastname' => ['required', 'string', 'max:255'],
-            'contact' => ['required', 'string', 'max:255'],
+            'contact' => ['required', 'string', 'max:11'],
             'birthday' => ['required'],
             'gender' => ['required'],
             'plan' => ['required'],
