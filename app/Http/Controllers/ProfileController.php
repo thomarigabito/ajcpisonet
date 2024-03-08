@@ -25,9 +25,9 @@ class ProfileController extends Controller
     /**
      * Update the user's profile information.
      */
-    public function update(Request $request): RedirectResponse
+    public function update(User $request): RedirectResponse
     {
-        $request->user()->fill($request->validated());
+        // $request->user()->fill($request->validated());
 
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
@@ -41,6 +41,8 @@ class ProfileController extends Controller
         // }
 
         $request->validateWithBag ('user', [
+            'name' => 'required',
+            'email' => 'required',
             'profilepicture'=>'required',
         ]);
 
@@ -53,7 +55,7 @@ class ProfileController extends Controller
             $profilepicture -> move($path, $profile_Picture);
         };
 
-        $profilepicture = User::create([
+        $request->user()->update([
             'profilepicture' => $path . $profile_Picture
         ]);
 
