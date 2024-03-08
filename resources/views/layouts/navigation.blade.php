@@ -52,7 +52,7 @@
                     <x-slot name="trigger">
                         <button >
                             @if(Auth::user()->profilepicture == null)
-                            <span class="avatar rounded-5 mt-3" style="width:50px; height:50px; aspect-ratio:3/2"><i class="fa-solid fa-user"></i></i></span>
+                            <span class="avatar rounded-5 mt-3 bg-secondary" style="width:50px; height:50px; aspect-ratio:3/2"><i class="fa-solid fa-user"></i></i></span>
                             @else
                                 <img src="{{ asset(Auth::user()->profilepicture)}}" alt="profileimage" class="avatar rounded-5 mt-3" style="width:50px; height:50px; aspect-ratio:3/2"  />
                             @endif
