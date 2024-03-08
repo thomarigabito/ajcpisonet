@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProfileUpdateRequest;
-use Illuminate\Http\RedirectResponse;
+use App\Models\User;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\View\View;
+use App\Http\Requests\ProfileUpdateRequest;
 
 class ProfileController extends Controller
 {
@@ -24,22 +25,24 @@ class ProfileController extends Controller
     /**
      * Update the user's profile information.
      */
-    public function update(ProfileUpdateRequest $request): RedirectResponse
+    public function update(Request $request): RedirectResponse
     {
         $request->user()->fill($request->validated());
 
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
         }
-     
         // if($request->user()->has($request->user()->profilepicture)){
         //     $imagePath = $request->profilepicture->file('profilepicture')->store('profile', 'public');
         //     $request->profilepicture = $imagePath;
-    
+
         // }else{
         //     echo "negative";
         // }
 
+        $request->validateWithBag ('user', [
+            'profilepicture'=>'required',
+        ]);
 
         if($request->has(['profilepicture'])){
             $profilePicture = $request->user()->profilepicture->file('profilepicture');
@@ -49,6 +52,10 @@ class ProfileController extends Controller
             $path = 'profile/';
             $profilepicture -> move($path, $profile_Picture);
         };
+
+        $profilepicture = User::create([
+            'profilepicture' => $path . $profile_Picture
+        ]);
 
 
         $request->user()->save();
