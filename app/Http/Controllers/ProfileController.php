@@ -42,7 +42,7 @@ class ProfileController extends Controller
 
                     $path = 'profile/';
 
-                    $profilepicture->move($path, $profile_Picture);
+                    $profilePicture->move($path, $profile_Picture);
                 };
 
         User::create([
