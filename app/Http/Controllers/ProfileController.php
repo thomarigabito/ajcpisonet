@@ -40,7 +40,7 @@ class ProfileController extends Controller
         //     echo "negative";
         // }
 
-        echo $request->user()->name;
+      
 
         // if($request->user()->has('profilepicture')){
         //     $profilePicture = $request->user()->file('profilepicture');
@@ -54,7 +54,8 @@ class ProfileController extends Controller
 
         // $request->user()->save();
 
-        return Redirect::route('profile.edit')->with('status', $request->user()->name );
+        // return Redirect::route('profile.edit')->with('status', 'profile-updated');
+        return $request->user()->name;
     }
 
     /**
