@@ -38,7 +38,7 @@ class ProfileUpdateRequest extends FormRequest
         //     'profilepicture' => ['required']  
         // ];
 
-        echo gettpe($request->name);
+        echo gettype($request->name);
 
         
 
