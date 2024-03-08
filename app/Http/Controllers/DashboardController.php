@@ -97,7 +97,7 @@ class DashboardController extends Controller
         $request->validate([
             'accountnumber' => 'required|unique:users'
         ]);
-
+        $AccountNumber;
         $searchAccountNumber = Allclient::get();
         foreach ($searchAccountNumber as $searchAccountNumber) {
             $AccountNumber = $searchAccountNumber->accountNumber; // data from allclient table specific accountNumber Column
