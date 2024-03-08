@@ -37,7 +37,7 @@
                         <h6>Account # : {{$accountnumber}}
                         <span class="float-end mx-2" style="font-size: 12px">Note: Put zero(0) for Paid</span>
                         </h6>
-                        <h6>{{$email}}</h6>
+                        <h6>Email Address : {{$email}}</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive max-w-2xl mx-auto">
