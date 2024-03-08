@@ -73,7 +73,7 @@ class ApplicationController extends Controller
     }
 
     //For Approve and auto add auto delete
-    public function approveclient(Request $request, $id,$firstname, $lastname, $email, $contact, $birthday, $gender, $plan, $street, $barangay, $town, $province){
+    public function approveclient( $id,$firstname, $lastname, $email, $contact, $birthday, $gender, $plan, $street, $barangay, $town, $province){
         // Patira sir validate
 
         Allclient::create([

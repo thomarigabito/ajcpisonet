@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('accountnumber')->nullable();
             $table->integer('plan');
             $table->string('email');
-            $table->bigInteger('contact');
+            $table->string('contact');
             $table->integer('january')->nullable();
             $table->integer('febuary')->nullable();
             $table->integer('march')->nullable();
