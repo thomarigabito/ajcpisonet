@@ -5,7 +5,7 @@
         </h2>
 
         <p class="mt-1 text-sm text-gray-600">
-            {{ __("Update your account's profile information and email address.") }}
+            {{ __("Update your account's profile information, email address and profile picture.") }}
         </p>
     </header>
 
@@ -13,7 +13,7 @@
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6">
+    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6" enctype="multipart/form-data">
         @csrf
         @method('patch')
 
@@ -45,6 +45,12 @@
                     @endif
                 </div>
             @endif
+        </div>
+
+        <div>
+            <x-input-label for="profilepicture" :value="__('Profilepicture')" />
+            <x-text-input id="name" name="profilepicture" type="file" class="mt-1 block w-full" :value="old('profilepicture', $user->profilepicture)" required autofocus  />
+            <x-input-error class="mt-2" :messages="$errors->get('profilepicture')" />
         </div>
 
         <div class="flex items-center gap-4">
