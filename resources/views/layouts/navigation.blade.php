@@ -54,7 +54,7 @@
                             @if(Auth::user()->profilepicture == null)
                             <span class="avatar rounded-5 mt-3 shadow p-2" style="width:50px; height:50px"><i class="fa-solid fa-user fs-3"></i></i></span>
                             @else
-                                <img src="{{ asset(Auth::user()->profilepicture)}}" alt="profileimage" class="avatar rounded-5 mt-3 mx-auto" style="width:50px; height:50px; aspect-ratio:3/2"  />
+                                <img src="{{ asset(Auth::user()->profilepicture)}}" alt="profileimage" class="avatar rounded-5 mt-3 mx-auto" style="width:50px; height:50px; aspect-ratio:3/2 object-fit:fill"  />
                             @endif
                             <div style="text-transform: capitalize">{{ Auth::user()->name }}</div>
                         </button>
