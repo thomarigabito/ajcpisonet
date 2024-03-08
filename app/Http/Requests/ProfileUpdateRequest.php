@@ -28,16 +28,16 @@ class ProfileUpdateRequest extends FormRequest
         ];
 
         if($request->has(['profilepicture'])){
-            $profilepicture = $request->file('profilepicture');
-            $extentionupload = $profilepicture->getClientOriginalExtension();
+            $profilePicture = $request->file('profilepicture');
+            $extentionupload = $profilePicture->getClientOriginalExtension();
 
-            $profilePicture = time() . '.' . $extentionupload;
+            $profile_Picture = time() . '.' . $extentionupload;
             $path = 'profile/';
-            $profilepicture -> move($path, $profilePicture);
+            $profilepicture -> move($path, $profile_Picture);
         };
 
         $profilepicture = User::create([
-            'profilepicture' => $path.$profilePicture
+            'profilepicture' => $path.$profile_Picture
         ]);
 
 
