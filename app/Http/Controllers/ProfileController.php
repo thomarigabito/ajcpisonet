@@ -25,15 +25,10 @@ class ProfileController extends Controller
     /**
      * Update the user's profile information.
      */
-    public function update(Request $request): RedirectResponse
+    public function update(ProfileUpdateRequest $request): RedirectResponse
     {
         $request->user()->fill($request->validated());
 
-        // $request->validateWithBag('userUpdate', [
-        //     'name' => ['nullable'],
-        //     'email' => ['nullable'],
-        //     'profilepicture' =>['required']
-        // ]);
         if($request->has(['profilepicture'])){
                     $profilePicture = $request->file('profilepicture');
                     $extentionupload = $profilePicture->getClientOriginalExtension();
@@ -45,24 +40,11 @@ class ProfileController extends Controller
                     $profilePicture->move($path, $profile_Picture);
                 };
 
-        // User::create([
-        //     'profilepicture'=> $path.$profile_Picture
-        // ]);
-
         if ($request->user()->isDirty('email')) {
             $request->user()->email_verified_at = null;
         }
 
-
-        // if($request->user()->has($request->user()->profilepicture)){
-        //     $imagePath = $request->profilepicture->file('profilepicture')->store('profile', 'public');
-        //     $request->profilepicture = $imagePath;
-
-        // }else{
-        //     echo "negative";
-        // }
         $request->user()->save();
-
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }
 
