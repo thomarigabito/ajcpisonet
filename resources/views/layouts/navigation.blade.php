@@ -52,7 +52,6 @@
                     <x-slot name="trigger">
                         <button >
                             <img src="{{ asset(Auth::user()->profilepicture)}}" alt="profileimage" class="rounded" style="width:30px; hieght:30px; border-radius:50%; object-fit:fit">
-                            {{Auth::user->profilepicture}}
                             <div style="text-transform: capitalize">{{ Auth::user()->name }}</div>
 
                         </button>
