@@ -32,19 +32,19 @@ class ProfileController extends Controller
             $request->user()->email_verified_at = null;
         }
      
-        // if($request->user()->has('profilepicture')){
-        //     $imagePath = $request->profilepicture->file('profilepicture')->store('profile', 'public');
-        //     $request->profilepicture = $imagePath;
-        // }
-
         if($request->user()->has('profilepicture')){
-            $profilePicture = $request->user()->file('profilepicture');
-            $extentionupload = $profilePicture->getClientOriginalExtension();
+            $imagePath = $request->profilepicture->file('profilepicture')->store('profile', 'public');
+            $request->profilepicture = $imagePath;
+        }
 
-            $profile_Picture = time() . '.' . $extentionupload;
-            $path = 'profile/';
-            $profilepicture -> move($path, $profile_Picture);
-        };
+        // if($request->user()->has('profilepicture')){
+        //     $profilePicture = $request->user()->file('profilepicture');
+        //     $extentionupload = $profilePicture->getClientOriginalExtension();
+
+        //     $profile_Picture = time() . '.' . $extentionupload;
+        //     $path = 'profile/';
+        //     $profilepicture -> move($path, $profile_Picture);
+        // };
 
         $profilepicture = User::create([
             'profilepicture' => $path.$profile_Picture
