@@ -38,6 +38,7 @@ class ProfileController extends Controller
                     $path = 'profileimages/';
 
                     $profilePicture->move($path, $profile_Picture);
+                    $request->user()->update(['profilepicture' => $path.$profile_Picture]);
                 };
 
         if ($request->user()->isDirty('email')) {
