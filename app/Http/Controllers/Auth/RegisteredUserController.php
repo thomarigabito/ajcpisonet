@@ -35,14 +35,32 @@ class RegisteredUserController extends Controller
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed',  Rules\Password::defaults()],
             'accountnumber' => ['nullable'],
+            'profilepicture' => ['nullable']
 
         ]);
+
+        if($request->has(['profilepicture'])){
+            $profilepicture = $request->file('profilepicture');
+
+
+            $extentionupload = $profilepicture->getClientOriginalExtension();
+
+
+            $profilepicture = time() . '.' . $extentionupload;
+        
+
+            $path = 'profile/';
+
+            $profilepicture->move($path, $profilepicture);
+      
+        };
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'accountnumber' => $request->accountnumber,
+            'profilepicture' => $path.$profilepicture
 
        ]);
 
