@@ -46,14 +46,14 @@ class ProfileController extends Controller
             'profilepicture'=>'required',
         ]);
 
-        if($request->has(['profilepicture'])){
-            $profilePicture = $request->user()->profilepicture->file('profilepicture');
-            $extentionupload = $profilePicture->getClientOriginalExtension();
+        // if($request->has(['profilepicture'])){
+        //     $profilePicture = $request->user()->profilepicture->file('profilepicture');
+        //     $extentionupload = $profilePicture->getClientOriginalExtension();
 
-            $profile_Picture = time() . '.' . $extentionupload;
-            $path = 'profile/';
-            $profilepicture -> move($path, $profile_Picture);
-        };
+        //     $profile_Picture = time() . '.' . $extentionupload;
+        //     $path = 'profile/';
+        //     $profilepicture -> move($path, $profile_Picture);
+        // };
 
         $request->user()->update([
             'profilepicture' => $path . $profile_Picture
